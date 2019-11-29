@@ -1,0 +1,199 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-prm-: 'Montserrat', sans-serif;
+    --color-prm-: #fff;
+}
+
+body {
+    font-family: var(--font-prm-);
+    width: 100vw;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: #141414;
+    display: block;
+}
+
+.nav {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 950;
+}
+
+.nav-wrap,
+.row-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav-wrap-top {
+    width: 100%;
+    height: 35px;
+    background-color: #141414;
+    z-index: 10;
+}
+
+.row-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-top-user-wrap,
+.retailer-info {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-row-wrap,
+.nav-top-user-wrap-flag {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.nav-top-user-wrap-flag {
+    width: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.enFlag-icon {
+    width: 30px;
+    height: 15px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/icos/svg/AmericanFlagIcon.891ce365.svg);
+}
+
+.retailer-icon {
+    width: 15px;
+    height: 15px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/icos/svg/LocationIcon.deb0b37b.svg);
+}
+
+.retailer-info {
+    width: 130px;
+    padding: 0 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.retailer-text,
+.enFlag-text,
+.sign-in,
+.shipping-offer {
+    font-size: 10px;
+    color: var(--color-prm-);
+    font-weight: 600;
+}
+
+.shipping-offer {
+    align-self: center;
+}
+
+.sign-in {
+    height: 100%;
+    width: 110px;
+    background-color: #4e4e4e;
+    border: none;
+}
+
+.sign-in:hover {
+    background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+.sign-in:active,
+.sign-in:focus {
+    border-style: none;
+    outline-style: none;
+}
+
+.sign-in:active {
+    background-color: #4e4e4e;
+}
+
+/* NAVIGATION @2th ROW*/
+.nav-wrap-bottom {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-bottom {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav-links-wrapper {
+    text-align: center;
+    height: 100%;
+}
+
+.nav-links-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    padding: 0 40px;
+}
+
+.nav-links {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #141414;
+    font-weight: 600;
+    display: block;
+}
+
+.nav-links:hover {
+    color: #d32e2e;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/icos/SpecializedNavLogo.babe4687.png);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
