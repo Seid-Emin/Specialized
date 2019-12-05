@@ -6,6 +6,7 @@
     --font-prm-: 'Montserrat', sans-serif;
     --color-prm-: #fff;
     --hover-clr-red-: #ed1c24;
+    --hover-clr-red-btn-: #a72d2d;
     --hover-bg-clr-grey-: #3d3d3d;
 }
 
@@ -898,7 +899,7 @@ li {
 }
 
 .landing-heroe-title {
-    font-size: 75px;
+    font-size: 4rem;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -906,7 +907,7 @@ li {
 .landing-heroe-text {
     font-weight: 300;
     text-transform: uppercase;
-    font-weight: 15px;
+    font-size: .9rem;
     line-height: 20px;
 }
 
@@ -1591,7 +1592,7 @@ li {
 }
 
 .mobile-footer_middle-right-retailerButton:hover {
-    background-color: var(--hover-clr-red-);
+    background-color: var(--hover-clr-red-btn-);
 }
 
 .mobile-footer-social-tags {

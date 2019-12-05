@@ -1,0 +1,15 @@
+main htmls:
+
+index.html
+
+html/bikes/bikes.html
+
+html/bikes/trail.html
+
+html/bikes/downhill.html
+
+html/bikes/s-works.html
+
+html/retailer/retailer.html
+
+html/inside_specialized/inside_specialized.html
