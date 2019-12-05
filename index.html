@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Made For Riders, By Riders | Specialized</title>
 </head>
 
@@ -24,7 +25,7 @@
                                     <p class="shipping-offer">FREE SHIPPING ON ALL ORDERS OVER $1 500.
                                     </p>
                                     <div class="nav-top-user-wrap">
-                                        <a href="/Specialized/index.html" class="retailer-info">
+                                        <a href="/Specialized/retailer.html" class="retailer-info">
                                             <div class="retailer-icon"></div>
                                             <p class="retailer-text">FIND A RETAILER</p>
                                         </a>
@@ -36,23 +37,25 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="nav-wrap-bottom">
                                 <div class="row-wrap nav-bottom-wrap">
                                     <div class="nav-bottom">
                                         <a href="index.html" class="nav-logo"></a>
                                         <div class="nav-links-wrapper">
                                             <ul class="nav-links-list">
-                                                <li class="nav-list"><a href="#shop/bikes" class="nav-links">bikes</a>
+                                                <li class="nav-list"><a href="bikes.html" class="nav-links">bikes</a>
                                                 </li>
-                                                <li class="nav-list"><a href="#shop/trail" class="nav-links">trail</a>
+                                                <li class="nav-list"><a href="trail.html" class="nav-links">trail</a>
                                                 </li>
-                                                <li class="nav-list"><a href="#shop/downhill"
+                                                <li class="nav-list"><a href="downhill.html"
                                                         class="nav-links">downhill</a>
                                                 </li>
-                                                <li class="nav-list"><a href="#shop/s-works"
+                                                <li class="nav-list"><a href="s-works.html"
                                                         class="nav-links">s-works</a>
                                                 </li>
-                                                <li class="nav-list"><a href="#" class="nav-links">inside
+                                                <li class="nav-list"><a href="inside_specialized.html"
+                                                        class="nav-links">inside
                                                         specialized</a>
                                                 </li>
                                             </ul>
@@ -62,6 +65,92 @@
                                             <div class="nav-cart nav-icon"></div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="nav-signIn_wrap-toggle" id="nav-signIn_wrap-toggle">
+                                <div class="nav-signIn-hidden">
+                                    <div class="nav-signIn-bg" id="nav-signIn-bg"></div>
+                                    <div class="nav-signIn-hidden-wrap">
+
+                                        <form class="signIn_form">
+                                            <label class="signIn_form-label">email</label>
+                                            <input type="email" class="nav-form-input signIn_form-input" name="email">
+                                            <label class="signIn_form-label">password</label>
+                                            <input type="password" class="nav-form-input signIn_form-input"
+                                                name="password">
+                                            <div class="signIn_form_div-Btn forgotPass">forgot your password?</div>
+                                            <div class="signIn_form_div-Btn registerMe">Register.</div>
+                                            <laber class="signIn_form-rememberMe">
+                                                <input type="checkbox" class="signIn_form-rememberMeBox"
+                                                    name="remember me" id="signIn_form-rememberMeBox" value="true">
+                                                <label for="signIn_form-rememberMeBox"
+                                                    class="signIn_form-rememberMeBox-label">Remember me</label>
+                                            </laber>
+                                            <button class="signIn_register signIn_form-submit">sign in</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-register_wrap-toggle" id="nav-register_wrap-toggle">
+                                <div class="nav-register-hidden">
+                                    <div class="nav-register-bg"></div>
+                                    <div class="nav-register-hidden-wrap">
+                                        <p class="nav-registe-text">All fields are required unless otherwise noted</p>
+                                        <form class="register_form">
+                                            <label class="register_form-label">first name</label>
+                                            <input type="text" class="register_form-input" name="first name">
+                                            <label class="register_form-label">last name</label>
+                                            <input type="text" class="register_form-input" name="last name">
+
+                                            <label class="register_form-label">email</label>
+                                            <input type="email" class="register_form-input" name="email">
+
+                                            <label class="register_form-label">password</label>
+                                            <input type="password" class="register_form-input" name="password">
+                                            <label class="register_form-label">confirm password</label>
+                                            <input type="password" class="register_form-input" name="confirm password">
+
+                                            <laber class="register_form-accepts">
+                                                <input type="checkbox" class="register_form-terms"
+                                                    name="singMeUp-offers" value="true" id="term-signMeUP-recieve"
+                                                    required>
+                                                <label for="term-signMeUP-recieve"
+                                                    class="signIn_form-rememberMeBox-label">Sign me up to receive email
+                                                    offers
+                                                    and updates</label>
+                                            </laber>
+                                            <laber class="register_form-accepts">
+                                                <input type="checkbox" class="register_form-terms"
+                                                    name="singMeUp-offers" value="true" id="term-acceptSpecTerms"
+                                                    required>
+                                                <label for="term-acceptSpecTerms"
+                                                    class="signIn_form-rememberMeBox-label">I
+                                                    accept the Specialized Terms
+                                                    & Conditions</label>
+                                            </laber>
+                                            <laber class="register_form-accepts">
+                                                <input type="checkbox" class="register_form-terms"
+                                                    name="singMeUp-offers" value="true" id="term-acceptSpecTermsOfUse"
+                                                    required>
+                                                <label for="term-acceptSpecTermsOfUse"
+                                                    class="signIn_form-rememberMeBox-label">
+                                                    I accept the Specialized Terms Of
+                                                    Use</label>
+                                            </laber>
+                                            <button class="signIn_register register_form-submit">register</button>
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-search-hidden" id="nav-search-hidden">
+                                <div class="search-hidden-wrap">
+                                    <form class="search-hidden_form">
+                                        <div class="search-hidden_form-field">
+                                            <input type="search" class="search-hidden_form-field_input">
+                                        </div>
+                                        <button type="submit" class="search-hidden_button">search</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -78,20 +167,95 @@
                     </div>
                     <div class="mobileNav_bottom-row">
                         <div class="mobileNav_left-icons">
-                            <div class="mobileNav_left-icon mobileNav-menu-icon"></div>
+                            <input type="button" class="mobileNav_left-icon mobileNav-menu-icon"></input>
                             <div class="mobileNav_left-icon mobileNav-search-icon"></div>
                         </div>
-                        <a href="/Specialized/index.html" class="mobileNav"></a>
+                        <a href="index.html" class="mobileNav-logo"></a>
                         <div class="mobileNav_right-icons">
-                            <div class="mobileNav_right-icon mobileNav_user-icon"></div>
+                            <input type="button" class="mobileNav_right-icon mobileNav_user-icon"></input>
                             <div class="mobileNav_right-icon mobileNav_cart-icon"></div>
                         </div>
                     </div>
-                    <div class="mobileNav_search">
+                    <!-- Mobile Nav SignIn -->
+                    <div class="nav-signIn_wrap-toggle" id="mobile-nav-signIn_wrap-toggle">
+                        <div class="nav-signIn-hidden">
+                            <div class="nav-signIn-bg"></div>
+                            <div class="nav-signIn-hidden-wrap">
+
+                                <form class="signIn_form">
+                                    <label class="signIn_form-label">email</label>
+                                    <input type="email" class="nav-form-input signIn_form-input" name="email">
+                                    <label class="signIn_form-label">password</label>
+                                    <input type="password" class="nav-form-input signIn_form-input" name="password">
+                                    <div class="signIn_form_div-Btn forgotPass">forgot your password?</div>
+                                    <div class="signIn_form_div-Btn registerMe">Register.</div>
+                                    <laber class="signIn_form-rememberMe">
+                                        <input type="checkbox" class="signIn_form-rememberMeBox" name="remember me"
+                                            id="mobile-signIn_form-rememberMeBox" value="true">
+                                        <label for="signIn_form-rememberMeBox"
+                                            class="mobile-signIn_form-rememberMeBox-label">Remember me</label>
+                                    </laber>
+                                    <button class="signIn_register signIn_form-submit">sign in</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Nav Register -->
+                    <div class="nav-register_wrap-toggle" id="mobile-nav-register_wrap-toggle">
+                        <div class="nav-register-hidden">
+                            <div class="nav-register-bg"></div>
+                            <div class="nav-register-hidden-wrap">
+                                <p class="nav-registe-text">All fields are required unless otherwise noted</p>
+                                <form class="register_form">
+                                    <label class="register_form-label">first name</label>
+                                    <input type="text" class="register_form-input" name="first name">
+                                    <label class="register_form-label">last name</label>
+                                    <input type="text" class="register_form-input" name="last name">
+
+                                    <label class="register_form-label">email</label>
+                                    <input type="email" class="register_form-input" name="email">
+
+                                    <label class="register_form-label">password</label>
+                                    <input type="password" class="register_form-input" name="password">
+                                    <label class="register_form-label">confirm password</label>
+                                    <input type="password" class="register_form-input" name="confirm password">
+
+                                    <laber class="register_form-accepts">
+                                        <input type="checkbox" class="register_form-terms" name="singMeUp-offers"
+                                            value="true" id="mobile-term-signMeUP-recieve" required>
+                                        <label for="term-signMeUP-recieve" class="signIn_form-rememberMeBox-label">Sign
+                                            me up to receive email
+                                            offers
+                                            and updates</label>
+                                    </laber>
+                                    <laber class="register_form-accepts">
+                                        <input type="checkbox" class="register_form-terms" name="singMeUp-offers"
+                                            value="true" id="mobile-term-acceptSpecTerms" required>
+                                        <label for="term-acceptSpecTerms" class="signIn_form-rememberMeBox-label">I
+                                            accept the Specialized Terms
+                                            & Conditions</label>
+                                    </laber>
+                                    <laber class="register_form-accepts">
+                                        <input type="checkbox" class="register_form-terms" name="singMeUp-offers"
+                                            value="true" id="mobile-term-acceptSpecTermsOfUse" required>
+                                        <label for="term-acceptSpecTermsOfUse" class="signIn_form-rememberMeBox-label">
+                                            I accept the Specialized Terms Of
+                                            Use</label>
+                                    </laber>
+                                    <button class="signIn_register register_form-submit">register</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileNav_search" id="mobileNav_search">
                         <div class="mobileNav_search-wrap">
                             <form action="/" class="mobileNav_search-form">
-                                <div class="mobileNav_search-field"></div>
-                                <button type="submit" class="mobileNav_search-button"></button>
+                                <div class="mobileNav_search-field">
+                                    <input type="search" name="nav Search" class="mobileNav_search-input">
+                                </div>
+                                <button type="submit" class="mobileNav_search-button">search</button>
                             </form>
                         </div>
                     </div>
@@ -100,7 +264,7 @@
             <!-- Mobile NAV end -->
 
             <!-- Mobile NAV hiddenMenu start -->
-            <div class="nav-drawer">
+            <div class="nav-drawer" id="nav-drawer">
                 <div class="nav-drawer_wrap">
                     <div class="nav-drawer_categories">
                         <div class="nav-drawer_exit">
@@ -109,27 +273,32 @@
                         </div>
                         <div class="nav-drawer_tabs">
                             <div class="nav-drawer_shop">
-                                <div class="nav-drawer_shop-text">shop</div>
-                                <div class="nav-drawer_inside">
-                                    <a href="#" class="nav-drawer-inside_text">inside specialized</a>
-                                </div>
+                                <a href="index.html" class="nav-drawer_shop-text">shop</a>
+
+                            </div>
+                            <div class="nav-drawer_inside">
+                                <a href="inside_specialized.html" class="nav-drawer-inside_text">inside specialized</a>
                             </div>
                         </div>
-                        <div class="nav-drawer_menu">
-                            <ul class="nav-drawe_menu-list">
-                                <li class="nav-drawer_menu-item">
-                                    <a href="#" class="nav-drawer_menu-link">bikes</a>
-                                </li>
-                                <li class="nav-drawer_menu-item"> <a href="#" class="nav-drawer_menu-link">trail</a>
-                                </li>
-                                <li class="nav-drawer_menu-item"> <a href="#" class="nav-drawer_menu-link">downhill</a>
-                                </li>
-                                <li class="nav-drawer_menu-item"> <a href="#" class="nav-drawer_menu-link">s-works</a>
-                                </li>
-                                <li class="nav-drawer_menu-item"> <a href="#" class="nav-drawer_menu-link">FIND A
-                                        RETAILER</a></li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="nav-drawer_menu">
+                        <ul class="nav-drawe_menu-list">
+                            <li class="nav-drawer_menu-item">
+                                <a href="bikes.html" class="nav-drawer_menu-link">bikes</a>
+                            </li>
+                            <li class="nav-drawer_menu-item"> <a href="trail.html"
+                                    class="nav-drawer_menu-link">trail</a>
+                            </li>
+                            <li class="nav-drawer_menu-item"> <a href="downhill.html"
+                                    class="nav-drawer_menu-link">downhill</a>
+                            </li>
+                            <li class="nav-drawer_menu-item"> <a href="s-works.html"
+                                    class="nav-drawer_menu-link">s-works</a>
+                            </li>
+                            <li class="nav-drawer_menu-item"> <a href="retailer.html" class="nav-drawer_menu-link">FIND
+                                    A
+                                    RETAILER</a></li>
+                        </ul>
                     </div>
                 </div>
                 <p class="nav-drawer-footer">Made For Riders, By Riders</p>
@@ -227,7 +396,7 @@
                     <div class="landing-video">
                         <div class="landing-video_title">the all new stumpjumper</div>
                         <div class="landing-video_video-wrap">
-                            <iframe class="landing-video__iframe" src="https://www.youtube.com/embed/yiNyUvYb7AM"
+                            <iframe width="80%" height="90%" src="https://www.youtube.com/embed/yiNyUvYb7AM"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </div>
