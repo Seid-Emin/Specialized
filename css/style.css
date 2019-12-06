@@ -32,10 +32,6 @@ ul {
     list-style-type: none;
 }
 
-.active-links {
-    color: var(--hover-clr-red-)
-}
-
 .site {
     font-family: montserrat, sans-serif;
     font-style: normal;
@@ -345,6 +341,10 @@ li {
 .search-hidden_button:hover {
     background-color: #eeeeee;
     cursor: pointer;
+}
+
+.active-links {
+    color: var(--hover-clr-red-)
 }
 
 /* Search field css end */
@@ -893,13 +893,13 @@ li {
 .landing-heroe-content {
     display: inline-block;
     color: #fff;
-    padding-left: 80px;
-    padding-top: 8%;
+    padding-left: 60px;
+    padding-top: 3%;
     transition: padding-top .2s ease-in;
 }
 
 .landing-heroe-title {
-    font-size: 4rem;
+    font-size: 5vw;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -907,7 +907,7 @@ li {
 .landing-heroe-text {
     font-weight: 300;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: .8rem;
     line-height: 20px;
 }
 

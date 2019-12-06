@@ -1,0 +1,257 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-prm-: 'Montserrat', sans-serif;
+    --color-prm-: #fff;
+    --hover-clr-red-: #ed1c24;
+    --hover-clr-red-btn-: #a72d2d;
+    --hover-bg-clr-grey-: #3d3d3d;
+}
+
+
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.page_header {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page_header-inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page_header-inner-title {
+    font-size: 10px;
+    padding-left: 60px;
+}
+
+.page_innet-title_links {
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+/* Page path  */
+
+.page_wrap {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+
+/* Full Image */
+.page-heroe {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(../shop/bikes/bikes_img/18_banner_bikes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+.page-heroe_title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.25rem;
+    padding-left: 60px;
+    font-weight: 600;
+}
+
+/* Page content */
+.page-content {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+/* Short cuts and category goes from here */
+
+.bikes-menu {
+    margin-left: 60px;
+    justify-content: left;
+}
+
+.bikes-menu_wrap,
+.bikes-menu {
+    width: 250px;
+    height: 500px;
+    margin-top: 5px;
+}
+
+.menu-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.category {
+    margin-bottom: 0px;
+}
+
+.menu-category_wrap {
+    height: 100%;
+}
+
+
+
+/* Category goes from here on */
+
+.category-wrap {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+}
+
+.category-title-wrap {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+.category_activator {
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.activator-hidden {
+    display: none;
+}
+
+.category_holder-bikes {
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.category-shortCut-trail:hover,
+.category-shortCut-downhill:hover,
+.category-shortCut-s-works:hover {
+    font-weight: 800;
+}
+
+.category-bikes-ul {
+    display: block;
+}
+
+.shortCut-bikes {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.shortCut-bikes-links:hover {
+    color: var(--hover-clr-red-);
+}
+
+.category-text {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    padding-right: 20px;
+}
+
+
+/* Bikes content Section */
+.bikes-content {
+    width: inherit;
+    /* width: calc(98%-250px); */
+    padding: 0 20px 20px;
+}
+
+.bike-content-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.section-trail {
+    position: relative;
+    height: 100%;
+}
+
+.section-text {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.section-content-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.product-view {
+    width: 30.5%;
+    height: 30vw;
+    max-height: 700px;
+    margin: .7vw;
+}
+
+.StumpJumperPro29-img {
+    width: 100%;
+    height: 60%;
+    background-image: url(/Specialized/shop/bikes/bikes_img/trail/StumpJumperPro29-PrevCard_bikes_page[1].jpg);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+
+/* Product view Info */
+.product-view_info-wrap {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.product-view-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-view-price {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
