@@ -127,6 +127,94 @@ $(document).ready(function () {
     });
 
 
+    // ShortCuts Show And Hide
+
+
+    function shortCut(e) {
+        let bikeType = ['trail', 'downhill', 's-works'];
+        $('.hide-shortCut-' + 'bikeType[e]').hide();
+        $('.' + 'bikeType[e]' + '-ul').slideToggle();
+    }
+
+    $('.category_holder-bikes').click(function () {
+        if (this.innerHTML == 'Trail') {
+            $('.trail-ul').slideToggle();
+            if ($('.hide-shortCut-trail').css('display') != 'none') {
+                $('.hide-shortCut-trail').hide();
+            } else {
+                $('.hide-shortCut-trail').show();
+            }
+        } else if (this.innerHTML == 'Downhill') {
+            $('.downhill-ul').slideToggle();
+            if ($('.hide-shortCut-downhill').css('display') != 'none') {
+                $('.hide-shortCut-downhill').hide();
+            } else {
+                $('.hide-shortCut-downhill').show();
+            }
+        } else {
+            $('.s-works-ul').slideToggle();
+            if ($('.hide-shortCut-s-works').css('display') != 'none') {
+                $('.hide-shortCut-s-works').hide();
+            } else {
+                $('.hide-shortCut-s-works').show();
+            }
+        }
+    });
+
+
+    var categoryTrail = $('.category-trail');
+    var categoryDownhill = $('.category-downhill');
+    var categorySworks = $('.category-s-works');
+
+    // var shortCutShowHide = $('.category-title-wrap');
+    // console.log(shortCutShowHide);
+
+
+
+    // $('.category-trail').click(function () {
+
+    //     if ($('.category_activator-hide-shortCut').css('display') != 'none') {
+    //         $('.category_activator-hide-shortCut').hide();
+    //         $('.trail-ul').slideToggle();
+    //     } else {
+    //         $('.category_activator-hide-shortCut').show();
+    //         $('.trail-ul').slideToggle();
+    //     }
+    // });
+
+
+
+
+    // var shortCutSign = $('.category_activator-wrap');
+    // var shortCutTitle = $('.category_activator-wrap')
+    // console.log(shortCutSign);
+    // // if ()
+    // $('.category-title-wrap').click(function () {
+    // $('.category_activator-show-shortCut').toggle();
+    // $('.category_activator-hide-shortCut').toggle();
+    // this('category-bikes-ul').toggle();
+    // console.log(this);
+
+    // console.log(this.('category-bikes-ul'));
+    // console.log($(this).find('category-bikes-ul'));
+
+    // })
+
+
+
+
+
+
+
+
+
+
+
+    // Shop Script
+
+
+
+
 
 
 });
