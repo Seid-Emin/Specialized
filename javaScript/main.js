@@ -129,88 +129,58 @@ $(document).ready(function () {
 
     // ShortCuts Show And Hide
 
+    // $('.category-wrap').click(function () {
+    //     console.log(this);
 
-    function shortCut(e) {
-        let bikeType = ['trail', 'downhill', 's-works'];
-        $('.hide-shortCut-' + 'bikeType[e]').hide();
-        $('.' + 'bikeType[e]' + '-ul').slideToggle();
-    }
+    // });
 
-    $('.category_holder-bikes').click(function () {
-        if (this.innerHTML == 'Trail') {
-            $('.trail-ul').slideToggle();
-            if ($('.hide-shortCut-trail').css('display') != 'none') {
-                $('.hide-shortCut-trail').hide();
-            } else {
-                $('.hide-shortCut-trail').show();
-            }
-        } else if (this.innerHTML == 'Downhill') {
-            $('.downhill-ul').slideToggle();
-            if ($('.hide-shortCut-downhill').css('display') != 'none') {
-                $('.hide-shortCut-downhill').hide();
-            } else {
-                $('.hide-shortCut-downhill').show();
-            }
+    $('.category-trail').click(function () {
+        $('.trail-ul').slideToggle();
+        if ($('.hide-shortCut-trail').css('display') != 'none') {
+            $('.hide-shortCut-trail').hide();
         } else {
-            $('.s-works-ul').slideToggle();
-            if ($('.hide-shortCut-s-works').css('display') != 'none') {
-                $('.hide-shortCut-s-works').hide();
-            } else {
-                $('.hide-shortCut-s-works').show();
-            }
+            $('.hide-shortCut-trail').show();
         }
     });
 
+    $('.category-downhill').click(function () {
+        $('.downhill-ul').slideToggle();
+        if ($('.hide-shortCut-downhill').css('display') != 'none') {
+            $('.hide-shortCut-downhill').hide();
+        } else {
+            $('.hide-shortCut-downhill').show();
+        }
+    });
 
-    var categoryTrail = $('.category-trail');
-    var categoryDownhill = $('.category-downhill');
-    var categorySworks = $('.category-s-works');
+    $('.category-s-works').click(function () {
+        $('.s-works-ul').slideToggle();
+        if ($('.hide-shortCut-s-works').css('display') != 'none') {
+            $('.hide-shortCut-s-works').hide();
+        } else {
+            $('.hide-shortCut-s-works').show();
+        }
+    });
 
-    // var shortCutShowHide = $('.category-title-wrap');
-    // console.log(shortCutShowHide);
+    // Shop/Specialized Script
+    // Scroll event - hightlight the current section at shortCuts
 
-
-
-    // $('.category-trail').click(function () {
-
-    //     if ($('.category_activator-hide-shortCut').css('display') != 'none') {
-    //         $('.category_activator-hide-shortCut').hide();
-    //         $('.trail-ul').slideToggle();
-    //     } else {
-    //         $('.category_activator-hide-shortCut').show();
-    //         $('.trail-ul').slideToggle();
-    //     }
-    // });
-
-
-
-
-    // var shortCutSign = $('.category_activator-wrap');
-    // var shortCutTitle = $('.category_activator-wrap')
-    // console.log(shortCutSign);
-    // // if ()
-    // $('.category-title-wrap').click(function () {
-    // $('.category_activator-show-shortCut').toggle();
-    // $('.category_activator-hide-shortCut').toggle();
-    // this('category-bikes-ul').toggle();
-    // console.log(this);
-
-    // console.log(this.('category-bikes-ul'));
-    // console.log($(this).find('category-bikes-ul'));
-
-    // })
-
-
-
-
-
-
-
-
-
-
-
-    // Shop Script
+    window.addEventListener('scroll', function () {
+        if (window.scrollY >= 478 && window.scrollY < 1800) {
+            $('.category-shortCut-trail').addClass('bolder-scroll');
+        } else {
+            $('.category-shortCut-trail').removeClass('bolder-scroll');
+        }
+        if (window.scrollY >= 1800 && window.scrollY < 2716) {
+            $('.category-shortCut-downhill').addClass('bolder-scroll');
+        } else {
+            $('.category-shortCut-downhill').removeClass('bolder-scroll');
+        }
+        if (window.scrollY >= 2716 && window.scrollY < 4000) {
+            $('.category-shortCut-s-works').addClass('bolder-scroll');
+        } else {
+            $('.category-shortCut-s-works').removeClass('bolder-scroll');
+        }
+    });
 
 
 

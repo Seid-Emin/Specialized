@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     --font-prm-: 'Montserrat', sans-serif;
-    --color-prm-: #fff;
+    --color-prm-: #f1f1f1;
     --hover-clr-red-: #ed1c24;
     --hover-clr-red-btn-: #a72d2d;
     --hover-bg-clr-grey-: #3d3d3d;
@@ -36,18 +36,20 @@
 .page_header-inner {
     width: 100%;
     height: 100%;
-    max-width: 1920px;
+    max-width: 1920;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .page_header-inner-title {
-    font-size: 10px;
-    padding-left: 60px;
+    font-size: 8px;
+    padding: 0 45px;
 }
 
 .page_innet-title_links {
+    font-style: italic;
     text-transform: uppercase;
     display: inline-block;
 }
@@ -65,13 +67,14 @@
 /* Full Image */
 .page-heroe {
     width: 100%;
-    height: 55vh;
+    height: 70vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: url(../shop/bikes/bikes_img/18_banner_bikes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50%;
     margin-bottom: 40px;
 }
 
@@ -79,7 +82,7 @@
     text-transform: uppercase;
     color: #fff;
     font-size: 1.5rem;
-    padding-left: 60px;
+    padding: 0 45px;
     font-weight: 600;
 }
 
@@ -87,7 +90,7 @@
 .page-content {
     width: 100%;
     display: flex;
-    padding-top: 40px;
+    padding-top: 20px;
     justify-content: space-between;
     position: relative;
 }
@@ -96,7 +99,6 @@
 /* Short cuts and category goes from here */
 
 .bikes-menu {
-    margin-left: 60px;
     justify-content: left;
     position: sticky;
     top: 90px
@@ -148,49 +150,33 @@
     position: relative;
 }
 
-.category_activator-show-shortCut {
-    font-weight: 600;
+.category_activator-show-shortCut,
+.category_activator-hide-shortCut {
+    background-color: #4c4c4c;
+    width: 8px;
+    height: 2px;
 }
 
 .category_activator-show-shortCut {
-    background-color: #191919;
-    width: 8px;
-    height: 2px;
-    /* margin-top: 8px; */
     margin: 8px 10px 10px 10px;
-    /* padding-left: 10px; */
     cursor: pointer;
-
 }
 
 /* .category_activator-hide-shortCut */
 
 .category_activator-hide-shortCut {
     transform: rotate(90deg);
-    background-color: #000000;
-    width: 8px;
-    height: 2px;
-    /* font-weight: 500; */
-    /* position: absolute; */
-    /* top: 8px; */
-    /* align-self: auto;
-    justify-self: center; */
-    /* display: none; */
 }
-
-
 
 .category_holder-bikes {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
 }
 
 .category-shortCut-trail:hover,
 .category-shortCut-downhill:hover,
-.category-shortCut-s-works:hover,
-.category_activator-show-shortCut:hover,
-.category_activator-hide-shortCut:hover {
+.category-shortCut-s-works:hover {
     font-weight: 800;
 }
 
@@ -250,8 +236,8 @@
 }
 
 .product-view {
-    width: 30.5%;
-    height: 30vw;
+    width: 45%;
+    height: 40vw;
     max-height: 700px;
     margin: .7vw;
 }
@@ -343,7 +329,7 @@
 
 /* S-works bikes Images */
 .S-WorksDemo8-img {
-    width: 100%;
+    width: 90%;
     height: 60%;
     background-image: url(/Specialized/shop/bikes/bikes_img/s-works/S-WorksDemo8[1].png);
     background-position: 50%;
@@ -412,5 +398,17 @@
 
 .product-view-price {
     font-size: 14px;
+    /* margin-bottom: 10px; */
+}
+
+.product-color {
     margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.bolder-scroll {
+    font-weight: 800;
 }

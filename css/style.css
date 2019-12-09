@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     --font-prm-: 'Montserrat', sans-serif;
-    --color-prm-: #fff;
+    --color-prm-: #f1f1f1;
     --hover-clr-red-: #ed1c24;
     --hover-clr-red-btn-: #a72d2d;
     --hover-bg-clr-grey-: #3d3d3d;
@@ -1097,7 +1097,7 @@ li {
 
 .landing-big-image_title-wrap {
     padding-top: 2%;
-    padding-left: 30px;
+    padding-left: 45px;
     position: relative;
 }
 
@@ -1114,7 +1114,7 @@ li {
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: 30px;
+    margin: 45px;
 }
 
 .landing-big-image__text {
@@ -1274,6 +1274,7 @@ li {
     background-color: #141414;
     color: #fff;
     z-index: 1000000;
+    padding: 0 auto;
 }
 
 .footer-wrap {
@@ -1506,6 +1507,7 @@ li {
 
 .mobile-footer_wrap {
     height: 100%;
+    margin: 0 15px;
 }
 
 .mobile-footer_wrap,

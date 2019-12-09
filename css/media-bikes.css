@@ -1,0 +1,438 @@
+/* max-width 1700 */
+@media screen and (max-width: 1800px) {
+    .page_header {
+        height: 38px;
+    }
+
+    .page_header-inner {
+        max-width: 1700;
+    }
+
+    .page_header-inner-title {
+        font-size: 10px;
+        margin-left: 20px
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 40px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 40px;
+    }
+
+    .page-heroe_title {
+        font-size: 1.6rem;
+        margin-left: 20px;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 20px;
+    }
+
+    .bikes-menu {
+        margin-left: 60px;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 40px;
+    }
+
+    .product-view {
+        width: 45%;
+        height: 40vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .product-color {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+
+/* max-width 1550 */
+@media screen and (max-width: 1550px) {
+    .page_header {
+        height: 38px;
+    }
+
+    .page_header-inner {
+        max-width: 1400;
+    }
+
+    .page_header-inner-title {
+        font-size: 10px;
+        padding: 0 40px;
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 40px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 40px;
+    }
+
+    .page-heroe_title {
+        font-size: 1.6rem;
+        padding: 0 40px;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 20px;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 40px;
+    }
+
+    .product-view {
+        width: 45%;
+        height: 40vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .product-color {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+
+
+
+
+/* max-width 1400 */
+@media screen and (max-width: 1400px) {
+    .page_header {
+        height: 38px;
+    }
+
+    .page_header-inner {
+        max-width: 1300;
+    }
+
+    .page_header-inner-title {
+        font-size: 9px;
+        padding: 0 38px;
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 38px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 38px;
+    }
+
+    .page-heroe_title {
+        font-size: 1.5rem;
+        padding: 0 38px;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 18px;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 38px;
+    }
+
+    .product-view {
+        width: 45%;
+        height: 30vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .product-color {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+/* max-width 1250 */
+@media screen and (max-width: 1250px) {
+    .page_header {
+        height: 37px;
+    }
+
+    .page_header-inner {
+        max-width: 1100;
+    }
+
+    .page_header-inner-title {
+        font-size: 8px;
+        padding: 0 37px;
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 37px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 37px;
+    }
+
+    .page-heroe_title {
+        font-size: 1.5rem;
+        padding: 0 37px;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 17px;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 37px;
+    }
+
+    .product-view {
+        width: 45%;
+        height: 30vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 12px;
+        margin-bottom: 9px;
+    }
+
+    .product-color {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+/* max-width 1000 */
+@media screen and (max-width: 1000px) {
+    .page_header {
+        height: 35px;
+    }
+
+    .page_header-inner {
+        max-width: 900;
+    }
+
+    .page_header-inner-title {
+        font-size: 7px;
+        padding: 0 35px;
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 35px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 35px;
+    }
+
+    .page-heroe_title {
+        font-size: 1.5rem;
+        padding: 0 35px;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 15px;
+    }
+
+    /* Short cuts and category goes from here */
+
+    .bikes-menu {
+        display: none;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 35px;
+    }
+
+    .product-view {
+        width: 40%;
+        height: 40vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 11.5px;
+        margin-bottom: 8px;
+    }
+
+    .product-color {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+/* max-width 800 */
+@media screen and (max-width: 800px) {
+    .page_header {
+        height: 32px;
+    }
+
+    .page_header-inner {
+        max-width: 700;
+    }
+
+    .page_header-inner-title {
+        font-size: 6.5px;
+        padding: 0 32px;
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 32px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 32px;
+    }
+
+    .page-heroe_title {
+        font-size: 22px;
+        padding: 0 20%;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 12px;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 32px;
+    }
+
+    .product-view {
+        width: 40%;
+        height: 40vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 11px;
+        margin-bottom: 7px;
+    }
+
+    .product-color {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+
+
+
+
+/* max-width 700 */
+@media screen and (max-width: 700px) {
+    .page_header {
+        height: 30px;
+    }
+
+    .page_header-inner {
+        max-width: 600;
+    }
+
+    .page_header-inner-title {
+        font-size: 6px;
+        padding: 0 30px;
+    }
+
+    /* Page path  */
+
+    .page_wrap {
+        margin-top: 30px;
+    }
+
+    /* Full Image */
+    .page-heroe {
+        margin-bottom: 30px;
+    }
+
+    .page-heroe_title {
+        font-size: 18px;
+        padding: 0 35%;
+    }
+
+    /* Page content */
+    .page-content {
+        padding-top: 10px;
+    }
+
+    .bikes-menu {
+        display: none;
+    }
+
+    /* Bikes content Section */
+    .bikes-content {
+        padding: 0 30px;
+    }
+
+    .product-view {
+        width: 100%;
+        height: 80vw;
+    }
+
+    .product-view-text,
+    .product-view-price {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .product-color {
+        width: 15px;
+        height: 15px;
+    }
+}
