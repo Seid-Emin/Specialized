@@ -296,7 +296,7 @@
 .StumpJumperExpert27_5-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/trail/StumpJumperExpert27.5-PrevCard[3].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/trail/StumpJumperExpert27_5-PrevCard[3].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -316,7 +316,7 @@
 .FuseExpert27_5-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/trail/FuseExpert27.5-PrevCard[5].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/trail/FuseExpert27_5-PrevCard[5].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -348,7 +348,7 @@
 .DemoAlloy27_5-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/downhill/DemoAlloy27.5[3].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/downhill/DemoAlloy27_5[3].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -360,7 +360,7 @@
 .S-WorksDemo8-img {
     width: 90%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/S-WorksDemo8[1].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/SWorksDemo8[1].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -370,7 +370,7 @@
 .S-WorksDemoEpicEVO-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/S-WorksDemoEpicEVO[2].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/SWorksDemoEpicEVO[2].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -380,7 +380,7 @@
 .S-WorksStumpJumper29-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/S-WorksStumpJumper29[3].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/SWorksStumpJumper29[3].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -390,7 +390,7 @@
 .S-WorksStumpJumper27_5-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/S-WorksStumpJumper27.5[4].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/SWorksStumpJumper27_5[4].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -400,7 +400,7 @@
 .S-WorksDemo8Frame-img {
     width: 100%;
     height: 60%;
-    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/S-WorksDemo8Frame[5].png);
+    background-image: url(/Specialized/shop/bikes/bikes_img/s-works/SWorksDemo8Frame[5].png);
     background-position: 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -740,7 +740,7 @@
     background-color: #292929;
     padding: 0 40px;
     color: #ffffff;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .bike-specs-wrap {

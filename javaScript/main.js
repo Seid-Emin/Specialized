@@ -231,7 +231,6 @@ $(document).ready(function () {
         let currentPageName = pageNames[i];
         let fullPageName = currentPageName.concat('.html');
         if (window.location.href.indexOf(fullPageName) > -1) {
-            tempPageName = currentPageName;
             $(".nav-links").each(function () {
                 var href = $(this).attr('href');
                 if (href == fullPageName) {
