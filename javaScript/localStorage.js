@@ -20,13 +20,5 @@ for (let i = 0; i < bikesPagesOnly.length; i++) {
         $('.thumbsDown-rating-count').text(currentItem.thumbsDown);
         var upClicked = 5;
         currentItem.thumbsUp = upClicked;
-
-        // console.log(currentItem.thumbsUp);
     }
 }
-// for (let i = 0; i < localStorage.length; i++) {
-//     if (localStorage.getItem(localStorage.key(i)) === null) {
-//         window.localStorage.setItem(`${bikesPagesOnly[i]}`, JSON.stringify(`${arrBikesInfo[i]}`));
-
-//     }
-// }
