@@ -43,11 +43,6 @@
         padding: 0 40px;
     }
 
-    .product-view {
-        width: 45%;
-        height: 40vw;
-    }
-
     .product-view-text,
     .product-view-price {
         font-size: 14px;
@@ -102,11 +97,6 @@
     /* Bikes content Section */
     .bikes-content {
         padding: 0 40px;
-    }
-
-    .product-view {
-        width: 45%;
-        height: 40vw;
     }
 
     .product-view-text,
@@ -167,10 +157,10 @@
         padding: 0 38px;
     }
 
-    .product-view {
+    /* .product-view {
         width: 45%;
         height: 30vw;
-    }
+    } */
 
     .product-view-text,
     .product-view-price {

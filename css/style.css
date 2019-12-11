@@ -263,10 +263,14 @@ li {
     transition: filter 0.4s ease-in-out;
 }
 
-.nav-logo:hover,
 .nav-search:hover,
 .nav-cart:hover {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.nav-logo:hover {
+    color: #4d4d4d;
+    filter: invert(28%) sepia(0%) saturate(0%) hue-rotate(300deg) brightness(97%) contrast(87%);
 }
 
 .nav-icon {
@@ -386,6 +390,14 @@ li {
     color: #141414;
     background-color: rgb(230, 230, 230);
     padding: 0 25px;
+}
+
+.nav-signIn-bg,
+.nav-register-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .signIn_form,
@@ -1257,6 +1269,8 @@ li {
 }
 
 /* Landing instagram - end */
+
+
 
 /* footer - start */
 .footer,

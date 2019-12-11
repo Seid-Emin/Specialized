@@ -65,13 +65,28 @@
 
 
 /* Full Image */
+.heroe-img-bikes {
+    background: url(../shop/bikes/bikes_img/18_banner_bikes.jpg);
+}
+
+.heroe-img-trail {
+    background: url(../shop/shop_individual_bikes/trail/plp-banner_mountainTrail.jpg);
+}
+
+.heroe-img-downhill {
+    background: url(../shop/shop_individual_bikes/downhill/plp-banner_mountainDownhill.jpg);
+}
+
+.heroe-img-s-works {
+    background: url(../shop/shop_individual_bikes/s-works/131845_Cyclists-competing-in-Tour-de-France-2014_GettyImages-452789140---Hero.jpg);
+}
+
 .page-heroe {
     width: 100%;
     height: 70vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: url(../shop/bikes/bikes_img/18_banner_bikes.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -168,6 +183,12 @@
     transform: rotate(90deg);
 }
 
+
+/* set class .active to element with class on event   */
+.active .category_activator-hide-shortCut {
+    display: none;
+}
+
 .category_holder-bikes {
     font-size: 14px;
     font-weight: 500;
@@ -181,6 +202,14 @@
 }
 
 .category-bikes-ul {
+    display: none;
+}
+
+.current-active {
+    display: block;
+}
+
+.hide-shortCut {
     display: none;
 }
 
@@ -236,8 +265,8 @@
 }
 
 .product-view {
-    width: 45%;
-    height: 40vw;
+    width: 30.5%;
+    height: 30vw;
     max-height: 700px;
     margin: .7vw;
 }
@@ -411,4 +440,442 @@
 
 .bolder-scroll {
     font-weight: 800;
+}
+
+
+
+
+/* individual page starts from here */
+
+/* header */
+.individual-page-bikes,
+.individual-bikes-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.individual-bikes-header {
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.individual-bikes-header-inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1920;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bikes-inner-title {
+    font-size: 8px;
+    padding: 0 45px;
+    font-style: italic;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+
+
+
+/* StumpJumperPro29 */
+
+.individual-bikes-wrap {
+    width: 100%;
+
+    /*Temporary Remove after*/
+    /* height: 6000px; */
+}
+
+.StumpJumperPro29 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperPro29-Hero_[1].jpg);
+}
+
+.individual-bikes {
+    width: 100%;
+    height: 60vh;
+    margin-top: 38px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bike-cart {
+    width: 100%;
+    position: relative;
+}
+
+.bike-cart_wrap {
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px
+}
+
+
+.bike-part {
+    font-size: 12px;
+
+}
+
+.bike-price {
+    font-size: 18px;
+    padding-top: 12px;
+    font-weight: 600;
+}
+
+.bike-part,
+.bike-price {
+    text-align: right;
+}
+
+.info-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-wrap {
+    display: block;
+    align-items: center;
+}
+
+.rating-icon_thumbsUp {
+    background: url(../img/icos/svg/thumbs-up.svg);
+    transform: rotateY(180deg);
+}
+
+.rating-icon_thumbsDown {
+    background: url(../img/icos/svg/thumbs-down.svg);
+}
+
+.rating-icon_thumbsUp,
+.rating-icon_thumbsDown {
+    display: inline-block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    align-self: flex-start;
+    margin-left: 20px;
+    filter: invert(74%) sepia(2%) saturate(2%) hue-rotate(13deg) brightness(91%) contrast(83%);
+    transition: filter 0.3s ease-in;
+}
+
+.rating-icon_thumbsUp:hover {
+    filter: invert(65%) sepia(78%) saturate(408%) hue-rotate(73deg) brightness(90%) contrast(95%);
+}
+
+.rating-icon_thumbsDown:hover {
+    filter: invert(16%) sepia(99%) saturate(2254%) hue-rotate(346deg) brightness(97%) contrast(89%);
+}
+
+.thumbs-rating-holder {
+    display: inline-block;
+    font-size: 16px;
+    /* width: 25px;
+    height: 25px; */
+    /* text-align: center;
+    justify-content: center; */
+    /* padding: auto; */
+}
+
+.thumbsUp-rating-count {
+
+    font-weight: 500;
+    color: #44d14f;
+}
+
+.thumbsDown-rating-count {
+    padding-left: 15px;
+    font-weight: 500;
+    color: #b32727;
+}
+
+.color-icon_color-wrap {
+    align-self: flex-end;
+}
+
+.color-icon {
+    margin-top: 30px;
+    widows: 25px;
+    height: 25px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(../shop/shop_individual_bikes/trail/img/StumpJumperPro29-Hero_[1].svg);
+}
+
+.color-text {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.color-icon,
+.color {
+    align-items: flex-start;
+    flex-flow: row;
+}
+
+.bike-cart-from {
+    height: 30px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.bike-select {
+    text-transform: uppercase;
+    width: 100px;
+    height: 100%;
+    border: 1px solid #141414;
+    border-radius: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bike-order-count {
+    margin-left: 10px;
+}
+
+.info-right-add {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bike-cart_add-to-cart {
+    background-color: #d32e2e;
+    border: none;
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.bike-cart_add-to-cart:hover {
+    background-color: #b32727;
+}
+
+.bike-cart_in-stock {
+    color: #44d14f;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.bike-cart_add-to-cart,
+.bike-cart_in-stock,
+.bike-description-text-bottom {
+    text-transform: uppercase;
+}
+
+
+/* DESCRIPTION */
+.bike-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.bike-description-wrap {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bike-description-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.bike-description-text-bottom {
+    font-size: 18px;
+    margin: 20px 0 50px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.bike-description-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bike-description-list-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    display: list-item;
+    list-style-position: outside;
+    list-style: disc;
+}
+
+
+/* BIKE VIDEO video-StumpJumperPro29 */
+.video-StumpJumperPro29 {
+    width: 100%;
+    height: 75vh;
+}
+
+/* BIKE SPECS */
+
+.bike-specs {
+    background-color: #292929;
+    padding: 0 40px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.bike-specs-wrap {
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike-specs-left {
+    width: 300px;
+    margin-right: 40px;
+}
+
+.bike-specs-downloadManual {
+    width: 250px;
+    padding: 20px 15px;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bike-specs-downloadManual-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bike-specs-right-table {
+    width: auto;
+    padding: 0 20px;
+}
+
+/* SPECS TABLE */
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+.bike-specs-right-table-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.specs-table-wrap,
+.specs-section-wrap,
+.specs-section-title-table,
+.specs-section-category,
+.specs-section-title-table-info,
+.specs-section-category-info {
+    width: 100%;
+}
+
+.specs-section-wrap {
+    padding-top: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+
+.specs-section-category {
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 22px;
+    font-weight: 600;
+    padding-right: 14px;
+    /* display: inline-block; */
+}
+
+.specs-section-category-title {
+    width: 145px;
+    padding-bottom: 5px;
+    transition: filter 0.2s ease-in;
+}
+
+.specs-section-category-title:hover {
+    color: #d4d4d4;
+}
+
+.chevrons {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.chevronUp {
+    background: url(../img/icos/svg/chevron-up.svg);
+}
+
+.chevronDown {
+    background: url(../img/icos/svg/chevron-down.svg);
+    display: none;
+}
+
+.chevronUp,
+.chevronDown {
+    filter: invert(95%) sepia(58%) saturate(0%) hue-rotate(233deg) brightness(114%) contrast(96%);
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: left;
+    cursor: pointer;
+}
+
+
+.chevronUp:hover,
+.chevronDown:hover {
+    filter: invert(89%) sepia(0%) saturate(1144%) hue-rotate(147deg) brightness(102%) contrast(89%);
+}
+
+.specs-name {
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+    width: 150px;
+    padding: 0 5px 5px 0;
+    display: flex;
+    align-self: flex-start;
+}
+
+.specs-info {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.specs-section-wrap {
+    padding-bottom: 30px;
+}
+
+.specs-small-text {
+    font-size: 8px;
 }
