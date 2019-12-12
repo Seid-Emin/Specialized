@@ -597,12 +597,20 @@
 .thumbsUp-rating-count {
 
     font-weight: 500;
+
+}
+
+.thumbsUp-active {
     color: #44d14f;
 }
 
 .thumbsDown-rating-count {
     padding-left: 15px;
     font-weight: 500;
+
+}
+
+.thumbsDown-active {
     color: #b32727;
 }
 
