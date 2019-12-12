@@ -655,7 +655,7 @@
     cursor: pointer;
 }
 
-.bike-order-count {
+.bike-qty {
     margin-left: 10px;
 }
 
@@ -820,7 +820,6 @@ tbody {
     line-height: 22px;
     font-weight: 600;
     padding-right: 14px;
-    /* display: inline-block; */
 }
 
 .specs-section-category-title {

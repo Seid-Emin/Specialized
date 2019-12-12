@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="../css/page-bikes.css">
     <link rel="stylesheet" href="../css/media-bikes.css">
     <link rel="stylesheet" href="../css/page-individual.css">
-    <title>Bikes | Specialized</title>
+    <title>Cart | Specialized</title>
 </head>
 
-<body>
+<body onload="showCart()">
     <div class="site">
         <div class="site-inner">
             <!-- Start NAV -->
@@ -64,7 +64,7 @@
                                     </div>
                                     <div class="nav-bottom-user-wrap">
                                         <div class="nav-search nav-icon"></div>
-                                        <a href="cart.html">
+                                        <a class="active-links-cart" href="cart.html">
                                             <div class="nav-cart nav-icon"></div>
                                         </a>
                                     </div>
@@ -177,7 +177,7 @@
                         <a href="../index.html" class="mobileNav-logo"></a>
                         <div class="mobileNav_right-icons">
                             <div class="mobileNav_right-icon mobileNav_user-icon"></div>
-                            <a href="cart.html">
+                            <a class="active-links-cart" href="cart.html">
                                 <div class="mobileNav_right-icon mobileNav_cart-icon"></div>
                             </a>
                         </div>
@@ -315,195 +315,88 @@
 
             <!-- Content start -->
             <div class="content-wrap">
-                <div class="page bikes">
-                    <div class="page_header">
-                        <div class="page_header-inner">
-                            <p class="page_header-inner-title"><a href="../index.html"
-                                    class="page_innet-title_links">specialized</a> / <a href="bikes.html"
-                                    class="page_innet-title_links">bikes</a> / <a href="trail.html"
-                                    class="page_innet-title_links">trail</a>
-                            </p>
+                <div class="cart">
+                    <div class="cart-wrap">
+                        <div class="cart-header">
+                            <p class="cart-header_title">shopping cart</p>
+                            <a class="cart-header_Shopping" href="../shop/bikes.html">Continue shopping</a>
                         </div>
-                    </div>
-                    <div class="page_wrap">
-                        <div class="page-heroe heroe-img-trail">
-                            <p class="page-heroe_title">trail</p>
-                        </div>
-                        <div class="page-content">
+                        <div class="cart-content">
 
 
-                            <!-- ShortCut from here -->
-                            <div class="bikes-menu">
-                                <div class="bikes-menu_wrap">
-                                    <p class="menu-title ">short cuts</p>
-                                    <div class="menu-category_wrap">
-                                        <p class="menu-title category">category</p>
-                                        <div class="category-wrap">
-                                            <div class="category-title-wrap category-trail category-title-wrap0">
-                                                <div class="category_activator-wrap trail-activator">
-                                                    <div class="category_activator-show-shortCut">
-                                                        <div
-                                                            class="category_activator-hide-shortCut hide-shortCut-trail">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="category_holder-bikes category-shortCut-trail">Trail</p>
-                                            </div>
-                                        </div>
-                                        <ul class="category-bikes-ul ul-trail category-bikes-ul0">
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/trail/StumpJumperPro29.html"
-                                                    class="shortCut-bikes-links">StumpJumper Pro 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/trail/StumpJumperExpert29.html"
-                                                    class="shortCut-bikes-links">StumpJumper Expert 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/trail/StumpJumperExpert27_5.html"
-                                                    class="shortCut-bikes-links">StumpJumper Expert 27.5</a>
-                                            </li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/trail/FuseExpert29.html"
-                                                    class="shortCut-bikes-links">Fuse Expert 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/trail/FuseExpert27.html"
-                                                    class="shortCut-bikes-links">Fuse Expert 27</a></li>
-                                        </ul>
-                                        <div class="category-wrap">
-                                            <div class="category-title-wrap category-downhill category-title-wrap1">
-                                                <div class="category_activator-wrap">
-                                                    <div class="category_activator-show-shortCut">
-                                                        <div
-                                                            class="category_activator-hide-shortCut hide-shortCut-downhill">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="category_holder-bikes category-shortCut-downhill">Downhill</p>
-                                            </div>
-                                        </div>
-                                        <ul class="category-bikes-ul ul-downhill category-bikes-ul1">
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/downhill/DemoExpert29.html"
-                                                    class="shortCut-bikes-links">Demo Expert 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/downhill/DemoRace29.html"
-                                                    class="shortCut-bikes-links">Demo Race 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/downhill/DemoAlloy27_5.html"
-                                                    class="shortCut-bikes-links">Demo Alloy 27.5</a>
-                                            </li>
-                                        </ul>
-                                        <div class="category-wrap">
-                                            <div class="category-title-wrap category-s-works category-title-wrap2">
-                                                <div class="category_activator-wrap">
-                                                    <div class="category_activator-show-shortCut">
-                                                        <div
-                                                            class="category_activator-hide-shortCut hide-shortCut-s-works">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <p class="category_holder-bikes category-shortCut-s-works">
-                                                    S-Works</p>
-                                            </div>
-                                        </div>
-                                        <ul class="category-bikes-ul ul-s-works category-bikes-u3">
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/s-works/SWorksDemo8.html"
-                                                    class="shortCut-bikes-links">S-Works Demo 8</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/s-works/SWorksDemoEpicEVO.html"
-                                                    class="shortCut-bikes-links">StumpJumper Expert 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/s-works/SWorksStumpJumper29.html"
-                                                    class="shortCut-bikes-links">StumpJumper Expert 27.5</a>
-                                            </li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/s-works/SWorksStumpJumper27_5.html"
-                                                    class="shortCut-bikes-links">Fuse Expert 29</a></li>
-                                            <li class="shortCut-bikes"><a
-                                                    href="shop_individual_bikes/s-works/SWorksDemo8Frame.html"
-                                                    class="shortCut-bikes-links">Fuse Expert 27</a></li>
-                                        </ul>
-                                        <p class="category-text">Bikes manufactured and sold by Specialized are
-                                            guaranteed for quality and performance. We stand by our bikes and aim to
-                                            produce the highest quality products. Our bikes are made for riders, by
-                                            riders.</p>
+                            <!-- shopping cart item added -->
+                            <div class="bike-cart-table">
+                                <h3 class="bike-cart-table-title">Your Shopping Cart</h3>
+                                <div class="cart-table-wrap">
+                                    <table class="cart-section-wrap">
+                                        <tbody class="cart-section-title-table">
+                                            <tr class="cart-section-category">
+                                                <td class="cart-section-category-title partNum">Part No.</td>
+                                                <td class="cart-section-category-title partName">Item Name</td>
+                                                <td class="cart-section-category-title partSize">Size</td>
+                                                <td class="cart-section-category-title partColor">Color</td>
+                                                <td class="cart-section-category-title partQty">Quantity</td>
+                                                <td class="cart-section-category-title partPrice">Price</td>
+                                                <td class="cart-section-category-title"></td>
+                                            <tr class="cart-section-category">
+                                                <td class="cart-section-category-title partNum addedItem">Part No.</td>
+                                                <td class="cart-section-category-title partName addedItem">Item Name
+                                                </td>
+                                                <td class="cart-section-category-title partSize addedItem uppercase">
+                                                    Size</td>
+                                                <td class="cart-section-category-title partColor addedItem"><img src=""
+                                                        class="addedColor"></td>
+                                                <td class="cart-section-category-title partQty addedItem">
+                                                    Quantity</td>
+                                                <td class="cart-section-category-title partPrice addedItem">Price</td>
+                                                <td class="cart-section-category-title partDelBtn addedItem"><input
+                                                        type="button" class="deleteItem"></input></td>
+
+                                                <!-- CheckOut or Back to shopping -->
+                                            <tr class="cart-section-category totalContainer">
+                                                <td class="cart-section-category-title partNum"></td>
+                                                <td class="cart-section-category-title partName"></td>
+                                                <td class="cart-section-category-title partSize"></td>
+                                                <td class="cart-section-category-title partColor"></td>
+                                                <td class="cart-section-category-title partTotal">Total:</td>
+                                                <td class="cart-section-category-title partTotalPrice"></td>
+                                                <td class="cart-section-category-title filler"></td>
+                                        </tbody>
+                                    </table>
+                                    <div class="option-buttons">
+                                        <a href="bikes.html" class="footer_right-retailer-button backToShopping">Back
+                                            to
+                                            shopping</a>
+                                        <a href="#" class="footer_right-retailer-button checkOut">To Checkout</a>
                                     </div>
                                 </div>
                             </div>
-
-
-                            <!-- Bikes Content start -->
-                            <div class="bikes-content">
-                                <div class="bike-content-wrap">
-                                    <div class="section-trail">
-                                        <p class="section-text section-trail-text">Trail</p>
-                                        <div class="section-content-wrap">
-                                            <div class="product-view StumpJumperPro29">
-                                                <a href="shop_individual_bikes/trail/StumpJumperPro29.html"
-                                                    class="StumpJumperPro29-img"></a>
-                                                <div class="product-view_info-wrap">
-                                                    <img class="product-color"
-                                                        src="shop_individual_bikes/trail/img/StumpJumperPro29-Hero_[1].svg"
-                                                        alt="Dark Blue / Black / Metallic Black">
-                                                    <a href="shop_individual_bikes/trail/StumpJumperPro29.html"
-                                                        class="product-view-text">StumpJumper Pro 29</a>
-                                                    <p class="product-view-price">$3,300.000</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-view StumpJumperExpert29">
-                                                <a href="shop_individual_bikes/trail/StumpJumperExpert29.html"
-                                                    class="StumpJumperExpert29-img"></a>
-                                                <div class="product-view_info-wrap">
-                                                    <img class="product-color"
-                                                        src="shop_individual_bikes/trail/img/SJ-EX29-27.d14557fd[2],[3].svg"
-                                                        alt="Light Blue / Black / Metallic Black">
-                                                    <a href="shop_individual_bikes/trail/StumpJumperExpert29.html"
-                                                        class="product-view-text">StumpJumper Expert 29</a>
-                                                    <p class="product-view-price">$2,000.000</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-view StumpJumperExpert27_5">
-                                                <a href="/Specialized/shop/shop_individual_bikes/trail/StumpJumperExpert27_5.html"
-                                                    class="StumpJumperExpert27_5-img"></a>
-                                                <div class="product-view_info-wrap">
-                                                    <img class="product-color"
-                                                        src="shop_individual_bikes/trail/img/SJ-EX29-27.d14557fd[2],[3].svg"
-                                                        alt="Light Blue / Black / Metallic Black">
-                                                    <a href="/Specialized/shop/shop_individual_bikes/trail/StumpJumperExpert27_5.html"
-                                                        class="product-view-text">StumpJumper Expert 27.5</a>
-                                                    <p class="product-view-price">$2,000.000</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-view FuseExpert29">
-                                                <a href="/Specialized/shop/shop_individual_bikes/trail/FuseExpert29.html"
-                                                    class="FuseExpert29-img"></a>
-                                                <div class="product-view_info-wrap">
-                                                    <img class="product-color"
-                                                        src="shop_individual_bikes/trail/img/Fuse Expert 29[4].svg"
-                                                        alt="Metallic Grey">
-                                                    <a href="/Specialized/shop/shop_individual_bikes/trail/FuseExpert29.html"
-                                                        class="product-view-text">FuseExpert 29</a>
-                                                    <p class="product-view-price">$1,100.000</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-view FuseExpert27_5">
-                                                <a href="shop_individual_bikes/trail/FuseExpert27_5.html"
-                                                    class="FuseExpert27_5-img"></a>
-                                                <div class="product-view_info-wrap">
-                                                    <img class="product-color"
-                                                        src="shop_individual_bikes/trail/img/Fuse Expert 27[5].svg"
-                                                        alt="Metallic Grey">
-                                                    <a href="shop_individual_bikes/trail/FuseExpert27_5.html"
-                                                        class="product-view-text">FuseExpert 27.5</a>
-                                                    <p class="product-view-price">$1,000.000</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="cart-info-bottom">
+                            <div class="cart-info_section">
+                                <p class="cart-info_section-title">Contact Us</p>
+                                <p class="cart-info_section-info">8:00am - 6:00pm MST, Monday-Friday</p>
+                                <p class="cart-info_section-info">877-808-8154</p>
+                                <p class="cart-info_section-info underlined">ridercare@specialized.com</p>
+                            </div>
+                            <div class="cart-info_section">
+                                <p class="cart-info_section-title">Helpful Links</p>
+                                <p class="cart-info_section-link">Frequently Asked Questions</p>
+                                <p class="cart-info_section-link">Return Policy</p>
+                                <p class="cart-info_section-link">Warranty Policy</p>
+                            </div>
+                            <div class="cart-info_section">
+                                <p class="cart-info_section-title">We Accept</p>
+                                <div class="cart-info_section-payment-wrap">
+                                    <div class="cart-info_section-payment payCart-icon1"></div>
+                                    <div class="cart-info_section-payment payCart-icon2"></div>
+                                    <div class="cart-info_section-payment payCart-icon3"></div>
+                                    <div class="cart-info_section-payment payCart-icon4"></div>
+                                    <div class="cart-info_section-payment payCart-icon5"></div>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -609,6 +502,7 @@
     <script src="../javaScript/jquery-3.4.1.min.js"></script>
     <script src="../javaScript/library.js"></script>
     <script src="../javaScript/main.js"></script>
+    <script src="../javaScript/localStorage.js"></script>
 </body>
 
 </html>

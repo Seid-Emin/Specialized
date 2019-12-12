@@ -349,7 +349,11 @@ li {
 }
 
 .active-links {
-    color: var(--hover-clr-red-)
+    color: var(--hover-clr-red-);
+}
+
+.active-links-cart {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 /* Search field css end */
@@ -1715,3 +1719,157 @@ li {
 }
 
 /* Mobile Footer end */
+
+
+/* CART CSS */
+
+.cart {
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    color: #141414;
+}
+
+.cart-wrap {
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart,
+.cart-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.cart-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 70px;
+}
+
+.cart-header_title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 60px;
+}
+
+.cart-header_Shopping {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.cart-header_Shopping:hover {
+    color: #d32e2e;
+}
+
+/* CART CONTENT */
+
+.cart-content,
+.cart-content-wrap-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.cart-content_title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.cart-content_text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.cart-header_contShopping {
+    font-size: 12px;
+    font-weight: 500;
+    color: #d32e2e;
+    text-decoration: underline;
+}
+
+
+/* CART INFO */
+.cart-info-bottom {
+    width: 80%;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cart-info_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cart-info_section-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.cart-info_section-info {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.underlined {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cart-info_section-link {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.cart-info_section-payment-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payCart-icon1 {
+    background: url(../img/icos/svg/visa.fde3985c.svg);
+}
+
+.payCart-icon2 {
+    background: url(../img/icos/svg/discover.0d4e59b5.svg);
+}
+
+.payCart-icon3 {
+    background: url(../img/icos/svg/amex.0a6a64fe.svg);
+}
+
+.payCart-icon4 {
+    background: url(../img/icos/svg/americanExpress.28f8412e.svg);
+}
+
+.payCart-icon5 {
+    background: url(../img/icos/svg/paypal.6f5c5ff9.svg);
+}
+
+.payCart-icon1,
+.payCart-icon2,
+.payCart-icon3,
+.payCart-icon4,
+.payCart-icon5 {
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-info_section-payment {
+    width: 35px;
+    height: 25px;
+    margin: 0 2px;
+}
