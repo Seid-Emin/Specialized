@@ -184,7 +184,18 @@ tbody {
     outline: 0;
 }
 
+/* .active-links-cart {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+} */
 
+.cartIconProdCount {
+    padding-left: 25px;
+    color: #d32e2e;
+}
+
+.align-cent {
+    text-align: center;
+}
 
 .text-align-last {
     text-align-last: center;

@@ -12,7 +12,7 @@ for (let i = 0; i < arrBikesInfo.length; i++) {
 var productsCounter = [];
 // set counter
 if (localStorage.getItem("productsCounter") === null) {
-    localStorage.setItem("productsCounter", 0);
+    localStorage.setItem("productsCounter", 1);
 }
 // Thumb Up
 $('.rating-icon_thumbsUp').click(function () {
@@ -37,6 +37,7 @@ function increase(e, o) {
 for (let i = 0; i < bikesPagesOnly.length; i++) {
     var currentPageName = bikesPagesOnly[i];
     var fullPageName = currentPageName.concat('.html');
+
     if (window.location.href.indexOf(fullPageName) > -1) {
         var pageName = fullPageName;
         var page = currentPageName;
@@ -49,6 +50,7 @@ for (let i = 0; i < bikesPagesOnly.length; i++) {
         if (currentItem.thumbsDown > 0) {
             $(".thumbsDown-rating-count").addClass("thumbsDown-active");
         }
+
         // var upClicked = 15;
         // currentItem.thumbsUp = upClicked;
         // console.log(currentItem);
@@ -80,20 +82,32 @@ $('.bike-cart_add-to-cart').click(function () {
 
     localStorage.setItem(itemName, JSON.stringify(currentBike));
     // console.log(itemName);
-    productsCounter++;
+
     var cartHolder = [];
     cartHolder.push(currentBike);
     console.log(currentBike);
 
     localStorage.setItem('cartHolder' + productsCounter, JSON.stringify(cartHolder));
-    localStorage.setItem("productsCounter", productsCounter);
+    // productsCounter++;
+    localStorage.setItem("productsCounter", ++productsCounter);
     // var a = JSON.parse(localStorage.getItem(cartHolder));
     // cartHolder[0];
     // console.log(cartHolder);
-
-
+    updateIconCounter(productsCounter);
 });
 
+function updateIconCounter(p) {
+    var ProdCountCartIcon = document.querySelector('.nav-cart');
+    var iconCounter = p - 1;
+    ProdCountCartIcon.innerHTML = `<p class="cartIconProdCount">${iconCounter}</p>`;
+}
+
+function onLoad() {
+    let productsCounter = localStorage.productsCounter;
+    var ProdCountCartIcon = document.querySelector('.nav-cart');
+    var iconCounter = productsCounter - 1;
+    ProdCountCartIcon.innerHTML = `<p class="cartIconProdCount">${iconCounter}</p>`;
+}
 // show added items
 // check Cart and add items
 
@@ -148,7 +162,7 @@ function showCart() {
 
     } else {
         // var getObject = JSON.parse(localStorage.getItem('cartHolder1'));
-        for (let j = 1; j <= productsCounter; j++) {
+        for (let j = 1; j < productsCounter; j++) {
             let key = "";
             key = "cartHolder" + j;
             console.log(key);
@@ -158,21 +172,23 @@ function showCart() {
             console.log(getObject);
             key.replace('cartHolder', 'cartHolder' + j)
             $('.cart-content-wrap-empty').hide();
-            for (let i = 0; i < getObject.length; i++) {
+            for (let i = 0; i < 1; i++) {
                 var cart = document.querySelector('.cart-section-title-table');
                 var totalContainer = document.querySelector('.totalContainer');
+
+
 
 
                 var cartProducts = document.createElement("tr");
                 cartProducts.className = "cart-section-category";
                 cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem">${getObject[i].partNum}</td>
             <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name}</a></td>
-            <td class="cart-section-category-title partSize addedItem uppercase">${getObject[i].size}</td>
-            <td class="cart-section-category-title partColor addedItem"><img src="${getObject[i].color}" class="addedColor"></td>
-            <td class="cart-section-category-title partQty addedItem uppercase">${getObject[i].qty}</td>
-            <td class="cart-section-category-title partPrice addedItem">${getObject[i].price}</td>
+            <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
+            <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
+            <td class="cart-section-category-title partQty addedItem uppercase align-cent">${getObject[i].qty}</td>
+            <td class="cart-section-category-title partPrice addedItem">$${((getObject[i].price)/1000).toFixed(3)}.000</td>
             <td class="cart-section-category-title partDelBtn addedItem"><input
-                    type="button" class="deleteItem deleteItem${j+1}"></input></td>`;
+                    type="button" class="deleteItem deleteItem${j}"></input></td>`;
                 cart.insertBefore(cartProducts, totalContainer);
             }
         }

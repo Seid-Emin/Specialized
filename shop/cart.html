@@ -16,7 +16,7 @@
     <title>Cart | Specialized</title>
 </head>
 
-<body onload="showCart()">
+<body onload="showCart(), onLoad()">
     <div class="site">
         <div class="site-inner">
             <!-- Start NAV -->
@@ -64,8 +64,8 @@
                                     </div>
                                     <div class="nav-bottom-user-wrap">
                                         <div class="nav-search nav-icon"></div>
-                                        <a class="active-links-cart" href="cart.html">
-                                            <div class="nav-cart nav-icon"></div>
+                                        <a href="cart.html">
+                                            <div class="nav-cart nav-icon active-links-cart"></div>
                                         </a>
                                     </div>
 
@@ -338,19 +338,6 @@
                                                 <td class="cart-section-category-title partQty">Quantity</td>
                                                 <td class="cart-section-category-title partPrice">Price</td>
                                                 <td class="cart-section-category-title"></td>
-                                            <tr class="cart-section-category">
-                                                <td class="cart-section-category-title partNum addedItem">Part No.</td>
-                                                <td class="cart-section-category-title partName addedItem">Item Name
-                                                </td>
-                                                <td class="cart-section-category-title partSize addedItem uppercase">
-                                                    Size</td>
-                                                <td class="cart-section-category-title partColor addedItem"><img src=""
-                                                        class="addedColor"></td>
-                                                <td class="cart-section-category-title partQty addedItem">
-                                                    Quantity</td>
-                                                <td class="cart-section-category-title partPrice addedItem">Price</td>
-                                                <td class="cart-section-category-title partDelBtn addedItem"><input
-                                                        type="button" class="deleteItem"></input></td>
 
                                                 <!-- CheckOut or Back to shopping -->
                                             <tr class="cart-section-category totalContainer">

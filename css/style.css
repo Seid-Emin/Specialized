@@ -352,9 +352,9 @@ li {
     color: var(--hover-clr-red-);
 }
 
-.active-links-cart {
+/* .active-links-cart {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-}
+} */
 
 /* Search field css end */
 
