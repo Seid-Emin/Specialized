@@ -1272,6 +1272,17 @@ li {
     background-color: #fff;
 }
 
+/* .row-img:hover {
+    transition: -webkit-transform 0.25s ease;
+    transform: scale(1.4);
+    transition: transform 0.25s ease;
+} */
+
+/* .row-img:active {
+    -webkit-transform: scale(2);
+    transform: scale(1.45);
+} */
+
 /* Landing instagram - end */
 
 
