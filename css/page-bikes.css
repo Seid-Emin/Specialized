@@ -799,11 +799,11 @@
     width: 100%;
     padding: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
 
 .bike-specs-left {
-    width: 300px;
+    /* width: 300px; */
     margin-right: 40px;
 }
 
@@ -844,9 +844,11 @@ tbody {
 
 
 .bike-specs-right-table-title {
+    text-transform: uppercase;
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .specs-table-wrap,
@@ -874,16 +876,22 @@ tbody {
 }
 
 .specs-section-category-title {
-    width: 145px;
+    width: 150px;
     padding-bottom: 5px;
     transition: filter 0.2s ease-in;
+    cursor: pointer;
 }
 
 .specs-section-category-title:hover {
     color: #d4d4d4;
 }
 
+.titleChevrons {
+    margin-left: 154px;
+}
+
 .chevrons {
+    position: relative;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -891,6 +899,7 @@ tbody {
 
 .chevronUp {
     background: url(../img/icos/svg/chevron-up.svg);
+
 }
 
 .chevronDown {
@@ -900,6 +909,7 @@ tbody {
 
 .chevronUp,
 .chevronDown {
+    position: absolute;
     filter: invert(95%) sepia(58%) saturate(0%) hue-rotate(233deg) brightness(114%) contrast(96%);
     width: 100%;
     height: 20px;
