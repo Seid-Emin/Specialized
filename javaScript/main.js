@@ -194,6 +194,8 @@ $(document).ready(function () {
     });
 
 
+
+
     // Shop/Specialized Script
 
     if (window.location.href.indexOf("bikes.html") > -1) {
