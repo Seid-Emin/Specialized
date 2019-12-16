@@ -11,6 +11,10 @@
     --hover-bg-clr-grey-: #3d3d3d;
 }
 
+*:focus {
+    outline: none;
+}
+
 
 
 .page {
@@ -500,6 +504,26 @@
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperPro29-Hero_[1].jpg);
 }
 
+.StumpJumperExpert29_1 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29-Hero_[2].jpg);
+}
+
+.StumpJumperExpert29_2 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29_[2]/StumpJumperExpert29-2.64267605.jpg);
+}
+
+.StumpJumperExpert29_3 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29_[2]/StumpJumperExpert29-3.00f516f7.jpg);
+}
+
+.StumpJumperExpert29_4 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29_[2]/StumpJumperExpert29-4.5be06b9a.jpg);
+}
+
+.carousel:focus {
+    outline: none;
+}
+
 .individual-bikes {
     width: 100%;
     height: 60vh;
@@ -791,7 +815,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #292929;
+    transition: background-color .2s ease-in;
     cursor: pointer;
+
+}
+
+.bike-specs-downloadManual:hover {
+    background-color: #333333;
 }
 
 .bike-specs-downloadManual-title {
