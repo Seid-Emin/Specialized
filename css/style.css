@@ -1884,3 +1884,48 @@ li {
     height: 25px;
     margin: 0 2px;
 }
+
+
+/* PopUp when addint items to cart */
+
+
+.addedToCartPopUp_wrap {
+    position: absolute;
+    top: -22px;
+}
+
+.ItemSuccessfulAdd,
+.ItemSuccessfulUpdate,
+.ItemExists {
+    position: relative;
+    display: none;
+    font-size: 12px;
+}
+
+.ItemSuccessfulUpdate-p-wrap {
+    display: none;
+}
+
+.ItemSuccessfulUpdate {
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.warning,
+.update {
+    /* display: none; */
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+
+.ItemSuccessfulAdd,
+.ItemSuccessfulUpdate,
+.update {
+    color: #44d14f;
+}
+
+.ItemExists,
+.warning {
+    color: #b32727;
+}

@@ -639,6 +639,11 @@
     flex-flow: row;
 }
 
+.info-bike-size-count {
+    position: relative;
+    min-width: 200px;
+}
+
 .bike-cart-from {
     height: 30px;
     display: inline-block;

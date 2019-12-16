@@ -1,4 +1,3 @@
-// Set To LocalStorage
 function onLoad() {
     if (localStorage.getItem("addedItemsCounter") === null) {
         localStorage.setItem("addedItemsCounter", 0);
@@ -76,6 +75,12 @@ for (var i = 0; i < bikesPagesOnly.length; i++) {
     }
 }
 
+function timeOutAddingCart(result) {
+    setTimeout(function () {
+        result.hide();
+    }, 2000);
+}
+
 // Removes Dublicates while adding item to cardHolders
 function removeDublicats() {
     for (var i = 0; i < productsCounter; i++) {
@@ -87,6 +92,7 @@ function removeDublicats() {
         }
         var firstObjName = firstObj[0].name;
         var firstObjSize = firstObj[0].size;
+        var firstObjQty = firstObj[0].qty;
         for (var j = i + 1; j < productsCounter; j++) {
             var nextKey = "";
             nextKey = "cartHolder" + j;
@@ -96,20 +102,34 @@ function removeDublicats() {
             }
             var secondObjName = secondObj[0].name;
             var secondObjSize = secondObj[0].size;
+            var secondObjQty = secondObj[0].qty;
 
             var compareName = firstObjName.localeCompare(secondObjName);
             var compareSize = firstObjSize.localeCompare(secondObjSize);
+            var compareQty = firstObjQty.localeCompare(secondObjQty);
             if (compareName === 0 && compareSize === 0) {
-
+                if (compareQty === 0) {
+                    var ItemExists = $('.ItemExists');
+                    ItemExists.show();
+                    timeOutAddingCart(ItemExists);
+                } else {
+                    var ItemSuccessfulUpdate = $('.ItemSuccessfulUpdate-p-wrap');
+                    ItemSuccessfulUpdate.show();
+                    timeOutAddingCart(ItemSuccessfulUpdate);
+                }
                 localStorage.setItem(key, JSON.stringify(secondObj));
                 localStorage.removeItem(nextKey);
                 productsCounter -= 1;
                 localStorage.setItem("productsCounter", productsCounter);
                 updateIconCounter();
                 updateTotalAfterAdding();
+
             }
         }
     }
+    var ItemSuccessfulAdd = $('.ItemSuccessfulAdd');
+    ItemSuccessfulAdd.show();
+    timeOutAddingCart(ItemSuccessfulAdd);
 }
 
 // Delete item from cart and storage
@@ -134,8 +154,8 @@ $('.bike-cart_add-to-cart').click(function () {
 
     currentBike.size = cartItemSize;
     currentBike.qty = cartItemQty;
-    partImetPrice = currentBike.price;
-    currentBike.total = Number(cartItemQty) * Number(partImetPrice);
+    var partItemPrice = currentBike.price;
+    currentBike.total = Number(cartItemQty) * Number(partItemPrice);
 
     addedItemsCounter += Number(cartItemQty);
     localStorage.setItem(itemName, JSON.stringify(currentBike));
@@ -165,6 +185,9 @@ function updateIconCounter() {
     var prodCountCartIcon = document.querySelector('.nav-cart');
     prodCountCartIcon.innerHTML = `<p class="cartIconProdCount">${cartItemsCounter}</p>`;
     localStorage.setItem("addedItemsCounter", Number(cartItemsCounter));
+    if (cartItemsCounter > 0) {
+        $('.cartIconProdCount').addClass('active-links');
+    }
 }
 
 function updateTotal(t) {
@@ -200,110 +223,110 @@ function updateProductsCounter() {
     localStorage.setItem("productsCounter", productsCounter);
 }
 
-function showCart() {
-    if (JSON.parse(localStorage.getItem('cartHolder1')) == null) {
-        var cartTable = document.querySelector('.bike-cart-table');
-        var cartWrap = document.querySelector('.cart-table-wrap');
-        var emptyCart = document.createElement("div");
-        emptyCart.className = "cart-content-wrap-empty";
-        emptyCart.innerHTML = `<p class="cart-content_title bolder">is Empty</p>
-        <p class="cart-content_text">Nothin' to see here.</p>
-        <p class="cart-content_text">Check out our bikes.</p>
-        <a class="cart-header_contShopping" href="../shop/bikes.html">Continue Shopping</a>`;
-        cartTable.insertBefore(emptyCart, cartWrap);
-        $('.cart-table-wrap').hide();
-    } else {
-        for (let j = 0; j < productsCounter; j++) {
-            let key = "";
-            key = "cartHolder" + j;
-            var getObject = JSON.parse(localStorage.getItem(key));
-            key.replace('cartHolder', 'cartHolder' + j)
-            $('.cart-content-wrap-empty').hide();
-            for (let i = 0; i < 1; i++) {
-                var cart = document.querySelector('.cart-section-title-table');
-                var totalContainer = document.querySelector('.totalContainer');
-                var cartProducts = document.createElement("tr");
-                cartProducts.className = "cart-section-category";
-                cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem">${getObject[i].partNum}</td>
-            <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name}</a></td>
-            <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
-            <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
-            <td class="cart-section-category-title partQty addedItem uppercase align-cent"> <input type="text" value="${getObject[i].qty}" class="bike-qty_option"></td>
-            <td class="cart-section-category-title partPrice addedItem">$${((getObject[i].total)/1000).toFixed(3)}.000</td>
-            <td class="cart-section-category-title-btn partDelBtn addedItem"><input
-                    type="button" class="deleteItem cartHolder${j}" id="cartHolder${j}""></input></td>`;
-                cart.insertBefore(cartProducts, totalContainer);
-            }
+function createCartEmptyCartDiv() {
+
+    var cartTable = document.querySelector('.bike-cart-table');
+    var cartWrap = document.querySelector('.cart-table-wrap');
+    var emptyCart = document.createElement("div");
+    emptyCart.className = "cart-content-wrap-empty";
+    emptyCart.innerHTML = `<p class="cart-content_title bolder">is Empty</p>
+    <p class="cart-content_text">Nothin' to see here.</p>
+    <p class="cart-content_text">Check out our bikes.</p>
+    <a class="cart-header_contShopping" href="../shop/bikes.html">Continue Shopping</a>`;
+    cartTable.insertBefore(emptyCart, cartWrap);
+    $('.cart-table-wrap').hide();
+}
+
+function createTrElementsInCart() {
+    for (let j = 0; j < productsCounter; j++) {
+        let key = "";
+        key = "cartHolder" + j;
+        var getObject = JSON.parse(localStorage.getItem(key));
+        key.replace('cartHolder', 'cartHolder' + j)
+        $('.cart-content-wrap-empty').hide();
+        for (let i = 0; i < 1; i++) {
+            var cart = document.querySelector('.cart-section-title-table');
+            var totalContainer = document.querySelector('.totalContainer');
+            var cartProducts = document.createElement("tr");
+            cartProducts.className = "cart-section-category generated";
+            cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem">${getObject[i].partNum}</td>
+        <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name}</a></td>
+        <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
+        <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
+        <td class="cart-section-category-title partQty addedItem uppercase align-cent"> <input type="text" value="${getObject[i].qty}" class="bike-qty_option"></td>
+        <td class="cart-section-category-title partPrice addedItem">$${((getObject[i].total)/1000).toFixed(3)}.000</td>
+        <td class="cart-section-category-title-btn partDelBtn addedItem"><input
+                type="button" class="deleteItem cartHolder${j}" id="cartHolder${j}""></input></td>`;
+            cart.insertBefore(cartProducts, totalContainer);
         }
+    }
+}
+
+function showCart() {
+    if (JSON.parse(localStorage.getItem('cartHolder0')) == null) {
+        createCartEmptyCartDiv();
+    } else {
+        createTrElementsInCart();
     }
     // Delete Item From Cart
     $('.partDelBtn').click(function () {
 
         var classNameDelBtn = $(this).find('.deleteItem').attr('id');
-
-        for (var i = 0; i < productsCounter; i++) {
-            var key = "";
-            key = "cartHolder" + i;
-            var firstObj = JSON.parse(localStorage.getItem(key));
-            if (classNameDelBtn == key) {
-                for (var j = i + 1; j < productsCounter; j++) {
-                    var nextKey = "";
-                    nextKey = "cartHolder" + j;
-                    localStorage.removeItem(firstObj);
-                    var secondObj = JSON.parse(localStorage.getItem(nextKey));
-                    if (secondObj != null) {
-                        localStorage.setItem(key, JSON.stringify(secondObj));
-                    } else {
-                        var lastKey = "";
-                        lastKey = "cartHolder" + productsCounter;
-                        localStorage.removeItem(lastKey);
-                    }
+        var DelBtnNum = $(this).find('.deleteItem').attr('id').replace("cartHolder", "");
 
 
 
-                    var nextNextKey = "";
-                    nextNextKey = "cartHolder" + `${j+1}`;
-                    var thurdObj = JSON.parse(localStorage.getItem(nextNextKey));
-                    localStorage.setItem(nextKey, JSON.stringify(thurdObj));
-                    localStorage.removeItem(nextNextKey);
+        // var firstObj = JSON.parse(localStorage.getItem(classNameDelBtn));
+
+        for (var j = Number(DelBtnNum) + 1; j < productsCounter; j++) {
+            var nextKey = "";
+            nextKey = "cartHolder" + j;
+            var previous = "";
+            previous = "cartHolder" + `${j - 1}`;
+            // localStorage.removeItem(firstObj);
+            var secondObj = JSON.parse(localStorage.getItem(nextKey));
+            if (secondObj != null) {
+                localStorage.setItem(previous, JSON.stringify(secondObj));
+                var IdCounter = j - 1;
+
+                var previousId = $('#cartHolder' + IdCounter).attr('id');
+                // prop({property:value, property:value, ...})
+                var nextKeyId = $('#cartHolder' + j).prop({
+                    id: previousId,
+                    class: "deleteItem " + previousId
+                });
+
+                nextKeyId = previousId;
+                console.log(nextKeyId);
+                console.log(previousId);
+
+                if (j == productsCounter - 1) {
+                    var lastKey = "";
+                    lastKey = "cartHolder" + j;
+                    localStorage.removeItem(lastKey);
                 }
             }
-
         }
+
         var name = $(this).parent().find('.whyNot').attr("href").replace('.html', '');
         $(this).parent().remove();
-        // getObject[0] = "";
-        // var index = getObject.indexOf(name);
-        // if (index > -1) {
-        //     getObject.splice(index, 1);
-        //     localStorage.setItem(getObject, JSON.stringify(getObject));
-        // }
 
         productsCounter -= 1;
         localStorage.setItem("productsCounter", productsCounter);
         updateIconCounter();
         updateTotalAfterAdding();
-        for (var j = i + 1; j < productsCounter; j++) {
+        for (var g = 0; g < productsCounter; g++) {
             var asd = "";
-            asd = "cartHolder" + j;
+            asd = "cartHolder" + g;
             var dsa = JSON.parse(localStorage.getItem(asd));
-            if (!dsa) {
-                localStorage.removeItem(asd);
+            if (dsa == null) {
+                localStorage.removeItem(dsa);
             }
         }
         var checkItems = localStorage.addedItemsCounter;
         if (checkItems == 0) {
             localStorage.clear();
-            var cartTable = document.querySelector('.bike-cart-table');
-            var cartWrap = document.querySelector('.cart-table-wrap');
-            var emptyCart = document.createElement("div");
-            emptyCart.className = "cart-content-wrap-empty";
-            emptyCart.innerHTML = `<p class="cart-content_title bolder">is Empty</p>
-            <p class="cart-content_text">Nothin' to see here.</p>
-            <p class="cart-content_text">Check out our bikes.</p>
-            <a class="cart-header_contShopping" href="../shop/bikes.html">Continue Shopping</a>`;
-            cartTable.insertBefore(emptyCart, cartWrap);
-            $('.cart-table-wrap').hide();
+            createCartEmptyCartDiv();
             $('.cart-content-wrap-empty').show();
         }
     });
@@ -336,6 +359,6 @@ function showCart() {
         }
         updateIconCounter();
         updateTotalAfterAdding();
-        updateProductsCounter()
+        updateProductsCounter();
     });
 }
