@@ -9,6 +9,12 @@ $(document).ready(function () {
             scrollShortCuts.css('bottom', '');
             scrollShortCuts.css('box-shadow', 'none');
         }
+        var searchHidden = $('.nav-search-hidden');
+        if (window.scrollY > 0) {
+            searchHidden.css('box-shadow', '0 5px 5px -5px #333');
+        } else {
+            searchHidden.css('box-shadow', 'none');
+        }
     });
 
 

@@ -354,7 +354,7 @@ li {
 }
 
 .nav-search-hidden {
-    box-shadow: 0 5px 5px -5px #333;
+    transition: box-shadow 0.2s ease-in;
 }
 
 .navigation-scroll-hidden {
