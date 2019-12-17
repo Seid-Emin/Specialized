@@ -1,10 +1,13 @@
 $(document).ready(function () {
 
     window.addEventListener('scroll', function () {
+        var scrollShortCuts = $('.navigation-scroll-hidden');
         if (window.scrollY > 340) {
-            $('.navigation-scroll-hidden').css('bottom', '-30px');
+            scrollShortCuts.css('bottom', '-30px');
+            scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
         } else {
-            $('.navigation-scroll-hidden').css('bottom', '');
+            scrollShortCuts.css('bottom', '');
+            scrollShortCuts.css('box-shadow', 'none');
         }
     });
 
