@@ -553,9 +553,33 @@
     background: url(../shop/shop_individual_bikes/trail/img/FuseExpert29-PrevCard[4].png);
 }
 
-
+/* FuseExpert27_5 */
 .FuseExpert27_5 {
     background: url(../shop/shop_individual_bikes/trail/img/FuseExpert27_5-PrevCard[5].png);
+}
+
+
+/* DOWNHILL */
+
+/* DemoExpert29 */
+.DemoExpert29_1 {
+    background: url(../shop/shop_individual_bikes/downhill/img/demoExp29\ [1].jpg);
+}
+
+.DemoExpert29_2 {
+    background: url(../shop/shop_individual_bikes/downhill/img/demoExp29[1]/caros_demo\ exp\ 29\ [1]_.jpg);
+}
+
+.DemoExpert29_3 {
+    background: url(../shop/shop_individual_bikes/downhill/img/demoExp29[1]/caros_demo\ exp\ 29\ [2].jpg);
+}
+
+.DemoExpert29_4 {
+    background: url(../shop/shop_individual_bikes/downhill/img/demoExp29[1]/caros_demo\ exp\ 29\ [3].jpg);
+}
+
+.DemoExpert29_5 {
+    background: url(../shop/shop_individual_bikes/downhill/img/demoExp29[1]/caros_demo\ exp\ 29\ [4].jpg);
 }
 
 
@@ -698,7 +722,8 @@
 
 .color-icon_StumpJumperExpert29,
 .color-icon_StumpJumperExpert27_5,
-.color-icon_FuseExpert29 {
+.color-icon_FuseExpert29,
+.color-icon_DemoExpert29 {
     background-image: url(../shop/shop_individual_bikes/trail/img/SJ-EX29-27.d14557fd[2]\,[3].svg);
 }
 
