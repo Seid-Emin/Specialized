@@ -193,13 +193,22 @@ tbody {
     outline: 0;
 }
 
-/* .active-links-cart {
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
-} */
-
 .cartIconProdCount {
-    padding-left: 25px;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    min-width: 15px;
+    height: 15px;
+    background: #ed1c24;
+    color: #fff;
+    font-size: 9px;
+    font-weight: 100;
+    position: absolute;
+    top: -10px;
+    right: -.45vw;
+    line-height: 15px;
 }
+
 
 .align-cent {
     text-align: center;

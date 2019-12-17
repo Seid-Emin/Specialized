@@ -290,6 +290,14 @@ li {
     top: 0;
 }
 
+.icon-nav-wrap {
+    position: relative;
+}
+
+/* .nav-cart {
+    position: absolute;
+} */
+
 .nav-search {
     background: url(../img/icos/SearchIcon.e17d82c4.svg);
 }

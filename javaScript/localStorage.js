@@ -1,10 +1,14 @@
 function onLoad() {
+    function insertAfter(el, referenceNode) {
+        referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+    }
+
     if (localStorage.getItem("addedItemsCounter") === null) {
         localStorage.setItem("addedItemsCounter", 0);
     } else {
         var addedItemsCounter = localStorage.addedItemsCounter;
-        var ProdCountCartIcon = document.querySelector('.nav-cart');
-        ProdCountCartIcon.innerHTML = `<p class="cartIconProdCount">${addedItemsCounter}</p>`;
+        var prodCountCartIcon = document.querySelector('.cartIconProdCount-a');
+        prodCountCartIcon.innerHTML = `<p class="cartIconProdCount">${addedItemsCounter}</p>`;
     }
     if (localStorage.getItem("productsCounter") === null) {
         localStorage.setItem("productsCounter", 0);
@@ -182,11 +186,13 @@ function updateIconCounter() {
         var objQty = getObjectChange[0].qty;
         cartItemsCounter += Number(objQty);
     }
-    var prodCountCartIcon = document.querySelector('.nav-cart');
+    var prodCountCartIcon = document.querySelector('.cartIconProdCount-a');
     prodCountCartIcon.innerHTML = `<p class="cartIconProdCount">${cartItemsCounter}</p>`;
     localStorage.setItem("addedItemsCounter", Number(cartItemsCounter));
     if (cartItemsCounter > 0) {
         $('.cartIconProdCount').addClass('active-links');
+    } else {
+        $('.cartIconProdCount').hide();
     }
 }
 
