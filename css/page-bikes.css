@@ -790,14 +790,14 @@
 
 .bike-specs {
     background-color: #292929;
-    padding: 0 40px;
+    padding: 70px 40px;
     color: #ffffff;
     /* margin-bottom: 40px; */
 }
 
 .bike-specs-wrap {
     width: 100%;
-    padding: 40px 0;
+    padding: 70px 0;
     display: flex;
     justify-content: left;
 }

@@ -331,7 +331,8 @@ li {
 
 /* Search field css starts from here */
 
-.nav-search-hidden {
+.nav-search-hidden,
+.navigation-scroll-hidden {
     width: 100%;
     height: 30px;
     position: absolute;
@@ -341,8 +342,24 @@ li {
     display: flex;
     justify-content: center;
     z-index: 5;
-    -webkit-transition: bottom .3s ease-in;
     transition: bottom .3s ease-in;
+}
+
+.navigation-scroll-hidden {
+    background-color: #e9e9e9;
+}
+
+.navigation-scroll-left-bike-title,
+.scrollTo-overwiev-specs-wrap,
+.backToTop {
+    font-size: 12px;
+    align-self: center;
+}
+
+.scrollTo-overwiev-specs-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
 }
 
 .search-hidden-active {
@@ -352,6 +369,68 @@ li {
 .search-hidden-wrap {
     width: 75%;
     height: 80%;
+}
+
+.navigation-scroll-hidden-wrap {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    margin: 0 55px;
+    padding-top: 5px;
+}
+
+.overwiev,
+.tech_specs {
+    height: 30px;
+    background-color: #e9e9e9;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    padding: 6px 30px;
+    transition: background-color .3s ease-in;
+}
+
+.overwiev-btn,
+.tech_specs-btn {
+    border: none;
+    background-color: none;
+}
+
+.overwiev-btn:hover,
+.tech_specs-btn:hover,
+.overwiev:hover,
+.tech_specs:hover {
+    background-color: #f8f8f8;
+}
+
+.overwiev:active,
+.tech_specs:active {
+    background-color: #f8f8f8;
+}
+
+.backToTop {
+    position: relative;
+    color: var(--hover-clr-red-);
+    margin-right: 25px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.backToTop::after {
+    content: "";
+    background: url(../img/icos/svg/chevron-up.svg);
+    width: 10px;
+    height: 10px;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+    background-repeat: no-repeat;
+    position: left;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 90px;
 }
 
 .search-hidden_form {

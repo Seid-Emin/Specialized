@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 340) {
+            $('.navigation-scroll-hidden').css('bottom', '-30px');
+        } else {
+            $('.navigation-scroll-hidden').css('bottom', '');
+        }
+    });
 
 
     //Mobile functions
@@ -101,7 +108,8 @@ $(document).ready(function () {
     });
 
 
-    // Search Show
+    //Show Search
+
     $('.nav-search').click(function () {
         if ($('#nav-search-hidden').css('bottom') == '0px') {
             $('#nav-search-hidden').addClass('search-hidden-active');
@@ -128,37 +136,7 @@ $(document).ready(function () {
         }
     });
 
-
     // ShortCuts Show And Hide
-
-    // also works but is not good for changes made - like adding new category
-
-    // $('.category-trail').click(function () {
-    //     $('.trail-ul').slideToggle();
-    //     if ($('.hide-shortCut-trail').css('display') != 'none') {
-    //         $('.hide-shortCut-trail').hide();
-    //     } else {
-    //         $('.hide-shortCut-trail').show();
-    //     }
-    // });
-
-    // $('.category-downhill').click(function () {
-    //     $('.downhill-ul').slideToggle();
-    //     if ($('.hide-shortCut-downhill').css('display') != 'none') {
-    //         $('.hide-shortCut-downhill').hide();
-    //     } else {
-    //         $('.hide-shortCut-downhill').show();
-    //     }
-    // });
-
-    // $('.category-s-works').click(function () {
-    //     $('.s-works-ul').slideToggle();
-    //     if ($('.hide-shortCut-s-works').css('display') != 'none') {
-    //         $('.hide-shortCut-s-works').hide();
-    //     } else {
-    //         $('.hide-shortCut-s-works').show();
-    //     }
-    // });
 
     $(".category-wrap").click(function () {
 
@@ -244,6 +222,7 @@ $(document).ready(function () {
 ///////////////////////////////////
 // Carousel JavaScript Slick only//
 ///////////////////////////////////
+
 (function (factory) {
     'use strict';
     if (typeof define === 'function' && define.amd) {
@@ -253,6 +232,14 @@ $(document).ready(function () {
     } else {
         factory(jQuery);
     }
+
+
+
+
+
+
+
+
 
 }(function ($) {
     'use strict';

@@ -796,3 +796,11 @@ function showCart() {
         updateProductsCounter();
     });
 }
+
+
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY >= 400) {
+        $('.navigation-scroll-hidden').slideDown();
+    }
+});
