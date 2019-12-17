@@ -32,7 +32,7 @@ var DemoAlloy27_5 = new bikesInfo('DemoAlloy 27_5', 'shop_individual_bikes/downh
 var SWorksDemo8 = new bikesInfo('S-Works Demo 8', 'shop_individual_bikes/s-works/img/S-WorksDemo8[1]_dot.svg', '7500', '0', '0', 's', 's-works', '94519-0009', '1', 'SWorksDemo8.html', '0');
 var SWorksDemoEpicEVO = new bikesInfo('S-Works Demo Epic EVO', 'shop_individual_bikes/s-works/img/S-WorksDemoEpicEVO[2]_dot.svg', '8400', '0', '0', 's', 's-works', '94519-0010', '1', 'SWorksDemoEpicEVO.html', '0');
 var SWorksStumpJumper29 = new bikesInfo('S-Works StumpJumper 29', 'shop_individual_bikes/s-works/img/S-WorksStumpJumper29[3]_[4]_dot.svg', '7400', '0', '0', 's', 's-works', '94519-0011', '1', 'SWorksStumpJumper29.html', '0');
-var SWorksStumpJumper27_5 = new bikesInfo('S-Works StumpJumper 27.5', 'shop_individual_bikes/s-works/img/S-WorksStumpJumper29[3]_[4]_dot.svg', '7400', '0', '0', 's', 's-works', '94519-0012', '1', 'SWorksStumpJumper27_5.html', '0');
+var SWorksStumpJumper27_5 = new bikesInfo('S-Works StumpJumper 27_5', 'shop_individual_bikes/s-works/img/S-WorksStumpJumper29[3]_[4]_dot.svg', '7400', '0', '0', 's', 's-works', '94519-0012', '1', 'SWorksStumpJumper27_5.html', '0');
 var SWorksDemo8Frame = new bikesInfo('S-Works Demo 8 Frame', 'shop_individual_bikes/s-works/img/S-WorksDemo8Frame[5]_dot.svg', '1000', '0', '0', 's', 's-works', '94519-0013', '1', 'SWorksDemo8Frame.html', '0');
 
 var arrBikesInfo = [StumpJumperPro29, StumpJumperExpert29, StumpJumperExpert27_5, FuseExpert29, FuseExpert27_5, DemoExpert29, DemoRace29, DemoAlloy27_5, SWorksDemo8, SWorksDemoEpicEVO, SWorksStumpJumper29, SWorksStumpJumper27_5, SWorksDemo8Frame];

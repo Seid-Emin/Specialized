@@ -150,8 +150,10 @@ $('.bike-cart_add-to-cart').click(function () {
     var cartItemQty = itemWrap.find('.order-count_select').val();
 
     var itemName = cartItemName.replace(" ", "");
-    itemName = cartItemName.replace(".", "_");
+
     itemName = cartItemName.replace("-", "");
+    itemName = cartItemName.replace(".", "_");
+
     for (i = 0; i < 5; i++) {
         itemName = itemName.replace(" ", "");
     }
