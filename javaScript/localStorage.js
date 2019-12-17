@@ -150,7 +150,7 @@ $('.bike-cart_add-to-cart').click(function () {
     var cartItemQty = itemWrap.find('.order-count_select').val();
 
     var itemName = cartItemName.replace(" ", "");
-
+    itemName = cartItemName.replace(".", "_");
     for (i = 0; i < 5; i++) {
         itemName = itemName.replace(" ", "");
     }
@@ -256,7 +256,7 @@ function createTrElementsInCart() {
             var cartProducts = document.createElement("tr");
             cartProducts.className = "cart-section-category generated";
             cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem uppercase">${getObject[i].partNum}-${getObject[i].size}</td>
-        <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name}</a></td>
+        <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
         <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
         <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
         <td class="cart-section-category-title partQty addedItem uppercase align-cent"> <input type="text" value="${getObject[i].qty}" class="bike-qty_option"></td>
