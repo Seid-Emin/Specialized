@@ -494,10 +494,8 @@
 /* StumpJumperPro29 */
 
 .individual-bikes-wrap {
+    margin-top: 38px;
     width: 100%;
-
-    /*Temporary Remove after*/
-    /* height: 6000px; */
 }
 
 .StumpJumperPro29 {
@@ -527,7 +525,6 @@
 .individual-bikes {
     width: 100%;
     height: 60vh;
-    margin-top: 38px;
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
