@@ -2,19 +2,22 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', function () {
         var scrollShortCuts = $('.navigation-scroll-hidden');
-        if (window.scrollY > 340) {
-            scrollShortCuts.css('bottom', '-30px');
-            scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
-        } else {
-            scrollShortCuts.css('bottom', '');
-            scrollShortCuts.css('box-shadow', 'none');
-        }
         var searchHidden = $('.nav-search-hidden');
-        if (window.scrollY > 0) {
+        if (window.scrollY > 0 && window.scrollY <= 340) {
             searchHidden.css('box-shadow', '0 5px 5px -5px #333');
         } else {
             searchHidden.css('box-shadow', 'none');
         }
+        if (window.scrollY > 340) {
+            scrollShortCuts.css('bottom', '-30px');
+            scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
+
+        } else {
+            scrollShortCuts.css('bottom', '');
+            scrollShortCuts.css('box-shadow', 'none');
+        }
+
+
     });
 
 

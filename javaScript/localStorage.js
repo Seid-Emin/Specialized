@@ -255,7 +255,7 @@ function createTrElementsInCart() {
             var totalContainer = document.querySelector('.totalContainer');
             var cartProducts = document.createElement("tr");
             cartProducts.className = "cart-section-category generated";
-            cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem">${getObject[i].partNum}</td>
+            cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem uppercase">${getObject[i].partNum}-${getObject[i].size}</td>
         <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name}</a></td>
         <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
         <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>

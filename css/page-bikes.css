@@ -502,6 +502,9 @@
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperPro29-Hero_[1].jpg);
 }
 
+
+
+
 .StumpJumperExpert29_1 {
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29-Hero_[2].jpg);
 }
@@ -517,6 +520,36 @@
 .StumpJumperExpert29_4 {
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29_[2]/StumpJumperExpert29-4.5be06b9a.jpg);
 }
+
+
+
+.StumpJumperExpert27_5_1 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5-Hero_[3].jpg);
+}
+
+.StumpJumperExpert27_5_2 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_2.jpg);
+}
+
+.StumpJumperExpert27_5_3 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_3.jpg);
+}
+
+.StumpJumperExpert27_5_4 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_4.jpg);
+}
+
+.StumpJumperExpert27_5_5 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_5.jpg);
+}
+
+.StumpJumperExpert27_5_6 {
+    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_6.jpg);
+}
+
+
+
+
 
 .carousel:focus {
     outline: none;
@@ -636,7 +669,7 @@
 }
 
 .color-icon_color-wrap {
-    align-self: flex-end;
+    align-self: center;
 }
 
 .color-icon {
