@@ -1539,7 +1539,8 @@ li {
     transition: color .3s ease-out;
 }
 
-.footer_center-text:hover {
+.footer_center-text:hover,
+.cart-info-links:hover {
     color: var(--hover-clr-red-)
 }
 
@@ -2026,6 +2027,7 @@ li {
     width: 35px;
     height: 25px;
     margin: 0 2px;
+    cursor: pointer;
 }
 
 
