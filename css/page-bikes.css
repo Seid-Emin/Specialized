@@ -625,6 +625,32 @@
 }
 
 
+/* S-Works Corousel */
+
+/* DemoAlloy27_5 */
+.SWorksDemo8_1 {
+    background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemo8[1].png);
+}
+
+.SWorksDemo8_2 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemo8[1]/caros_SWorks\ Demo\ 8_1.jpg);
+}
+
+.SWorksDemo8_3 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemo8[1]/caros_SWorks\ Demo\ 8_2.jpg);
+}
+
+.SWorksDemo8_4 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemo8[1]/caros_SWorks\ Demo\ 8_3.jpg);
+}
+
+.SWorksDemo8_5 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemo8[1]/caros_SWorks\ Demo\ 8_4.jpg);
+}
+
+
+
+
 
 .carousel:focus {
     outline: none;
@@ -780,6 +806,11 @@
 /* Grey svg */
 .color-icon_DemoAlloy27_5 {
     background-image: url(../shop/shop_individual_bikes/downhill/img/DemoAlloy29[3]_dot.svg);
+}
+
+/* Black svg */
+.color-icon-SWorksDemo8 {
+    background-image: url(../shop/shop_individual_bikes/s-works/img/S-WorksDemo8[1]_dot.svg);
 }
 
 

@@ -151,6 +151,7 @@ $('.bike-cart_add-to-cart').click(function () {
 
     var itemName = cartItemName.replace(" ", "");
     itemName = cartItemName.replace(".", "_");
+    itemName = cartItemName.replace("-", "");
     for (i = 0; i < 5; i++) {
         itemName = itemName.replace(" ", "");
     }
