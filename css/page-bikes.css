@@ -627,7 +627,7 @@
 
 /* S-Works Corousel */
 
-/* DemoAlloy27_5 */
+/* SWorksDemo8 */
 .SWorksDemo8_1 {
     background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemo8[1].png);
 }
@@ -646,6 +646,31 @@
 
 .SWorksDemo8_5 {
     background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemo8[1]/caros_SWorks\ Demo\ 8_4.jpg);
+}
+
+/* SWorksDemo8 */
+.SWorksDemoEpicEVO_1 {
+    background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemoEpic\ EVO[2].png);
+}
+
+.SWorksDemoEpicEVO_2 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemoEpicEVO[2]/caros_SWEpicEvo-2.01a93d6d.jpg);
+}
+
+.SWorksDemoEpicEVO_3 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemoEpicEVO[2]/caros_SWEpicEvo-3.fb3f8925.jpg);
+}
+
+.SWorksDemoEpicEVO_4 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemoEpicEVO[2]/caros_SWEpicEvo-4.398cb453.jpg);
+}
+
+.SWorksDemoEpicEVO_5 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemoEpicEVO[2]/caros_SWEpicEvo-5.96fecd8a.jpg);
+}
+
+.SWorksDemoEpicEVO_6 {
+    background: url(../shop/shop_individual_bikes/s-works/img/caros_SWorksDemoEpicEVO[2]/caros_SWEpicEvo-6.3755ef1e.jpg);
 }
 
 
@@ -799,7 +824,8 @@
 }
 
 /* Dark Yellow svg */
-.color-icon_DemoRace29 {
+.color-icon_DemoRace29,
+.color-icon-SWorksDemoEpicEVO {
     background-image: url(../shop/shop_individual_bikes/downhill/img/DEMO-RACE-29[2]_dot.svg);
 }
 

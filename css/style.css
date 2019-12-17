@@ -365,7 +365,7 @@ li {
 
 .navigation-scroll-left-bike-title,
 .scrollTo-overwiev-specs-wrap,
-.backToTop {
+.backToTop-wrap {
     font-size: 12px;
     align-self: center;
 }
@@ -424,7 +424,7 @@ li {
     background-color: #f8f8f8;
 }
 
-.backToTop {
+.backToTop-wrap {
     position: relative;
     color: var(--hover-clr-red-);
     margin-right: 25px;
@@ -432,7 +432,7 @@ li {
     z-index: -1;
 }
 
-.backToTop::after {
+.backToTop-wrap::after {
     content: "";
     background: url(../img/icos/svg/chevron-up.svg);
     width: 10px;

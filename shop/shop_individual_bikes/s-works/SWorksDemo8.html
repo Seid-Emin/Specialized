@@ -17,7 +17,7 @@
 </head>
 
 <body onload="onLoad(), carousel()">
-    <div class="site">
+    <div class="site" id="forBackToTop">
         <div class="site-inner">
             <!-- Start NAV -->
             <div class="site-container">
@@ -220,7 +220,10 @@
                                                 href="#forTechSpecs">Technical
                                                 Specifications</a></button>
                                     </div>
-                                    <a class="backToTop" href="#forBackToTop">Back To Top</a>
+                                    <a class="backToTop" href="#forBackToTop">
+                                        <div class="backToTop-wrap">Back To
+                                            Top</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -413,7 +416,7 @@
                                 <div class="bike-cart_info info-left">
                                     <p class="bike-name">S-Works Demo 8</p>
                                     <div class="bike-price_part">
-                                        <p class="bike-part">Part No. 94519-0009</p>
+                                        <p class="bike-part" id="forOverwiev">Part No. 94519-0009</p>
                                         <p class="bike-price">$7,500.000</p>
                                     </div>
                                 </div>
@@ -476,35 +479,32 @@
 
 
                         </div>
-                        <div class="bike-description  bike-SWorksDemo8" id="overwiev">
+                        <div class="bike-description  bike-SWorksDemo8">
                             <div class="bike-description-wrap">
                                 <p class="bike-description-text">
-                                    If you don't know the Demo, it's time you get acquainted. Think of it as a
-                                    two-wheeled, dirt-eating Mario Andretti—it just wants to go fast. And this year, the
-                                    Demo Expert 29 adds a new limb to the Demo family tree with an entirely new design
-                                    that makes railing corners and casting floatation spells over rock gardens easier
-                                    than ever. It has a ground-up new frame, improved kinematics, better suspension
-                                    under braking, bigger wheels, and all the newest fancy bits that make this the
-                                    fastest Demo we've ever made. Yeah, we say that every time, but the race clock
-                                    doesn't lie.</p>
+                                    Relentless, fast, aggressive—no matter how you describe it, downhill racing is
+                                    demanding. Starting with the bike, you're inserting control into a borderline
+                                    uncontrollable situation wherever you can. But when it comes to harnessing gravity's
+                                    pull, while also maintaining confident handling, it simply doesn't get any better
+                                    than the S-Work Demo 8.</p>
                                 <div class="bike-description-text-bottom">read more</div>
                                 <ul class="bike-description-list">
-                                    <li class="bike-description-list-text description-li">M5 alloy construction works in
-                                        harmony with our Style-Specific DH Geometry to create the ultimate race machine.
-                                        The design is compact in order increase maneuverability and responsiveness,
-                                        while the 200mm of travel at the rear makes the bike capable of taking big hits
-                                        in stride. And to fill out all of the details that make the difference on race
-                                        day, we’ve included an ISCG ‘05 mount for chain guides and all the bits to make
-                                        it easy to work on.</li>
-                                    <li class="bike-description-list-text description-li">The RockShox Super Deluxe RC
-                                        World Cup rear shock features a low-speed compression adjustment, external
-                                        rebound adjustment, and a Trunnion mount that makes for a smaller shock envelope
-                                        and increased durability.
+                                    <li class="bike-description-list-text description-li">The frame features a full FACT
+                                        11m carbon fibre construction for low weight and heightened levels of strength
+                                        and stiffness, which is amplified by its asymmetrical frame design that still
+                                        leaves plenty of access. This has also been paired with our proven S3 Geometry
+                                        that increases manoeuvrability and responsiveness, while the 200mm of travel at
+                                        the rear makes the bike capable of taking on the biggest of hits in stride.
                                     </li>
-                                    <li class="bike-description-list-text description-li">RockShox BoXXer RC 29 fork is
-                                        nothing short of legendary. With 200mm of travel, a DebonAir spring for maximum
-                                        efficiency, and adjustable low-speed compression, it's easy to see why it's such
-                                        a fan favorite for gravity fiends.
+                                    <li class="bike-description-list-text description-li">RockShox BoXXer Team 650b fork
+                                        is nothing short of legendary. With 200mm of travel, a Charger Damper for
+                                        maximum efficiency, and Power Buldge reinforced lower legs that allow oversized
+                                        bushings for incredible stiffness, it's easy to see why it's such a fan
+                                        favourite for gravity fiends.
+                                    </li>
+                                    <li class="bike-description-list-text description-li">A SRAM X01 DH 7-speed rear
+                                        derailleur makes sure that your chain stays put on the cassette, and keeps all
+                                        of your power taking you forward, no matter how gnarly the terrain.
                                     </li>
                                 </ul>
                             </div>
@@ -530,23 +530,22 @@
                                             </tbody>
                                             <tbody class="specs-section-title-table-info">
                                                 <tr class="specs-section-category-info">
-                                                    <td class="specs-name">BOTTOM BRACKET</td>
-                                                    <td class="specs-info">SRAM GXP, 83mm
-                                                <tr class="specs-section-category-info">
                                                     <td class="specs-name">CHAIN</td>
-                                                    <td class="specs-info">SRAM PC-1031, 10-speed
+                                                    <td class="specs-info">SRAM PC1130 chain, 11-speed w/ PowerLink
+                                                <tr class="specs-section-category-info">
+                                                    <td class="specs-name">BOTTOM BRACKET </td>
+                                                    <td class="specs-info">SRAM BB30, 83mm
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">CRANKSET</td>
-                                                    <td class="specs-info">SRAM Descendant, GXP, alloy, 94 BCD, 165mm
-                                                        crankarm, MRP SXg CS ISCG-05 chainguide
+                                                    <td class="specs-info">SRAM X0 DH, carbon, 104 BCD spider, 165mm
+                                                        crankarm w/ Gamut bashguard
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">SHIFT LEVERS</td>
-                                                    <td class="specs-info">SRAM GX, trigger, 10-speed
+                                                    <td class="specs-info">SRAM X0 DH, 7-speed, trigger
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">CASSETTE
                                                     </td>
-                                                    <td class="specs-info">SRAM PG-1030, 10 speed, 11-36t (*last three
-                                                        cogs removed)
+                                                    <td class="specs-info">SRAM X01 DH, 7-speed, 10-24t
                                             </tbody>
                                         </table>
                                         <table class="specs-section-wrap">
@@ -562,9 +561,9 @@
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">FORK
                                                     </td>
-                                                    <td class="specs-info">RockShox BoXXer RC 29, DebonAir spring,
-                                                        adjustable low-speed compression, adjustable rebound, short
-                                                        crown, 20x110mm thru-axle, 56mm offset, 200mm of travel
+                                                    <td class="specs-info">RockShox BoXXer WC 27.5, Charger Damper, air
+                                                        spring, compression adjust, rebound adjust, alloy steerer, 48mm
+                                                        offset, Maxle Lite DH, 200mm of travel
                                             </tbody>
                                         </table>
                                         <table class="specs-section-wrap">
@@ -580,22 +579,18 @@
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">SADDLE
                                                     </td>
-                                                    <td class="specs-info">Body Geometry Henge DH, hollow cro-mo
-                                                        rails,130mm
-                                                <tr class="specs-section-category-info">
-                                                    <td class="specs-name">SEAT BINDER
-                                                    </td>
-                                                    <td class="specs-info">Alloy, 34.9mm
+                                                    <td class="specs-info">Body Geometry Phenom Expert, Adaptive Edge
+                                                        design, hollow titanium rails, carbon fiber base, 143mm
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">SEATPOST
                                                     </td>
-                                                    <td class="specs-info">Specialized, 6061 alloy, 2-bolt clamp, 0mm
-                                                        setback, 30.9mm
+                                                    <td class="specs-info">Thomson, alloy, straight, 12-degree clamp
                                                 <tr class="specs-section-category-info">
-                                                    <td class="specs-name">HANDLEBARS
+                                                    <td class="specs-name">STEM
                                                     </td>
-                                                    <td class="specs-info">Specialized, 7050 alloy, 6-degree upsweep,
-                                                        8-degree backsweep, 27mm rise, 800mm width
+                                                    <td class="specs-info">Specialized Direct Mount DH Stem, two-piece,
+                                                        forged alloy, 45mm
+                                                <tr class="specs-section-category-info">
                                             </tbody>
                                         </table>
                                         <table class="specs-section-wrap">
@@ -613,12 +608,12 @@
                                                     <td class="specs-name">FRONT HUB
                                                     </td>
                                                     <td class="specs-info">Specialized disc, alloy flange & disc mount,
-                                                        sealed cartridge bearings, 20x110mm thru-axle, 28h
+                                                        sealed cartridge bearings, 20mm thru-axle, 32h
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">REAR HUB
                                                     </td>
-                                                    <td class="specs-info">Specialized, sealed cartridge bearings,
-                                                        12x148mm thru-axle, 28h
+                                                    <td class="specs-info">Custom DT Swiss 350, 135mm spacing, SRAM XD
+                                                        driver, 54T ratchet, 12mm thru-axle, 32h
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">INNER TUBES
                                                     </td>
@@ -626,11 +621,12 @@
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">SPOKES
                                                     </td>
-                                                    <td class="specs-info">DT Swiss Industry
+                                                    <td class="specs-info">DT Swiss Competition, stainless,
+                                                        black,x2.0x1.8x2.0
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">RIMS
                                                     </td>
-                                                    <td class="specs-info">Roval 29" Alloy DH, 28mm internal width, 28h
+                                                    <td class="specs-info">Roval 27.5, alloy, 24mm internal width
                                             </tbody>
                                         </table>
                                         <table class="specs-section-wrap">
@@ -646,8 +642,8 @@
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">FRONT BRAKE
                                                     </td>
-                                                    <td class="specs-info">SRAM Code R, 4-piston caliper, hydraulic
-                                                        disc, 200mm
+                                                    <td class="specs-info">SRAM Code RSC, 4-piston caliper, hydraulic
+                                                        disc, metallic pads, 200mm rotor
                                             </tbody>
                                         </table>
                                         <table class="specs-section-wrap">
@@ -663,7 +659,8 @@
                                                 <tr class="specs-section-category-info">
                                                     <td class="specs-name">PEDALS
                                                     </td>
-                                                    <td class="specs-info">Specialized Dirt
+                                                    <td class="specs-info">Specialized Boomslang, 6061 alloy, sealed
+                                                        cartridge bearings
                                             </tbody>
                                         </table>
                                         <table class="specs-section-wrap">
@@ -677,12 +674,16 @@
                                             </tbody>
                                             <tbody class="specs-section-title-table-info">
                                                 <tr class="specs-section-category-info">
+                                                    <td class="specs-name">SEAT BINDER
+                                                    </td>
+                                                    <td class="specs-info">Alloy, 36.9mm
                                                     <td class="specs-name">FRAME
                                                     </td>
-                                                    <td class="specs-info">M5 alloy, Style-Specific DH Geometry, BSA
-                                                        threaded BB, full internal cable routing with option for full
-                                                        external brake, 148mm rear spacing, sealed cartridge bearing
-                                                        pivots, replaceable derailleur hanger, 200mm of travel
+                                                    <td class="specs-info">S-Works FACT 11m, S3 Geometry, carbon front
+                                                        triangle, full carbon rear end, new team alloy link, FACT IS
+                                                        construction, BB30, full internal cable routing, 135mm dropouts,
+                                                        lipped and sealed cartridge bearing pivots, replaceable
+                                                        derailleur hanger, 200mm of travel
                                             </tbody>
                                         </table>
                                         <div class="specs-small-text">* Specifications are subject to change without
