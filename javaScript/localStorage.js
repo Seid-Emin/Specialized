@@ -337,7 +337,10 @@ function showCart() {
             localStorage.clear();
             createCartEmptyCartDiv();
             $('.cart-content-wrap-empty').show();
+        } else if (checkItems == 2) {
+            location.reload();
         }
+
     });
 
     // Change Product Qtity in CART

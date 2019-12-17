@@ -676,7 +676,7 @@
 
 /* SWorksStumpJumper29 */
 .SWorksStumpJumper29 {
-    background: url(../shop/shop_individual_bikes/s-works/img/SWStumpJumper29[3].jpg);
+    background: url(../shop/shop_individual_bikes/s-works/img/SWorksStumpJumper29[3].jpg);
 }
 
 .SWorksStumpJumper27_5 {
@@ -701,7 +701,14 @@
     scale: 0.9;
 }
 
-.StumpJumperExpert27_5_5 {
+.StumpJumperExpert27_5_5,
+.DemoRace29_1,
+.DemoRace29_2,
+.DemoRace29_3,
+.DemoRace29_4,
+.DemoRace29_5,
+.DemoRace29_6,
+.DemoRace29_7 {
     background-size: cover;
 }
 
