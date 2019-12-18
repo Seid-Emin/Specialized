@@ -631,6 +631,10 @@ li {
     margin: 15px 0;
 }
 
+label {
+    cursor: pointer;
+}
+
 .nav-register-text {
     color: var(--hover-clr-red-);
     font-size: 8px;
@@ -651,6 +655,7 @@ li {
     justify-content: space-between;
     margin-right: 10px;
     white-space: nowrap;
+    cursor: ;
 }
 
 /* SignIn and Register form start */
@@ -1042,12 +1047,21 @@ li {
 }
 
 .landing-heroe {
-    height: calc(100vh - 90px);
     background: url(../img/index_home/Demo8-1.0aa0e9b0.jpg);
+}
+
+.landing-heroe {
+    height: calc(100vh - 90px);
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
+}
+
+
+
+.heroe-img1 {
+    background: url(../about/inside_specialized/img/AboutSection2.67f1dec5.jpg);
 }
 
 .landing-heroe-content {
@@ -1113,7 +1127,8 @@ li {
 /* Landing Heroe - end */
 
 /* Landing intro - start */
-.landing-intro {
+.landing-intro,
+.landing-intro-aboutUs {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2035,7 +2050,7 @@ li {
 }
 
 
-/* PopUp when addint items to cart */
+/* PopUp when adding items to cart */
 
 
 .addedToCartPopUp_wrap {
@@ -2078,6 +2093,245 @@ li {
 .warning {
     color: #b32727;
 }
+
+.img1-aboutUs {
+    background: url(../about/inside_specialized/AboutHero.7911052f.jpg);
+}
+
+.img2-aboutUs {
+    background: url(../about/inside_specialized/img/about-us-soil-searching-1440x810-preview.jpg);
+}
+
+.img3-aboutUs {
+    background: url(../about/inside_specialized/img/about-us-foundation.jpg);
+}
+
+.img4-aboutUs {
+    background: url(../about/inside_specialized/img/about-us-hunter-hunter-little-hunter-1440x810-preview.jpg);
+}
+
+.aboutUs-heroe-img,
+.heroe-img1,
+.img2-aboutUs,
+.img1-aboutUs,
+.img3-aboutUs,
+.img4-aboutUs {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.youTubeHunter {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.youTube-link-hunter {
+    background: url(../about/inside_specialized/img/svg/youtube.svg);
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    filter: invert(10%) sepia(100%) saturate(6326%) hue-rotate(354deg) brightness(108%) contrast(86%);
+}
+
+.heroe-img1 {
+    margin-top: 10px;
+}
+
+.aboutUs-heroe-content {
+    position: absolute;
+    width: 30%;
+    color: #fff;
+    text-align: left;
+    padding-right: 3%;
+}
+
+.youtube-wrap {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+
+}
+
+.donation-wrapper-all {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.donation {
+    padding-left: 3%;
+}
+
+.donation-btn-wrap {
+    display: flex;
+}
+
+.watch-video {
+    margin-left: 10px;
+}
+
+.learn-more,
+.watch-video {
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s ease-in;
+
+}
+
+.learn-more:hover {
+    background-color: #101010;
+    border-color: #0a0a0a;
+    color: #fff;
+}
+
+.watch-video:hover {
+    background-color: #363636;
+    border-color: #0a0a0a;
+    color: #fff;
+}
+
+.aboutUs-title-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutUs-title-wrap {
+    font-family: DIN Next W01 Condensed Medium;
+    color: #fafafa;
+}
+
+.landing-heroe-content {
+    width: 30%;
+}
+
+.aboutUs-title-year {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.landing-heroe-title-aboutUs {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 20px 5px;
+}
+
+.landing-heroe-aboutUs-text {
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.landing-intro-aboutUs {
+    background-color: #292929;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    height: 200px;
+}
+
+.landing-intro_title-aboutUs {
+    position: absolute;
+    top: 40%;
+    color: #fafafa;
+    font-size: 26px;
+    font-family: DIN Next W01 Condensed Medium;
+    letter-spacing: 0;
+}
+
+.heroe-img2 {
+    background: url(../about/inside_specialized/img/AboutSection3.51b703f2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 65%;
+}
+
+.content-aboutUs {
+    margin-bottom: 0;
+}
+
+.aboutUs-footer {
+    position: relative;
+}
+
+.why-work-here {
+    max-height: 600px;
+    display: flex;
+    flex-direction: inherit;
+    position: relative;
+}
+
+.job-header,
+.job-text-inner {
+    color: #414141;
+}
+
+.job-header {
+    font-weight: 600;
+}
+
+.content-why-work-here {
+    width: 60%;
+    text-align: center;
+    padding: 0;
+    align-self: center
+}
+
+.job-text-inner {
+    font-size: 12px;
+}
+
+.job-openings-btn {
+    justify-content: space-evenly;
+}
+
+.job-openings {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+    width: fit-content;
+    transition: background-color 0.3s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

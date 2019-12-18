@@ -132,16 +132,17 @@ $(document).ready(function () {
     $('.nav-search').click(function () {
         if ($('#nav-search-hidden').css('bottom') == '0px') {
             $('#nav-search-hidden').addClass('search-hidden-active');
+            if ($('.sign-in').css('display') != "none") {
+                $('#nav-signIn_wrap-toggle').hide();
+            }
+            if ($('.registerMe').css('display') != "none") {
+                $('#nav-register_wrap-toggle').hide();
+            }
             scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
         } else {
             $('#nav-search-hidden').removeClass('search-hidden-active');
         }
-        if ($('.sign-in').css('display') != "none") {
-            $('#nav-signIn_wrap-toggle').slideUp();
-        }
-        if ($('.registerMe').css('display') != "none") {
-            $('#nav-register_wrap-toggle').slideUp();
-        }
+
     });
 
     //Check anything active. If so, hide them

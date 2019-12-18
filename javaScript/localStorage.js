@@ -287,7 +287,7 @@ function showCart() {
 
         // var firstObj = JSON.parse(localStorage.getItem(classNameDelBtn));
 
-        for (var j = Number(DelBtnNum) + 1; j < productsCounter; j++) {
+        for (var j = Number(DelBtnNum) + 1; j <= productsCounter; j++) {
             var nextKey = "";
             nextKey = "cartHolder" + j;
             var previous = "";
@@ -333,6 +333,8 @@ function showCart() {
             }
         }
         var checkItems = localStorage.addedItemsCounter;
+        var pickCartHolder1 = $('#cartHolder1').attr('id');
+        // && pickCartHolder1 == undefined
         if (checkItems == 0) {
             localStorage.clear();
             createCartEmptyCartDiv();

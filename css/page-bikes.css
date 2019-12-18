@@ -705,6 +705,8 @@
     scale: 0.9;
 }
 
+.DemoExpert29_3,
+.DemoExpert29_5,
 .StumpJumperExpert29_3,
 .StumpJumperExpert27_5_5,
 .DemoRace29_1,
@@ -713,7 +715,12 @@
 .DemoRace29_4,
 .DemoRace29_5,
 .DemoRace29_6,
-.DemoRace29_7 {
+.DemoRace29_7,
+.SWorksDemo8_1,
+.SWorksDemo8_2,
+.SWorksDemo8_3,
+.SWorksDemo8_4,
+.SWorksDemo8_5 {
     background-size: cover;
 }
 
