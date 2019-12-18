@@ -631,7 +631,7 @@ li {
     margin: 15px 0;
 }
 
-.nav-registe-text {
+.nav-register-text {
     color: var(--hover-clr-red-);
     font-size: 8px;
     font-weight: 400;
@@ -1974,6 +1974,10 @@ li {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 5px;
+}
+
+.hoverRed:hover {
+    color: var(--hover-clr-red-);
 }
 
 .underlined {

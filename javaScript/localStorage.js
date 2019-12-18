@@ -259,7 +259,7 @@ function createTrElementsInCart() {
             var cartProducts = document.createElement("tr");
             cartProducts.className = "cart-section-category generated";
             cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem uppercase">${getObject[i].partNum}-${getObject[i].size}</td>
-        <td class="cart-section-category-title partName addedItem"><a class="whyNot" href="${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
+        <td class="cart-section-category-title partName addedItem"><a class="whyNot hoverRed" href="${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
         <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
         <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
         <td class="cart-section-category-title partQty addedItem uppercase align-cent"> <input type="text" value="${getObject[i].qty}" class="bike-qty_option"></td>
@@ -280,7 +280,7 @@ function showCart() {
     // Delete Item From Cart
     $('.partDelBtn').click(function () {
 
-        var classNameDelBtn = $(this).find('.deleteItem').attr('id');
+        // var classNameDelBtn = $(this).find('.deleteItem').attr('id');
         var DelBtnNum = $(this).find('.deleteItem').attr('id').replace("cartHolder", "");
 
 
@@ -317,7 +317,7 @@ function showCart() {
             }
         }
 
-        var name = $(this).parent().find('.whyNot').attr("href").replace('.html', '');
+        // var name = $(this).parent().find('.whyNot').attr("href").replace('.html', '');
         $(this).parent().remove();
 
         productsCounter -= 1;

@@ -683,6 +683,10 @@
     background: url(../shop/shop_individual_bikes/s-works/img/StumpJumper27_5[4].jpg);
 }
 
+.SWorksDemo8Frame {
+    background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemo8Frame.png);
+}
+
 
 
 
@@ -701,6 +705,7 @@
     scale: 0.9;
 }
 
+.StumpJumperExpert29_3,
 .StumpJumperExpert27_5_5,
 .DemoRace29_1,
 .DemoRace29_2,
