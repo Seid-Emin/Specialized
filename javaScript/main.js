@@ -201,17 +201,17 @@ $(document).ready(function () {
     if (window.location.href.indexOf("bikes.html") > -1) {
         $(this).closest('li').addClass('active');
         window.addEventListener('scroll', function () {
-            if (window.scrollY >= 325 && window.scrollY < 1640) {
+            if (window.scrollY >= 420 && window.scrollY < 2055) {
                 $('.category-shortCut-trail').addClass('bolder-scroll');
             } else {
                 $('.category-shortCut-trail').removeClass('bolder-scroll');
             }
-            if (window.scrollY >= 2020 && window.scrollY < 3110) {
+            if (window.scrollY >= 2055 && window.scrollY < 3255) {
                 $('.category-shortCut-downhill').addClass('bolder-scroll');
             } else {
                 $('.category-shortCut-downhill').removeClass('bolder-scroll');
             }
-            if (window.scrollY >= 3200 && window.scrollY < 4820) {
+            if (window.scrollY >= 3255 && window.scrollY < 5000) {
                 $('.category-shortCut-s-works').addClass('bolder-scroll');
             } else {
                 $('.category-shortCut-s-works').removeClass('bolder-scroll');
