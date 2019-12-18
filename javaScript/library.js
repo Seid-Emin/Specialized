@@ -1,5 +1,5 @@
 // variables
-const pageNames = ['index', 'bikes', 'trail', 'downhill', 'sworks', 'StumpJumperPro29', 'StumpJumperExpert29', 'StumpJumperExpert27_5', 'FuseExpert29', 'FuseExpert27_5', 'DemoExpert29', 'DemoRace29', 'DemoAlloy27_5', 'SWorksDemo8', 'SWorksDemoEpicEVO', 'SWorksStumpJumper29', 'SWorksStumpJumper27_5', 'SWorksDemo8Frame'];
+const pageNames = ['index', 'bikes', 'trail', 'downhill', 'sworks', 'StumpJumperPro29', 'StumpJumperExpert29', 'StumpJumperExpert27_5', 'FuseExpert29', 'FuseExpert27_5', 'DemoExpert29', 'DemoRace29', 'DemoAlloy27_5', 'SWorksDemo8', 'SWorksDemoEpicEVO', 'SWorksStumpJumper29', 'SWorksStumpJumper27_5', 'SWorksDemo8Frame', 'inside_specialized'];
 const bikesPagesOnly = ['StumpJumperPro29', 'StumpJumperExpert29', 'StumpJumperExpert27_5', 'FuseExpert29', 'FuseExpert27_5', 'DemoExpert29', 'DemoRace29', 'DemoAlloy27_5', 'SWorksDemo8', 'SWorksDemoEpicEVO', 'SWorksStumpJumper29', 'SWorksStumpJumper27_5', 'SWorksDemo8Frame'];
 
 function bikesInfo(name, color, price, thumbsUp, thumbsDown, size, type, partNum, qty, html, total) {
@@ -36,3 +36,4 @@ var SWorksStumpJumper27_5 = new bikesInfo('S-Works StumpJumper 27_5', 'shop_indi
 var SWorksDemo8Frame = new bikesInfo('S-Works Demo 8 Frame', 'shop_individual_bikes/s-works/img/S-WorksDemo8Frame[5]_dot.svg', '1000', '0', '0', 's', 's-works', '94519-0013', '1', 'SWorksDemo8Frame.html', '0');
 
 var arrBikesInfo = [StumpJumperPro29, StumpJumperExpert29, StumpJumperExpert27_5, FuseExpert29, FuseExpert27_5, DemoExpert29, DemoRace29, DemoAlloy27_5, SWorksDemo8, SWorksDemoEpicEVO, SWorksStumpJumper29, SWorksStumpJumper27_5, SWorksDemo8Frame];
+var arrWrapPages = ['index', 'bikes', 'trail', 'downhill', 'sworks', 'inside_specialized'];

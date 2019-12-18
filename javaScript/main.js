@@ -1,24 +1,31 @@
 $(document).ready(function () {
 
-    window.addEventListener('scroll', function () {
-        var scrollShortCuts = $('.navigation-scroll-hidden');
-        var searchHidden = $('.nav-search-hidden');
-        if (window.scrollY > 0 && window.scrollY <= 340) {
-            searchHidden.css('box-shadow', '0 5px 5px -5px #333');
-        } else {
-            searchHidden.css('box-shadow', 'none');
+    for (var s = 0; s < bikesPagesOnly.length; s++) {
+        var wrap_S_pages = bikesPagesOnly[s];
+        var wrapPagesNameHtml = wrap_S_pages.concat('.html');
+        if (window.location.href.indexOf(wrapPagesNameHtml) > -1) {
+            window.addEventListener('scroll', function () {
+                var scrollShortCuts = $('.navigation-scroll-hidden');
+                var searchHidden = $('.nav-search-hidden');
+                if (window.scrollY > 0 && window.scrollY <= 340) {
+                    searchHidden.css('box-shadow', '0 5px 5px -5px #333');
+                } else {
+                    searchHidden.css('box-shadow', 'none');
+                }
+                if (window.scrollY > 340) {
+                    scrollShortCuts.css('bottom', '-30px');
+                    scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
+
+                } else {
+                    scrollShortCuts.css('bottom', '');
+                    scrollShortCuts.css('box-shadow', 'none');
+                }
+
+
+            });
         }
-        if (window.scrollY > 340) {
-            scrollShortCuts.css('bottom', '-30px');
-            scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
+    }
 
-        } else {
-            scrollShortCuts.css('bottom', '');
-            scrollShortCuts.css('box-shadow', 'none');
-        }
-
-
-    });
 
 
     //Mobile functions
@@ -125,6 +132,7 @@ $(document).ready(function () {
     $('.nav-search').click(function () {
         if ($('#nav-search-hidden').css('bottom') == '0px') {
             $('#nav-search-hidden').addClass('search-hidden-active');
+            scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
         } else {
             $('#nav-search-hidden').removeClass('search-hidden-active');
         }
@@ -138,12 +146,12 @@ $(document).ready(function () {
 
     //Check anything active. If so, hide them
     $('.sign-in').click(function () {
-        if ($('.nav-search-hidden').css('bottom') != 0) {
+        if ($('.nav-search-hidden').css('bottom') != '0px') {
             $('.nav-search-hidden').removeClass('search-hidden-active');
         }
     });
     $('.registerMe').click(function () {
-        if ($('.nav-search-hidden').css('bottom') != 0) {
+        if ($('.nav-search-hidden').css('bottom') != '0px') {
             $('.nav-search-hidden').removeClass('search-hidden-active');
         }
     });
@@ -188,20 +196,21 @@ $(document).ready(function () {
 
     // Shop/Specialized Script
 
+    // Bolder Shotcuts in bikesInfo.html only
     if (window.location.href.indexOf("bikes.html") > -1) {
         $(this).closest('li').addClass('active');
         window.addEventListener('scroll', function () {
-            if (window.scrollY >= 325 && window.scrollY < 1200) {
+            if (window.scrollY >= 325 && window.scrollY < 1640) {
                 $('.category-shortCut-trail').addClass('bolder-scroll');
             } else {
                 $('.category-shortCut-trail').removeClass('bolder-scroll');
             }
-            if (window.scrollY >= 1200 && window.scrollY < 1675) {
+            if (window.scrollY >= 2020 && window.scrollY < 3110) {
                 $('.category-shortCut-downhill').addClass('bolder-scroll');
             } else {
                 $('.category-shortCut-downhill').removeClass('bolder-scroll');
             }
-            if (window.scrollY >= 1675 && window.scrollY < 2552) {
+            if (window.scrollY >= 3200 && window.scrollY < 4820) {
                 $('.category-shortCut-s-works').addClass('bolder-scroll');
             } else {
                 $('.category-shortCut-s-works').removeClass('bolder-scroll');
@@ -227,6 +236,25 @@ $(document).ready(function () {
     }
     // set current active page-inner-title_links
     $(".page_innet-title_links:last-child").addClass('active-links');
+
+    // put shadow with different condition for all without individual bikes
+    for (var shadow = 0; shadow < arrWrapPages.length; shadow++) {
+        var wrapPagesName = arrWrapPages[shadow];
+        var wrapPagesNameHtml = wrapPagesName.concat('.html');
+        if (window.location.href.indexOf(wrapPagesNameHtml) > -1) {
+            window.addEventListener('scroll', function () {
+                // var scrollShortCuts = $('.navigation-scroll-hidden');
+                var searchHidden = $('.nav-search-hidden');
+                if (window.scrollY > 0) {
+                    searchHidden.css('box-shadow', '0 5px 5px -5px #333');
+                } else {
+                    searchHidden.css('box-shadow', 'none');
+                }
+            });
+        }
+    }
+
+
 });
 
 
