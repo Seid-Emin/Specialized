@@ -259,7 +259,7 @@ function createTrElementsInCart() {
             var cartProducts = document.createElement("tr");
             cartProducts.className = "cart-section-category generated";
             cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem uppercase">${getObject[i].partNum}-${getObject[i].size}</td>
-        <td class="cart-section-category-title partName addedItem"><a class="whyNot hoverRed" href="${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
+        <td class="cart-section-category-title partName addedItem"><a class="whyNot hoverRed" href="./shop_individual_bikes/${getObject[i].type}/${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
         <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
         <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
         <td class="cart-section-category-title partQty addedItem uppercase align-cent"> <input type="text" value="${getObject[i].qty}" class="bike-qty_option"></td>
