@@ -203,18 +203,30 @@ $(document).ready(function () {
         window.addEventListener('scroll', function () {
             if (window.scrollY >= 420 && window.scrollY < 2055) {
                 $('.category-shortCut-trail').addClass('bolder-scroll');
+                $('.hide-shortCut-trail').addClass('hide-shortCut');
+                $('.ul-trail').addClass('current-active');
             } else {
                 $('.category-shortCut-trail').removeClass('bolder-scroll');
+                $(".hide-shortCut-trail").removeClass('hide-shortCut');
+                $(".ul-trail").removeClass('current-active');
             }
             if (window.scrollY >= 2055 && window.scrollY < 3255) {
                 $('.category-shortCut-downhill').addClass('bolder-scroll');
+                $('.hide-shortCut-downhill').addClass('hide-shortCut');
+                $('.ul-downhill').addClass('current-active');
             } else {
                 $('.category-shortCut-downhill').removeClass('bolder-scroll');
+                $('.hide-shortCut-downhill').removeClass('hide-shortCut');
+                $('.ul-downhill').removeClass('current-active');
             }
             if (window.scrollY >= 3255 && window.scrollY < 5000) {
                 $('.category-shortCut-s-works').addClass('bolder-scroll');
+                $('.hide-shortCut-s-works').addClass('hide-shortCut');
+                $('.ul-s-works').addClass('current-active');
             } else {
                 $('.category-shortCut-s-works').removeClass('bolder-scroll');
+                $('.hide-shortCut-s-works').removeClass('hide-shortCut');
+                $('.ul-s-works').removeClass('current-active');
             }
         });
     };
