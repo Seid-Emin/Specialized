@@ -189,14 +189,16 @@ function updateIconCounter() {
         var objQty = getObjectChange[0].qty;
         cartItemsCounter += Number(objQty);
     }
-    var prodCountCartIcon = document.querySelector('.cartIconProdCount-a');
-    prodCountCartIcon.innerHTML = `<p class="cartIconProdCount">${cartItemsCounter}</p>`;
-    localStorage.setItem("addedItemsCounter", Number(cartItemsCounter));
-    if (cartItemsCounter > 0) {
-        $('.cartIconProdCount').addClass('active-links');
-    } else {
-        $('.cartIconProdCount').hide();
-    }
+    var prodCountCartIcon = document.querySelectorAll('.cartIconProdCount-a');
+    prodCountCartIcon.forEach(prodCountCartIcon => {
+        prodCountCartIcon.innerHTML = `<p class="cartIconProdCount">${cartItemsCounter}</p>`;
+        localStorage.setItem("addedItemsCounter", Number(cartItemsCounter));
+        if (cartItemsCounter > 0) {
+            $('.cartIconProdCount').addClass('active-links');
+        } else {
+            $('.cartIconProdCount').hide();
+        }
+    });
 }
 
 function updateTotal(t) {

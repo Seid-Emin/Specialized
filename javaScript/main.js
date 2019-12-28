@@ -6,11 +6,14 @@ $(document).ready(function () {
         if (window.location.href.indexOf(wrapPagesNameHtml) > -1) {
             window.addEventListener('scroll', function () {
                 var scrollShortCuts = $('.navigation-scroll-hidden');
-                var searchHidden = $('.nav-search-hidden');
+                var searchHidden = $('.mobileNav_search');
+                var mobileSearchHidden = $('.nav-search-hidden');
                 if (window.scrollY > 0 && window.scrollY <= 340) {
                     searchHidden.css('box-shadow', '0 5px 5px -5px #333');
+                    mobileSearchHidden.css('box-shadow', '0 5px 5px -5px #333');
                 } else {
                     searchHidden.css('box-shadow', 'none');
+                    mobileSearchHidden.css('box-shadow', 'none');
                 }
                 if (window.scrollY > 340) {
                     scrollShortCuts.css('bottom', '-30px');
@@ -20,11 +23,27 @@ $(document).ready(function () {
                     scrollShortCuts.css('bottom', '');
                     scrollShortCuts.css('box-shadow', 'none');
                 }
-
-
             });
         }
     }
+    for (var s = 0; s < arrWrapPages.length; s++) {
+        var wrap_pages = arrWrapPages[s];
+        var wrapPagesNameHtml = wrap_pages.concat('.html');
+        if (window.location.href.indexOf(wrapPagesNameHtml) > -1) {
+            window.addEventListener('scroll', function () {
+                var searchHidden = $('.mobileNav_search');
+                var mobileSearchHidden = $('.nav-search-hidden');
+                if (window.scrollY > 0) {
+                    searchHidden.css('box-shadow', '0 5px 5px -5px #333');
+                    mobileSearchHidden.css('box-shadow', '0 5px 5px -5px #333');
+                } else {
+                    searchHidden.css('box-shadow', 'none');
+                    mobileSearchHidden.css('box-shadow', 'none');
+                }
+            });
+        }
+    }
+
 
 
 

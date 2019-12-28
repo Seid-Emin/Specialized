@@ -655,7 +655,7 @@ label {
     justify-content: space-between;
     margin-right: 10px;
     white-space: nowrap;
-    cursor: ;
+    cursor: pointer;
 }
 
 /* SignIn and Register form start */
@@ -839,6 +839,7 @@ label {
     z-index: 5;
     -webkit-transition: bottom .3s ease-in;
     transition: bottom .3s ease-in;
+    transition: box-shadow 0.2s ease-in;
 }
 
 .mobileNav_search-active {
@@ -2273,7 +2274,7 @@ label {
 }
 
 .aboutUs-footer {
-    position: relative;
+    position: absolute;
 }
 
 .why-work-here {
@@ -2281,6 +2282,7 @@ label {
     display: flex;
     flex-direction: inherit;
     position: relative;
+    margin-bottom: 200px;
 }
 
 .job-header,
