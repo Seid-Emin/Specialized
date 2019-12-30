@@ -263,16 +263,11 @@
 
     .content-wrap {
         margin-top: 70px;
-        /* margin-bottom: 485px; */
+        margin-bottom: 485px;
     }
 
     .nav-drawer {
         display: block;
-    }
-
-    .content-wrap {
-        margin-top: 70px;
-        /* margin-bottom: 485px; */
     }
 
     .landing-heroe {
