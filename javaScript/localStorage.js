@@ -170,6 +170,8 @@ $('.bike-cart_add-to-cart').click(function () {
     var cartHolder = [];
     cartHolder.push(currentBike);
 
+    // cartHolder2[currentBike.name] = currentBike;
+
     localStorage.setItem('cartHolder' + productsCounter, JSON.stringify(cartHolder));
     productsCounter++;
     localStorage.setItem("productsCounter", productsCounter);
