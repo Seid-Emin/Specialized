@@ -336,6 +336,19 @@ tbody {
         left: 80px;
     }
 
+    .bikes-inner-title {
+        padding-left: 20px;
+    }
+
+    .bike-specs-left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bike-specs-downloadManual {
+        width: 100%;
+    }
+
 
 
     /* cart  */
