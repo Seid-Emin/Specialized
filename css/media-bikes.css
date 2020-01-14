@@ -290,6 +290,12 @@
     .bike-specs-left {
         margin-right: 0;
         margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bike-specs-downloadManual {
+        width: 100%;
     }
 }
 

@@ -1035,11 +1035,6 @@
     justify-content: left;
 }
 
-.bike-specs-left {
-    /* width: 300px; */
-    margin-right: 40px;
-}
-
 .bike-specs-downloadManual {
     width: 250px;
     padding: 20px 15px;
