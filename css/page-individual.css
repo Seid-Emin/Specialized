@@ -248,6 +248,75 @@ tbody {
 
 }
 
+@media screen and (max-width: 800px) {
+
+    /* scroll bar */
+    .navigation-scroll-hidden {
+        height: 35px;
+    }
+
+    .navigation-scroll-hidden-wrap {
+        align-self: center;
+        margin: 0 20px;
+    }
+
+    .scrollTo-overwiev-specs-wrap {
+        align-self: auto;
+        margin-left: 40px;
+    }
+
+    .navigation-scroll-hidden-wrap {
+        height: 35px;
+    }
+
+    .navigation-scroll-left-bike-title,
+    .overwiev,
+    .tech_specs,
+    .backToTop {
+        font-size: 10px;
+    }
+
+    .overwiev {
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .tech_specs {
+        padding-left: 20px;
+    }
+
+    .backToTop-wrap,
+    .backToTop {
+        height: 100%;
+    }
+
+
+    .backToTop-wrap,
+    .overwiev,
+    .tech_specs {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* .tech_specs {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    } */
+
+
+
+    .backToTop {
+        width: 120px;
+
+    }
+
+    .backToTop-wrap::after {
+        top: 35%;
+        left: 80px;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     /* index landing */
@@ -269,72 +338,7 @@ tbody {
         font-size: 12px;
     }
 
-    /* scroll bar */
-    .navigation-scroll-hidden {
-        height: 35px;
-    }
 
-    .navigation-scroll-hidden-wrap {
-        align-self: center;
-        margin: 0 20px;
-    }
-
-    .scrollTo-overwiev-specs-wrap {
-        align-self: auto;
-    }
-
-    .navigation-scroll-hidden-wrap {
-        height: 35px;
-    }
-
-    .navigation-scroll-left-bike-title {
-        display: none;
-    }
-
-    .navigation-scroll-left-bike-title,
-    .overwiev,
-    .tech_specs,
-    .backToTop {
-        font-size: 10px;
-    }
-
-    .overwiev {
-        padding-right: 20px;
-        padding-left: 10px;
-    }
-
-    .tech_specs {
-        padding-left: 20px;
-    }
-
-    .tech_specs {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        /* padding-right: 0; */
-    }
-
-    .backToTop-wrap,
-    .backToTop {
-        height: 100%;
-    }
-
-
-    .backToTop-wrap,
-    .overwiev {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-
-    .backToTop {
-        width: 120px;
-
-    }
-
-    .backToTop-wrap::after {
-        top: 35%;
-        left: 80px;
-    }
 
     .bikes-inner-title {
         padding-left: 20px;
@@ -345,8 +349,19 @@ tbody {
         padding-right: 15px;
     }
 
-    .bike-specs-downloadManual {
-        width: 100%;
+    /* hidden scroll */
+
+    .navigation-scroll-left-bike-title {
+        display: none;
+    }
+
+    .scrollTo-overwiev-specs-wrap {
+        margin-left: 0;
+    }
+
+    .tech_specs {
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 
 
