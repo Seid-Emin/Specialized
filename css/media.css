@@ -871,4 +871,15 @@
 }
 
 /* max height */
-@media screen and (max-height: 600px) {}
+@media screen and (max-height: 700px) {
+    .landing-heroe-content-wrap {
+        right: 0;
+        left: auto;
+        padding-right: 40px;
+        text-align: right;
+    }
+}
+
+
+/* max width */
+@media screen and (max-width: 600px) {}

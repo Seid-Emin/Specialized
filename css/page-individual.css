@@ -250,6 +250,18 @@ tbody {
 
 
 @media screen and (max-width: 600px) {
+    /* index landing */
+
+    .landing-heroe-button {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .landing-heroe-content-wrap {
+        padding-left: 20px;
+        padding-bottom: 40px;
+    }
 
     /* Hidden nav */
     .nav-drawer-inside_text,
