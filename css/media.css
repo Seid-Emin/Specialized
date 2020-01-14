@@ -485,8 +485,10 @@
 
     /* Search mobile */
     .mobileNav_search-button {
-        width: 15%;
+        width: 20%;
         font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
 
