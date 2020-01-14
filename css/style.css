@@ -37,8 +37,10 @@ ul {
     font-family: montserrat, sans-serif;
     font-style: normal;
     color: #191919;
+    overflow-x: hidden;
 }
 
+.site,
 .site-inner {
     width: 100%;
     position: relative;
@@ -1059,8 +1061,6 @@ label {
     padding: 10px;
 }
 
-
-
 .heroe-img1 {
     background: url(../about/inside_specialized/img/AboutSection2.67f1dec5.jpg);
 }
@@ -1069,12 +1069,12 @@ label {
     display: inline-block;
     color: #fff;
     padding-left: 60px;
-    padding-top: 3%;
+    padding-top: 8%;
     transition: padding-top .2s ease-in;
 }
 
 .landing-heroe-title {
-    font-size: 5vw;
+    font-size: 75px;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -1105,20 +1105,20 @@ label {
     background-color: #3d3d3d;
 }
 
-.landing-heroe-content-wrap {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-left: 90px;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
-
 .landing-heroe-content-hook {
     font-size: 12px;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
+}
+
+.landing-heroe-content-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    cursor: pointer;
 }
 
 .bolder {
@@ -2156,6 +2156,32 @@ label {
     padding-right: 3%;
 }
 
+.aboutUs-heroe-content-mobile {
+    display: none;
+    width: 100%;
+}
+
+.aboutUs-title-wrap-mobile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 40px;
+}
+
+.aboutUs-title-year-mobile {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.landing-heroe-title-aboutUs-mobile {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
 .youtube-wrap {
     position: absolute;
     width: 100%;
@@ -2220,10 +2246,6 @@ label {
     color: #fafafa;
 }
 
-.landing-heroe-content {
-    width: 30%;
-}
-
 .aboutUs-title-year {
     font-size: 30px;
     margin-bottom: 20px;
@@ -2243,19 +2265,21 @@ label {
 
 .landing-intro-aboutUs {
     background-color: #292929;
-    margin-top: 0;
-    margin-bottom: 0;
-    position: relative;
-    height: 200px;
+    width: 100%;
+    height: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: center;
+    line-height: 28px;
 }
 
+
 .landing-intro_title-aboutUs {
-    position: absolute;
-    top: 40%;
     color: #fafafa;
-    font-size: 26px;
-    font-family: DIN Next W01 Condensed Medium;
-    letter-spacing: 0;
 }
 
 .heroe-img2 {

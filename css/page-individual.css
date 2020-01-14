@@ -1,17 +1,8 @@
-/* .product-view {
-    width: 45%;
-    height: 40vw;
-    max-height: 700px;
-    margin: .7vw;
-}
-
- */
-
 /* CART for deleting */
-.bike-cart-table {
+/* .bike-cart-table {
     width: auto;
     padding: 0 20px;
-}
+} */
 
 tbody {
     display: table-row-group;
@@ -191,6 +182,224 @@ tbody {
 
 .deleteItem:focus {
     outline: 0;
+}
+
+.onlyOnMobile {
+    display: none;
+}
+
+/* cart info added items */
+@media screen and (max-width: 1000px) {
+    .partNum {
+        display: none;
+    }
+
+    .cart-info-bottom {
+        flex-flow: column;
+    }
+
+    .cart-info_section {
+        margin-bottom: 30px;
+    }
+
+    /* bikes-info */
+    /* bike images */
+    .individual-bikes {
+        height: 32vw;
+    }
+
+    .bike-cart_wrap {
+        flex-direction: column;
+    }
+
+    .bike-cart_info {
+        margin-bottom: 12px;
+    }
+
+    .bike-cart_in-stock {
+        margin-top: 10px;
+    }
+
+    .bike-name,
+    .bike-part,
+    .bike-price,
+    .info-bike-size-count,
+    .info-right-add {
+        text-align: center;
+    }
+
+    .bike-cart_add-to-cart {
+        align-self: center;
+    }
+
+    .addedToCartPopUp_wrap {
+        left: 40%;
+        top: 120px;
+    }
+
+    .ItemSuccessfulUpdate-p-wrap {
+        margin-left: 25px;
+    }
+
+    .ItemExists {
+        left: 70%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* Hidden nav */
+    .nav-drawer-inside_text,
+    .nav-drawer_shop-text {
+        font-size: 12px;
+    }
+
+    /* cart  */
+    .cart-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bike-cart-table-title {
+        text-align: center;
+    }
+
+    /* 
+    .bike-cart-table {
+        padding: 0;
+    } */
+
+    .partName {
+        width: 110px;
+    }
+
+
+    /* nav */
+    #body {}
+
+    .mobileNav {
+        padding-right: 0;
+
+    }
+
+
+
+    .option-buttons {
+        flex-flow: column;
+    }
+
+    .fullViewCartName {
+        display: none;
+    }
+
+    .partSize {
+        display: none;
+    }
+
+    .onlyOnMobile {
+        display: block;
+    }
+
+    /* buttons */
+    .checkOut,
+    .backToShopping {
+        max-width: 90vw;
+        width: 100%;
+        align-self: center;
+    }
+
+    /* popUp */
+    .addedToCartPopUp_wrap {
+        left: 28%;
+        top: 120px;
+    }
+
+    .ItemSuccessfulUpdate-p-wrap {
+        margin-left: 25px;
+    }
+
+    .ItemExists {
+        left: 70%;
+    }
+
+    .bike-cart-table,
+    .cart-section-wrap,
+    .cart-section-category {
+        width: 100%;
+    }
+
+    .cart-section-category {
+        font-size: 12px;
+    }
+
+    .addedItem {
+        font-size: 10px;
+    }
+
+    /* about page */
+    .aboutUs-heroe-img {
+        height: 70vh;
+    }
+
+    .donation-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .donation-btn-wrap {
+        justify-content: space-evenly;
+    }
+
+
+    .youTubeHunter,
+    .heroe-img2,
+    .heroe-img1,
+    .aboutUs-heroe-img {
+        background-size: contain;
+    }
+
+    .heroe-img2,
+    .heroe-img1,
+    .landing-img {
+        height: 66.5vw;
+    }
+
+    .youTubeHunter {
+        height: 56vw;
+    }
+
+
+    .aboutUs-heroe-content,
+    .why-work-here {
+        display: none;
+    }
+
+    .youtube-wrap {
+        display: block;
+    }
+
+    .aboutUs-heroe-content-mobile {
+        display: flex;
+    }
+
+    .landing-intro-aboutUs {
+        font-size: 16px;
+        height: 200px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .mobile-job-openings-btn {
+        align-self: center;
+    }
+
 }
 
 .cartIconProdCount {

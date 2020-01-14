@@ -24,11 +24,6 @@
         margin-bottom: 40px;
     }
 
-    .page-heroe_title {
-        font-size: 1.6rem;
-        margin-left: 20px;
-    }
-
     /* Page content */
     .page-content {
         padding-top: 20px;
@@ -41,17 +36,6 @@
     /* Bikes content Section */
     .bikes-content {
         padding: 0 40px;
-    }
-
-    .product-view-text,
-    .product-view-price {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .product-color {
-        width: 25px;
-        height: 25px;
     }
 }
 
@@ -84,11 +68,6 @@
         margin-bottom: 40px;
     }
 
-    .page-heroe_title {
-        font-size: 1.6rem;
-        padding: 0 40px;
-    }
-
     /* Page content */
     .page-content {
         padding-top: 20px;
@@ -97,17 +76,6 @@
     /* Bikes content Section */
     .bikes-content {
         padding: 0 40px;
-    }
-
-    .product-view-text,
-    .product-view-price {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .product-color {
-        width: 20px;
-        height: 20px;
     }
 }
 
@@ -142,11 +110,6 @@
         margin-bottom: 38px;
     }
 
-    .page-heroe_title {
-        font-size: 1.5rem;
-        padding: 0 38px;
-    }
-
     /* Page content */
     .page-content {
         padding-top: 18px;
@@ -155,22 +118,6 @@
     /* Bikes content Section */
     .bikes-content {
         padding: 0 38px;
-    }
-
-    /* .product-view {
-        width: 45%;
-        height: 30vw;
-    } */
-
-    .product-view-text,
-    .product-view-price {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-
-    .product-color {
-        width: 19px;
-        height: 19px;
     }
 }
 
@@ -200,11 +147,6 @@
         margin-bottom: 37px;
     }
 
-    .page-heroe_title {
-        font-size: 1.5rem;
-        padding: 0 37px;
-    }
-
     /* Page content */
     .page-content {
         padding-top: 17px;
@@ -218,17 +160,6 @@
     .product-view {
         width: 45%;
         height: 30vw;
-    }
-
-    .product-view-text,
-    .product-view-price {
-        font-size: 12px;
-        margin-bottom: 9px;
-    }
-
-    .product-color {
-        width: 18px;
-        height: 18px;
     }
 }
 
@@ -265,14 +196,13 @@
         margin-bottom: 35px;
     }
 
-    .page-heroe_title {
-        font-size: 1.5rem;
-        padding: 0 35px;
-    }
-
     /* Page content */
     .page-content {
         padding-top: 15px;
+    }
+
+    .bike-description-wrap {
+        width: 100%;
     }
 
     /* Short cuts and category goes from here */
@@ -280,6 +210,13 @@
     .bikes-menu {
         display: none;
     }
+
+
+
+
+
+
+
 
     /* Bikes content Section */
     .bikes-content {
@@ -289,17 +226,6 @@
     .product-view {
         width: 40%;
         height: 40vw;
-    }
-
-    .product-view-text,
-    .product-view-price {
-        font-size: 11.5px;
-        margin-bottom: 8px;
-    }
-
-    .product-color {
-        width: 17px;
-        height: 17px;
     }
 }
 
@@ -327,11 +253,7 @@
     /* Full Image */
     .page-heroe {
         margin-bottom: 32px;
-    }
-
-    .page-heroe_title {
-        font-size: 22px;
-        padding: 0 20%;
+        align-items: flex-end;
     }
 
     /* Page content */
@@ -344,20 +266,30 @@
         padding: 0 32px;
     }
 
+    .page-heroe_title {
+        padding-bottom: 50px;
+        padding-left: 30px;
+    }
+
     .product-view {
         width: 40%;
         height: 40vw;
     }
 
-    .product-view-text,
-    .product-view-price {
-        font-size: 11px;
-        margin-bottom: 7px;
+    /* bikes specs */
+
+    .bike-specs {
+        padding: 20px;
     }
 
-    .product-color {
-        width: 16px;
-        height: 16px;
+    .bike-specs-wrap {
+        flex-flow: column-reverse;
+        padding: 0;
+    }
+
+    .bike-specs-left {
+        margin-right: 0;
+        margin-top: 20px;
     }
 }
 
@@ -365,8 +297,9 @@
 
 
 
-/* max-width 700 */
-@media screen and (max-width: 700px) {
+
+/* max-width 600 */
+@media screen and (max-width: 600px) {
     .page_header {
         height: 30px;
     }
@@ -388,12 +321,13 @@
 
     /* Full Image */
     .page-heroe {
+        align-items: flex-end;
         margin-bottom: 30px;
     }
 
     .page-heroe_title {
-        font-size: 18px;
-        padding: 0 35%;
+        padding-bottom: 50px;
+        padding-left: 30px;
     }
 
     /* Page content */
@@ -413,16 +347,5 @@
     .product-view {
         width: 100%;
         height: 100vw;
-    }
-
-    .product-view-text,
-    .product-view-price {
-        font-size: 10px;
-        margin-bottom: 5px;
-    }
-
-    .product-color {
-        width: 15px;
-        height: 15px;
     }
 }

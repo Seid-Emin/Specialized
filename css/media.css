@@ -1,14 +1,25 @@
-/* max-width 1700 */
-@media screen and (max-width: 1800px) {
-
+/* max-width 1800 */
+@media screen and (max-width: 1920px) {
     .row-wrap {
         max-width: 1700px;
-        margin: 0 auto;
     }
 
     .footer-wrap {
         max-width: 1700px;
-        margin: 0 auto;
+    }
+
+}
+
+
+/* max-width 1800 */
+@media screen and (max-width: 1750px) {
+
+    .row-wrap {
+        max-width: 1700px;
+    }
+
+    .footer-wrap {
+        max-width: 1700px;
     }
 }
 
@@ -17,13 +28,11 @@
 @media screen and (max-width: 1550px) {
 
     .row-wrap {
-        max-width: 1460px;
-        margin: 0 45px;
+        max-width: 1500px;
     }
 
     .footer-wrap {
-        max-width: 1460px;
-        margin: 0 auto;
+        max-width: 1500px;
     }
 }
 
@@ -34,7 +43,6 @@
 
     .row-wrap {
         max-width: 1250px;
-        margin: 0 45px;
     }
 
     .footer-wrap {
@@ -74,16 +82,15 @@
     /* Landing  */
 
     .row-wrap {
-        max-width: 1100px;
-        margin: 0 40;
+        max-width: 1000px;
     }
 
     .nav-drawer {
         display: none;
     }
 
-    .landing-heroe-content {
-        padding-left: 40px;
+    .nav-list {
+        padding: 0 30px
     }
 
     .landing-heroe-text {
@@ -97,7 +104,7 @@
 
     /* Intro Section */
     .landing-intro_title {
-        font-size: 20px;
+        font-size: 5vw;
     }
 
     .landing-intro_text {
@@ -187,7 +194,7 @@
 
     /* footer */
     .footer-wrap {
-        max-width: 1100px;
+        max-width: 1000px;
         padding: 0 auto;
     }
 
@@ -263,7 +270,7 @@
 
     .content-wrap {
         margin-top: 70px;
-        margin-bottom: 485px;
+        margin-bottom: 415px;
     }
 
     .nav-drawer {
@@ -274,9 +281,13 @@
         height: calc(100vh - 70px);
     }
 
-    .landing-heroe-content {
-        padding-top: 60px;
-        padding-left: 30px;
+    /* footer */
+    .footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        display: flex;
     }
 
 
@@ -291,12 +302,12 @@
         height: 35px;
     }
 
-
-    /* Landing  */
-
     .landing-heroe-content {
+        padding-top: 60px;
         padding-left: 40px;
     }
+
+    /* Landing  */
 
     .landing-heroe-text {
         width: 100%;
@@ -305,6 +316,10 @@
 
     .landing-heroe-content-hook {
         font-size: 13px;
+    }
+
+    .landing-heroe-content-wrap {
+        padding-left: 50px;
     }
 
     /* Intro Section */
@@ -454,6 +469,9 @@
 
 /* max-width 800 */
 @media screen and (max-width: 800px) {
+    .content-wrap {
+        margin-bottom: 385px;
+    }
 
     /* SignIn-Register mobile */
     .signIn_register {
@@ -576,14 +594,6 @@
 
     /* footer */
 
-    .footer {
-        display: none;
-    }
-
-    .mobile-footer {
-        display: flex;
-    }
-
     .mobile-footer_form-input {
         height: 38px;
         font-size: 14px;
@@ -653,6 +663,9 @@
 
 /* max-width 700 */
 @media screen and (max-width: 700px) {
+    .content-wrap {
+        margin-bottom: 325px;
+    }
 
     /* SignIn-Register mobile */
     .signIn_register {
@@ -684,7 +697,7 @@
     }
 
     .landing-heroe-button {
-        width: 110px;
+        width: auto;
         height: 35px;
         font-size: 12px;
     }
@@ -839,4 +852,23 @@
     .footer_CopyRights-text {
         font-size: 8px;
     }
+
+    .landing-heroe-content {
+        padding-top: 70px;
+    }
+
+
+    .landing-heroe-text {
+        width: 100%;
+    }
+
+    .landing-heroe-content-wrap {
+        right: 0;
+        left: auto;
+        padding-right: 40px;
+        text-align: right;
+    }
 }
+
+/* max height */
+@media screen and (max-height: 600px) {}
