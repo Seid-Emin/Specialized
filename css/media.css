@@ -95,7 +95,7 @@
 
     .landing-heroe-text {
         width: 100%;
-        font-size: .7rem;
+        font-size: 12px;
     }
 
     .landing-heroe-content-hook {
@@ -281,6 +281,10 @@
         height: calc(100vh - 70px);
     }
 
+    .landing-heroe-title {
+        font-size: 50px;
+    }
+
     /* footer */
     .footer {
         display: none;
@@ -310,8 +314,7 @@
     /* Landing  */
 
     .landing-heroe-text {
-        width: 100%;
-        font-size: .7rem;
+        width: 90%;
     }
 
     .landing-heroe-content-hook {
@@ -488,9 +491,6 @@
 
 
     /* Landing  */
-    .landing-heroe-title {
-        font-size: 5vw;
-    }
 
     .landing-heroe-content {
         padding-top: 55px;
@@ -498,8 +498,7 @@
     }
 
     .landing-heroe-text {
-        width: 100%;
-        font-size: .7rem;
+        width: 80%;
     }
 
     .landing-heroe-button {
@@ -682,18 +681,10 @@
 
 
     /* Landing  */
-    .landing-heroe-title {
-        font-size: 4vw;
-    }
 
     .landing-heroe-content {
         padding-top: 40px;
         padding-left: 15px;
-    }
-
-    .landing-heroe-text {
-        width: 100%;
-        font-size: .6rem;
     }
 
     .landing-heroe-button {
@@ -855,11 +846,6 @@
 
     .landing-heroe-content {
         padding-top: 70px;
-    }
-
-
-    .landing-heroe-text {
-        width: 100%;
     }
 
     .landing-heroe-content-wrap {
