@@ -834,7 +834,7 @@ label {
 
 .mobileNav_search {
     width: 100%;
-    height: 30px;
+    height: 35px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -848,7 +848,7 @@ label {
 }
 
 .mobileNav_search-active {
-    bottom: -30px;
+    bottom: -35px;
 }
 
 .mobileNav_search-wrap {
