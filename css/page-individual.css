@@ -257,6 +257,33 @@ tbody {
         font-size: 12px;
     }
 
+    /* scroll bar */
+    .navigation-scroll-hidden {
+        height: 35px;
+    }
+
+    .navigation-scroll-hidden-wrap {
+        align-self: center;
+        margin: 0 20px;
+    }
+
+    .scrollTo-overwiev-specs-wrap {
+        align-self: auto;
+    }
+
+    .navigation-scroll-left-bike-title,
+    .overwiev,
+    .tech_specs,
+    .backToTop {
+        font-size: 10px;
+    }
+
+    .backToTop {
+        padding-top: 5px;
+    }
+
+
+
     /* cart  */
     .cart-header {
         flex-direction: column;

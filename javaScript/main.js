@@ -16,7 +16,7 @@ $(document).ready(function () {
                     mobileSearchHidden.css('box-shadow', 'none');
                 }
                 if (window.scrollY > 340) {
-                    scrollShortCuts.css('bottom', '-30px');
+                    scrollShortCuts.css('bottom', '-35px');
                     scrollShortCuts.css('box-shadow', '0 5px 5px -5px #333');
 
                 } else {
