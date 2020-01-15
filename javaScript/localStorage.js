@@ -1,5 +1,3 @@
-const forKey = "cartHolder";
-
 function onLoad() {
     function insertAfter(el, referenceNode) {
         referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
@@ -225,18 +223,18 @@ function updateTotalAfterAdding() {
     localStorage.setItem("finalTotal", total);
 }
 
-function updateProductsCounter() {
-    for (var i = 0; i < productsCounter; i++) {
-        var key = "";
-        key = "cartHolder" + i;
-        productsCounter = 0;
-        var getObjectChange = JSON.parse(localStorage.getItem(key));
-        if (!getObjectChange) {
-            productsCounter++;
-        }
-    }
-    localStorage.setItem("productsCounter", productsCounter);
-}
+// function updateProductsCounter() {
+//     for (var i = 0; i < productsCounter; i++) {
+//         var key = "";
+//         key = "cartHolder" + i;
+//         productsCounter = 0;
+//         var getObjectChange = JSON.parse(localStorage.getItem(key));
+//         if (!getObjectChange) {
+//             productsCounter++;
+//         }
+//     }
+//     localStorage.setItem("productsCounter", productsCounter);
+// }
 
 function createCartEmptyCartDiv() {
 
@@ -359,8 +357,8 @@ function showCart() {
         var currentSize = $(this).parent().parent().find('.partSize').text();
 
         for (var i = 0; i < productsCounter; i++) {
-            // var key = "cartHolder";
-            var key = forKey + i;
+            var key = "";
+            key = "cartHolder" + i;
             var getObjectChange = JSON.parse(localStorage.getItem(key));
             var objName = getObjectChange[0].name;
             var objSize = getObjectChange[0].size;
