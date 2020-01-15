@@ -372,15 +372,6 @@ tbody {
         align-items: flex-start;
     }
 
-    .bike-cart-table-title {
-        text-align: center;
-    }
-
-    /* 
-    .bike-cart-table {
-        padding: 0;
-    } */
-
     .partName {
         width: 110px;
     }
