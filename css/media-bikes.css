@@ -327,6 +327,7 @@
 
     /* Full Image */
     .page-heroe {
+        height: 100vw;
         align-items: flex-end;
         margin-bottom: 30px;
     }
