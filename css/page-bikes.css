@@ -120,7 +120,8 @@
 .bikes-menu {
     justify-content: left;
     position: sticky;
-    top: 90px
+    top: 90px;
+    margin-left: 110px;
 }
 
 .bikes-menu_wrap,
