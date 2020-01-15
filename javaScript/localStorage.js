@@ -1,3 +1,5 @@
+const forKey = "cartHolder";
+
 function onLoad() {
     function insertAfter(el, referenceNode) {
         referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
@@ -357,8 +359,8 @@ function showCart() {
         var currentSize = $(this).parent().parent().find('.partSize').text();
 
         for (var i = 0; i < productsCounter; i++) {
-            var key = String;
-            key = "cartHolder" + i;
+            // var key = "cartHolder";
+            var key = forKey + i;
             var getObjectChange = JSON.parse(localStorage.getItem(key));
             var objName = getObjectChange[0].name;
             var objSize = getObjectChange[0].size;
@@ -379,6 +381,5 @@ function showCart() {
         }
         updateIconCounter();
         updateTotalAfterAdding();
-        updateProductsCounter();
     });
 }
