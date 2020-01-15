@@ -276,6 +276,63 @@ function createTrElementsInCart() {
     }
 }
 
+function delItem(DelBtnNum) {
+    for (var j = Number(DelBtnNum) + 1; j <= productsCounter; j++) {
+        var nextKey = "";
+        nextKey = "cartHolder" + j;
+        var previous = "";
+        previous = "cartHolder" + `${j - 1}`;
+        // localStorage.removeItem(firstObj);
+        var secondObj = JSON.parse(localStorage.getItem(nextKey));
+        if (secondObj != null) {
+            localStorage.setItem(previous, JSON.stringify(secondObj));
+            var IdCounter = j - 1;
+
+            var previousId = $('#cartHolder' + IdCounter).attr('id');
+            // prop({property:value, property:value, ...})
+            var nextKeyId = $('#cartHolder' + j).prop({
+                id: previousId,
+                class: "deleteItem " + previousId
+            });
+
+            nextKeyId = previousId;
+            console.log(nextKeyId);
+            console.log(previousId);
+
+            if (j == productsCounter - 1) {
+                var lastKey = "";
+                lastKey = "cartHolder" + j;
+                localStorage.removeItem(lastKey);
+            }
+        }
+    }
+}
+
+function checkReloadIfNeeded() {
+    productsCounter -= 1;
+    localStorage.setItem("productsCounter", productsCounter);
+    updateIconCounter();
+    updateTotalAfterAdding();
+    for (var g = 0; g < productsCounter; g++) {
+        var asd = "";
+        asd = "cartHolder" + g;
+        var dsa = JSON.parse(localStorage.getItem(asd));
+        if (dsa == null) {
+            localStorage.removeItem(dsa);
+        }
+    }
+    var checkItems = localStorage.addedItemsCounter;
+    // var pickCartHolder1 = $('#cartHolder1').attr('id');
+    // && pickCartHolder1 == undefined
+    if (checkItems == 0) {
+        localStorage.clear();
+        createCartEmptyCartDiv();
+        $('.cart-content-wrap-empty').show();
+    } else if (checkItems == 2) {
+        location.reload();
+    }
+}
+
 function showCart() {
     if (JSON.parse(localStorage.getItem('cartHolder0')) == null) {
         createCartEmptyCartDiv();
@@ -285,69 +342,10 @@ function showCart() {
     // Delete Item From Cart
     $('.partDelBtn').click(function () {
 
-        // var classNameDelBtn = $(this).find('.deleteItem').attr('id');
         var DelBtnNum = $(this).find('.deleteItem').attr('id').replace("cartHolder", "");
-
-
-
-        // var firstObj = JSON.parse(localStorage.getItem(classNameDelBtn));
-
-        for (var j = Number(DelBtnNum) + 1; j <= productsCounter; j++) {
-            var nextKey = "";
-            nextKey = "cartHolder" + j;
-            var previous = "";
-            previous = "cartHolder" + `${j - 1}`;
-            // localStorage.removeItem(firstObj);
-            var secondObj = JSON.parse(localStorage.getItem(nextKey));
-            if (secondObj != null) {
-                localStorage.setItem(previous, JSON.stringify(secondObj));
-                var IdCounter = j - 1;
-
-                var previousId = $('#cartHolder' + IdCounter).attr('id');
-                // prop({property:value, property:value, ...})
-                var nextKeyId = $('#cartHolder' + j).prop({
-                    id: previousId,
-                    class: "deleteItem " + previousId
-                });
-
-                nextKeyId = previousId;
-                console.log(nextKeyId);
-                console.log(previousId);
-
-                if (j == productsCounter - 1) {
-                    var lastKey = "";
-                    lastKey = "cartHolder" + j;
-                    localStorage.removeItem(lastKey);
-                }
-            }
-        }
-
-        // var name = $(this).parent().find('.whyNot').attr("href").replace('.html', '');
+        delItem(DelBtnNum);
         $(this).parent().remove();
-
-        productsCounter -= 1;
-        localStorage.setItem("productsCounter", productsCounter);
-        updateIconCounter();
-        updateTotalAfterAdding();
-        for (var g = 0; g < productsCounter; g++) {
-            var asd = "";
-            asd = "cartHolder" + g;
-            var dsa = JSON.parse(localStorage.getItem(asd));
-            if (dsa == null) {
-                localStorage.removeItem(dsa);
-            }
-        }
-        var checkItems = localStorage.addedItemsCounter;
-        // var pickCartHolder1 = $('#cartHolder1').attr('id');
-        // && pickCartHolder1 == undefined
-        if (checkItems == 0) {
-            localStorage.clear();
-            createCartEmptyCartDiv();
-            $('.cart-content-wrap-empty').show();
-        } else if (checkItems == 2) {
-            location.reload();
-        }
-
+        checkReloadIfNeeded();
     });
 
     // Change Product Qtity in CART
@@ -355,6 +353,12 @@ function showCart() {
         var currentNameFull = $(this).parent().parent().find('.fullViewCartName-list').text().replace(".", "_");
         var currentQty = $(this).val();
         var currentSize = $(this).parent().parent().find('.partSize').text();
+        var DelBtnNum = $(this).parent().parent().find('.deleteItem').attr('id').replace("cartHolder", "");
+        if (currentQty <= 0) {
+            delItem(DelBtnNum);
+            $(this).parent().parent().remove();
+            checkReloadIfNeeded();
+        }
 
         for (var i = 0; i < productsCounter; i++) {
             var key = "";
