@@ -205,7 +205,7 @@ function updateIconCounter() {
 
 function updateTotal(t) {
     var totalCart = document.querySelector('.partTotalPrice');
-    totalCart.innerHTML = `<p>$${(t/1000).toFixed(3)}.000</p>`;
+    totalCart.innerHTML = `<p>${(t/1000).toFixed(3)}.000</p>`;
     localStorage.setItem("finalTotal", t);
 }
 
@@ -219,7 +219,7 @@ function updateTotalAfterAdding() {
         total += Number(objPrice);
     }
     var totalCart = document.querySelector('.partTotalPrice');
-    totalCart.innerHTML = `<p>$${(total/1000).toFixed(3)}.000</p>`;
+    totalCart.innerHTML = `<p>${(total/1000).toFixed(3)}.000</p>`;
     localStorage.setItem("finalTotal", total);
 }
 
@@ -263,12 +263,12 @@ function createTrElementsInCart() {
             var cartProducts = document.createElement("tr");
             cartProducts.className = "cart-section-category generated";
             cartProducts.innerHTML = `<td class="cart-section-category-title partNum addedItem uppercase">${getObject[i].partNum}-${getObject[i].size}</td>
-        <td class="cart-section-category-title partName fullViewCartName addedItem"><a class="whyNot hoverRed" href="./shop_individual_bikes/${getObject[i].type}/${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
-        <td class="cart-section-category-title partName onlyOnMobile addedItem"><a class="whyNot hoverRed " href="./shop_individual_bikes/${getObject[i].type}/${getObject[i].html}">${getObject[i].name.replace('_','.')}-${getObject[i].size}</a></td>
+        <td class="cart-section-category-title partName fullViewCartName addedItem"><a class="fullViewCartName-list hoverRed" href="./shop_individual_bikes/${getObject[i].type}/${getObject[i].html}">${getObject[i].name.replace('_','.')}</a></td>
+        <td class="cart-section-category-title partName onlyOnMobile addedItem"><a class="onlyOnMobile-list hoverRed " href="./shop_individual_bikes/${getObject[i].type}/${getObject[i].html}">${getObject[i].name.replace('_','.')}-${getObject[i].size}</a></td>
         <td class="cart-section-category-title partSize addedItem uppercase align-cent">${getObject[i].size}</td>
         <td class="cart-section-category-title partColor addedItem align-cent"><img src="${getObject[i].color}" class="addedColor"></td>
         <td class="cart-section-category-title partQty addedItem uppercase align-cent"> <input type="text" value="${getObject[i].qty}" class="bike-qty_option"></td>
-        <td class="cart-section-category-title partPrice addedItem">$${((getObject[i].total)/1000).toFixed(3)}.000</td>
+        <td class="cart-section-category-title partPrice addedItem">${((getObject[i].total)/1000).toFixed(3)}.000</td>
         <td class="cart-section-category-title-btn partDelBtn addedItem"><input
                 type="button" class="deleteItem cartHolder${j}" id="cartHolder${j}""></input></td>`;
             cart.insertBefore(cartProducts, totalContainer);
@@ -352,11 +352,12 @@ function showCart() {
 
     // Change Product Qtity in CART
     $('.bike-qty_option').change(function () {
-        var currentName = $(this).parent().parent().find('.whyNot').text();
+        var currentNameFull = $(this).parent().parent().find('.fullViewCartName-list').text().replace(".", "_");
         var currentQty = $(this).val();
         var currentSize = $(this).parent().parent().find('.partSize').text();
+
         for (var i = 0; i < productsCounter; i++) {
-            var key = "";
+            var key = String;
             key = "cartHolder" + i;
             var getObjectChange = JSON.parse(localStorage.getItem(key));
             var objName = getObjectChange[0].name;
@@ -365,15 +366,15 @@ function showCart() {
             var objPrice = getObjectChange[0].price;
 
             // Check for repeating item
-            var compare1 = currentName.localeCompare(objName);
+            var compare1 = currentNameFull.localeCompare(objName);
             var compare2 = currentSize.localeCompare(objSize);
             if (compare1 === 0 && compare2 === 0) {
                 getObjectChange[0].qty = currentQty;
                 currentQty = getObjectChange[0].qty;
-                objTotal = Number(currentQty) * Number(objPrice);
+                objTotal = currentQty * objPrice;
                 getObjectChange[0].total = objTotal;
                 localStorage.setItem(key, JSON.stringify(getObjectChange));
-                $(this).parent().parent().find('.partPrice').text(`$${(objTotal/1000).toFixed(3)}.000`);
+                $(this).parent().parent().find('.partPrice').text(`${(objTotal/1000).toFixed(3)}.000`);
             }
         }
         updateIconCounter();
