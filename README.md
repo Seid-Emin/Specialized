@@ -44,7 +44,7 @@ Content:
 6. Dropdown menu in nav.
    Shadow efect in it and scroll to shorcuts in individual bikes.
 
-7. Fully responsive pages with "hambirger" menu.
+7. Fully responsive pages.
 
 8. Fully Operational shopping cart. All operation stored and readed from LocalStorage.
  8.1 Add to cart.
