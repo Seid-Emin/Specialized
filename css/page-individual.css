@@ -319,7 +319,11 @@ tbody {
 
 
 @media screen and (max-width: 600px) {
+
     /* index landing */
+    .individual-bikes {
+        height: 40vw;
+    }
 
     .landing-heroe-button {
         width: 130px;

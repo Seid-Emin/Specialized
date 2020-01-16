@@ -1,7 +1,7 @@
 function onLoad() {
-    function insertAfter(el, referenceNode) {
-        referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
-    }
+    // function insertAfter(el, referenceNode) {
+    //     referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+    // }
 
     if (localStorage.getItem("addedItemsCounter") === null) {
         localStorage.setItem("addedItemsCounter", 0);
@@ -59,10 +59,23 @@ for (var i = 0; i < bikesPagesOnly.length; i++) {
     var currentPageName = bikesPagesOnly[i];
     var fullPageName = currentPageName.concat('.html');
 
+
+
     if (window.location.href.indexOf(fullPageName) > -1) {
+        if (localStorage.getItem(currentPageName) === null) {
+            localStorage.setItem(currentPageName, JSON.stringify(arrBikesInfo[i]));
+        }
         var pageName = fullPageName;
         var page = currentPageName;
         var currentItem = JSON.parse(localStorage.getItem(currentPageName));
+        // var thumbsUpRatingCount = $('.thumbsUp-rating-count');
+        // var thumbsDownRatingCount = $('.thumbsDown-rating-count');
+        if (currentItem.thumbsUp == null) {
+            currentItem.thumbsUp = 0;
+        }
+        if (currentItem.thumbsDown == null) {
+            currentItem.thumbsDown = 0;
+        }
         $('.thumbsUp-rating-count').text(currentItem.thumbsUp);
         $('.thumbsDown-rating-count').text(currentItem.thumbsDown);
         if (currentItem.thumbsUp > 0) {
@@ -71,11 +84,6 @@ for (var i = 0; i < bikesPagesOnly.length; i++) {
         if (currentItem.thumbsDown > 0) {
             $(".thumbsDown-rating-count").addClass("thumbsDown-active");
         }
-
-        // var upClicked = 15;
-        // currentItem.thumbsUp = upClicked;
-        // console.log(currentItem);
-        // $('.thumbsUp-rating-count').text(currentItem.thumbsUp);
     }
 }
 
