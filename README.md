@@ -1,4 +1,9 @@
 # Specialized
+
+Check out the Final Product @ http://seid-saydahmed.site/projects/Specialized/index.html
+
+This is a remake of an existing website https://www.specialized.com
+
 Specialized. Made for riders, by riders.
 
 Static site for bikes.
