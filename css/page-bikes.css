@@ -1,12 +1,12 @@
 * {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    --font-prm-: 'Montserrat', sans-serif;
-    --color-prm-: #f1f1f1;
-    --hover-clr-red-: #ed1c24;
+    text-decoration     : none;
+    margin              : 0;
+    padding             : 0;
+    box-sizing          : border-box;
+    font-family         : 'Montserrat', sans-serif;
+    --font-prm-         : 'Montserrat', sans-serif;
+    --color-prm-        : #f1f1f1;
+    --hover-clr-red-    : #ed1c24;
     --hover-clr-red-btn-: #a72d2d;
     --hover-bg-clr-grey-: #3d3d3d;
 }
@@ -15,60 +15,56 @@
     outline: none;
 }
 
-
-
 .page {
-    width: 100%;
-    height: 100%;
-    display: flex;
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
     justify-content: center;
-    position: relative;
+    position       : relative;
 }
 
 .page_header {
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    display: flex;
-    top: 0;
-    align-items: center;
+    width          : 100%;
+    height         : 40px;
+    position       : absolute;
+    display        : flex;
+    top            : 0;
+    align-items    : center;
     justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
+    left           : 50%;
+    transform      : translateX(-50%);
 }
 
 .page_header-inner {
-    width: 100%;
-    height: 100%;
-    max-width: 1920;
-    margin: 0 auto;
-    display: flex;
+    width          : 100%;
+    height         : 100%;
+    max-width      : 1920;
+    margin         : 0 auto;
+    display        : flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items    : center;
 }
 
 .page_header-inner-title {
     font-size: 8px;
-    padding: 0 45px;
+    padding  : 0 45px;
 }
 
 .page_innet-title_links {
-    font-style: italic;
+    font-style    : italic;
     text-transform: uppercase;
-    display: inline-block;
+    display       : inline-block;
 }
-
 
 /* Page path  */
 
 .page_wrap {
-    width: 100%;
+    width     : 100%;
     margin-top: 40px;
 }
 
-
-
 /* Full Image */
+
 .heroe-img-bikes {
     background: url(../shop/bikes/bikes_img/18_banner_bikes.jpg);
 }
@@ -86,56 +82,55 @@
 }
 
 .page-heroe {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width              : 100%;
+    height             : 70vh;
+    display            : flex;
+    justify-content    : flex-start;
+    align-items        : center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
     background-position: 50%;
-    margin-bottom: 40px;
+    margin-bottom      : 40px;
 }
 
 .page-heroe_title {
     text-transform: uppercase;
-    color: #fff;
-    font-size: 2.5rem;
-    padding: 0 45px;
-    font-weight: 600;
+    color         : #fff;
+    font-size     : 2.5rem;
+    padding       : 0 45px;
+    font-weight   : 600;
 }
 
 /* Page content */
-.page-content {
-    width: 100%;
-    display: flex;
-    padding-top: 20px;
-    justify-content: space-between;
-    position: relative;
-}
 
+.page-content {
+    width          : 100%;
+    display        : flex;
+    padding-top    : 20px;
+    justify-content: space-between;
+    position       : relative;
+}
 
 /* Short cuts and category goes from here */
 
 .bikes-menu {
     justify-content: left;
-    position: sticky;
-    top: 90px;
-    margin-left: 110px;
+    position       : sticky;
+    top            : 90px;
+    margin-left    : 110px;
 }
 
 .bikes-menu_wrap,
 .bikes-menu {
-    width: 250px;
-    height: 500px;
+    width     : 250px;
     margin-top: 5px;
 }
 
 .menu-title {
     text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 20px;
-    font-size: 16px;
+    font-weight   : 700;
+    margin-bottom : 20px;
+    font-size     : 16px;
 }
 
 .category {
@@ -146,35 +141,33 @@
     height: 100%;
 }
 
-
-
 /* Category goes from here on */
 
 .category-wrap {
-    display: flex;
+    display        : flex;
     justify-content: left;
-    padding-top: 10px;
+    padding-top    : 10px;
 }
 
 .category-title-wrap {
-    display: flex;
-    cursor: pointer;
-    width: 100%;
+    display      : flex;
+    cursor       : pointer;
+    width        : 100%;
     margin-bottom: 10px;
 }
 
 .category_activator-wrap {
-    display: flex;
-    cursor: pointer;
-    width: 30px;
+    display : flex;
+    cursor  : pointer;
+    width   : 30px;
     position: relative;
 }
 
 .category_activator-show-shortCut,
 .category_activator-hide-shortCut {
     background-color: #4c4c4c;
-    width: 8px;
-    height: 2px;
+    width           : 8px;
+    height          : 2px;
 }
 
 .category_activator-show-shortCut {
@@ -188,16 +181,16 @@
     transform: rotate(90deg);
 }
 
-
 /* set class .active to element with class on event   */
+
 .active .category_activator-hide-shortCut {
     display: none;
 }
 
 .category_holder-bikes {
-    font-size: 14px;
+    font-size  : 14px;
     font-weight: 500;
-    width: 100%;
+    width      : 100%;
 }
 
 .category-shortCut-trail:hover,
@@ -219,9 +212,9 @@
 }
 
 .shortCut-bikes {
-    font-size: 12px;
-    font-weight: 500;
-    margin-left: 15px;
+    font-size    : 12px;
+    font-weight  : 500;
+    margin-left  : 15px;
     margin-bottom: 10px;
 }
 
@@ -230,281 +223,269 @@
 }
 
 .category-text {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 18px;
+    font-size    : 12px;
+    font-weight  : 300;
+    line-height  : 18px;
     padding-right: 20px;
 }
 
-
 /* Bikes content Section */
+
 .bikes-content {
-    width: inherit;
+    width   : inherit;
     /* width: calc(98%-250px); */
-    padding: 0 20px 20px;
+    padding : 0 20px 20px;
 }
 
 .bike-content-wrap {
-    width: 100%;
+    width : 100%;
     height: 100%;
 }
 
 .section-trail,
 .section-downhill,
 .section-s-works {
-    position: relative;
+    position     : relative;
     margin-bottom: 20px;
 }
 
 .section-text {
     text-transform: uppercase;
-    font-weight: 800;
-    font-size: 18px;
-    padding-top: 5px;
+    font-weight   : 800;
+    font-size     : 18px;
+    padding-top   : 5px;
 }
 
 .section-content-wrap {
-    width: 100%;
-    display: flex;
+    width    : 100%;
+    display  : flex;
     flex-wrap: wrap;
 }
 
 .product-view {
-    width: 30.5%;
-    height: 30vw;
+    width     : 30.5%;
+    height    : 30vw;
     max-height: 700px;
-    margin: .7vw;
+    margin    : .7vw;
 }
 
-
 /* Trail bikes Images */
+
 .StumpJumperPro29-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/trail/StumpJumperPro29-PrevCard_bikes_page[1].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/trail/StumpJumperPro29-PrevCard_bikes_page[1].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .StumpJumperExpert29-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/trail/StumpJumperExpert29-PrevCard[2].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/trail/StumpJumperExpert29-PrevCard[2].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .StumpJumperExpert27_5-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/trail/StumpJumperExpert27_5-PrevCard[3].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/trail/StumpJumperExpert27_5-PrevCard[3].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .FuseExpert29-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/trail/FuseExpert29-PrevCard[4].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/trail/FuseExpert29-PrevCard[4].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .FuseExpert27_5-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/trail/FuseExpert27_5-PrevCard[5].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/trail/FuseExpert27_5-PrevCard[5].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
-
 /* Downhill bikes Images */
+
 .DemoExpert29-img {
-    width: 100%;
-    height: 50%;
-    background-image: url(../shop/bikes/bikes_img/downhill/DEMO-EXPERT-29[1].png);
+    width              : 100%;
+    height             : 50%;
+    background-image   : url(../shop/bikes/bikes_img/downhill/DEMO-EXPERT-29[1].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .DemoRace29-img {
-    width: 100%;
-    height: 50%;
-    background-image: url(../shop/bikes/bikes_img/downhill/DEMO-RACE-29[2].png);
+    width              : 100%;
+    height             : 50%;
+    background-image   : url(../shop/bikes/bikes_img/downhill/DEMO-RACE-29[2].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .DemoAlloy27_5-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/downhill/DemoAlloy27_5[3].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/downhill/DemoAlloy27_5[3].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
-
 /* S-works bikes Images */
+
 .S-WorksDemo8-img {
-    width: 90%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/s-works/SWorksDemo8[1].png);
+    width              : 90%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/s-works/SWorksDemo8[1].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .S-WorksDemoEpicEVO-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/s-works/SWorksDemoEpicEVO[2].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/s-works/SWorksDemoEpicEVO[2].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .S-WorksStumpJumper29-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/s-works/SWorksStumpJumper29[3].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/s-works/SWorksStumpJumper29[3].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .S-WorksStumpJumper27_5-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/s-works/SWorksStumpJumper27_5[4].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/s-works/SWorksStumpJumper27_5[4].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
 .S-WorksDemo8Frame-img {
-    width: 100%;
-    height: 60%;
-    background-image: url(../shop/bikes/bikes_img/s-works/SWorksDemo8Frame[5].png);
+    width              : 100%;
+    height             : 60%;
+    background-image   : url(../shop/bikes/bikes_img/s-works/SWorksDemo8Frame[5].png);
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    cursor             : pointer;
 }
 
-
-
 /* Product view Info */
+
 .product-view_info-wrap {
-    width: 100%;
-    height: 30%;
-    display: flex;
+    width         : 100%;
+    height        : 30%;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
-    padding: 2%;
+    align-items   : center;
+    padding       : 2%;
 }
 
 .product-view-text {
-    font-size: 14px;
-    font-weight: 600;
+    font-size    : 14px;
+    font-weight  : 600;
     margin-bottom: 10px;
 }
 
 .product-view-price {
-    font-size: 14px;
+    font-size       : 14px;
     /* margin-bottom: 10px; */
 }
 
 .product-color {
     margin-bottom: 10px;
-    width: 20px;
-    height: 20px;
+    width        : 20px;
+    height       : 20px;
 }
-
-
 
 .bolder-scroll {
     font-weight: 800;
 }
 
-
-
-
 /* individual page starts from here */
 
 /* header */
+
 .individual-page-bikes,
 .individual-bikes-header {
-    width: 100%;
-    display: flex;
+    width          : 100%;
+    display        : flex;
     justify-content: center;
-    position: relative;
+    position       : relative;
 }
 
 .individual-bikes-header {
-    height: 40px;
+    height     : 40px;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position   : absolute;
+    top        : 0;
+    left       : 50%;
+    transform  : translateX(-50%);
 }
 
 .individual-bikes-header-inner {
-    width: 100%;
-    height: 100%;
-    max-width: 1920;
-    margin: 0 auto;
-    display: flex;
+    width          : 100%;
+    height         : 100%;
+    max-width      : 1920;
+    margin         : 0 auto;
+    display        : flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items    : center;
 }
 
 .bikes-inner-title {
-    font-size: 8px;
-    padding: 0 45px;
-    font-style: italic;
+    font-size     : 8px;
+    padding       : 0 45px;
+    font-style    : italic;
     text-transform: uppercase;
-    display: inline-block;
+    display       : inline-block;
 }
-
-
-
-
 
 /* StumpJumperPro29 */
 
 .individual-bikes-wrap {
     margin-top: 38px;
-    width: 100%;
+    width     : 100%;
 }
 
 .StumpJumperPro29 {
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperPro29-Hero_[1].jpg);
 }
-
-
-
 
 .StumpJumperExpert29_1 {
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29-Hero_[2].jpg);
@@ -522,8 +503,8 @@
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert29_[2]/StumpJumperExpert29-4.5be06b9a.jpg);
 }
 
-
 /* StumpJumperExpert27_5 */
+
 .StumpJumperExpert27_5_1 {
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5-Hero_[3].jpg);
 }
@@ -541,7 +522,7 @@
 }
 
 .StumpJumperExpert27_5_5 {
-    background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_5.jpg);
+    background     : url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_5.jpg);
     background-size: cover;
 }
 
@@ -549,21 +530,22 @@
     background: url(../shop/shop_individual_bikes/trail/img/StumpJumperExpert27_5_[3]/StumpJumperExpert27_5_6.jpg);
 }
 
-
 /* FuseExpert29 */
+
 .FuseExpert29 {
     background: url(../shop/shop_individual_bikes/trail/img/FuseExpert29-PrevCard[4].png);
 }
 
 /* FuseExpert27_5 */
+
 .FuseExpert27_5 {
     background: url(../shop/shop_individual_bikes/trail/img/FuseExpert27_5-PrevCard[5].png);
 }
 
-
 /* DOWNHILL */
 
 /* DemoExpert29 */
+
 .DemoExpert29_1 {
     background: url(../shop/shop_individual_bikes/downhill/img/demoExp29\ [1].jpg);
 }
@@ -585,6 +567,7 @@
 }
 
 /* DemoRace29 */
+
 .DemoRace29_1 {
     background: url(../shop/shop_individual_bikes/downhill/img/DEMORACE29\ [2].jpg);
 }
@@ -622,14 +605,15 @@
 }
 
 /* DemoAlloy27_5 */
+
 .DemoAlloy27_5 {
     background: url(../shop/shop_individual_bikes/downhill/img/DemoAlloy27_5[3].jpg);
 }
 
-
 /* S-Works Corousel */
 
 /* SWorksDemo8 */
+
 .SWorksDemo8_1 {
     background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemo8[1].png);
 }
@@ -651,6 +635,7 @@
 }
 
 /* SWorksDemo8 */
+
 .SWorksDemoEpicEVO_1 {
     background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemoEpic\ EVO[2].png);
 }
@@ -676,6 +661,7 @@
 }
 
 /* SWorksStumpJumper29 */
+
 .SWorksStumpJumper29 {
     background: url(../shop/shop_individual_bikes/s-works/img/SWorksStumpJumper29[3].jpg);
 }
@@ -688,22 +674,17 @@
     background: url(../shop/shop_individual_bikes/s-works/img/SWorksDemo8Frame.png);
 }
 
-
-
-
-
-
 .carousel:focus {
     outline: none;
 }
 
 .individual-bikes {
-    width: 100%;
-    height: 60vh;
+    width              : 100%;
+    height             : 60vh;
     background-position: 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    scale: 0.9;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    scale              : 0.9;
 }
 
 .DemoExpert29_3,
@@ -726,31 +707,29 @@
 }
 
 .bike-cart {
-    width: 100%;
+    width   : 100%;
     position: relative;
 }
 
 .bike-cart_wrap {
-    width: 100%;
-    padding: 30px 20px;
-    display: flex;
+    width          : 100%;
+    padding        : 30px 20px;
+    display        : flex;
     justify-content: space-between;
 }
 
 .bike-name {
-    font-size: 24px;
-    font-weight: 600;
+    font-size    : 24px;
+    font-weight  : 600;
     margin-bottom: 30px
 }
 
-
 .bike-part {
     font-size: 12px;
-
 }
 
 .bike-price {
-    font-size: 18px;
+    font-size  : 18px;
     padding-top: 12px;
     font-weight: 600;
 }
@@ -761,19 +740,19 @@
 }
 
 .info-mid {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
+    align-items   : center;
 }
 
 .rating-wrap {
-    display: block;
+    display    : block;
     align-items: center;
 }
 
 .rating-icon_thumbsUp {
     background: url(../img/icos/svg/thumbs-up.svg);
-    transform: rotateY(180deg);
+    transform : rotateY(180deg);
 }
 
 .rating-icon_thumbsDown {
@@ -782,14 +761,14 @@
 
 .rating-icon_thumbsUp,
 .rating-icon_thumbsDown {
-    display: inline-block;
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    align-self: flex-start;
+    display    : inline-block;
+    cursor     : pointer;
+    width      : 24px;
+    height     : 24px;
+    align-self : flex-start;
     margin-left: 20px;
-    filter: invert(74%) sepia(2%) saturate(2%) hue-rotate(13deg) brightness(91%) contrast(83%);
-    transition: filter 0.3s ease-in;
+    filter     : invert(74%) sepia(2%) saturate(2%) hue-rotate(13deg) brightness(91%) contrast(83%);
+    transition : filter 0.3s ease-in;
 }
 
 .rating-icon_thumbsUp:hover {
@@ -801,19 +780,17 @@
 }
 
 .thumbs-rating-holder {
-    display: inline-block;
-    font-size: 16px;
-    /* width: 25px;
-    height: 25px; */
-    /* text-align: center;
+    display        : inline-block;
+    font-size      : 16px;
+    /* width       : 25px;
+    height         : 25px; */
+    /* text-align  : center;
     justify-content: center; */
-    /* padding: auto; */
+    /* padding     : auto; */
 }
 
 .thumbsUp-rating-count {
-
     font-weight: 500;
-
 }
 
 .thumbsUp-active {
@@ -822,8 +799,7 @@
 
 .thumbsDown-rating-count {
     padding-left: 15px;
-    font-weight: 500;
-
+    font-weight : 500;
 }
 
 .thumbsDown-active {
@@ -835,11 +811,11 @@
 }
 
 .color-icon {
-    margin-top: 30px;
-    widows: 25px;
-    height: 25px;
-    align-items: center;
-    background-repeat: no-repeat;
+    margin-top         : 30px;
+    widows             : 25px;
+    height             : 25px;
+    align-items        : center;
+    background-repeat  : no-repeat;
     background-position: 50%;
 }
 
@@ -848,6 +824,7 @@
 }
 
 /* Light Blue svg */
+
 .color-icon_StumpJumperExpert29,
 .color-icon_StumpJumperExpert27_5,
 .color-icon_FuseExpert29,
@@ -860,77 +837,75 @@
 }
 
 /* Dark Yellow svg */
+
 .color-icon_DemoRace29,
 .color-icon-SWorksDemoEpicEVO {
     background-image: url(../shop/shop_individual_bikes/downhill/img/DEMO-RACE-29[2]_dot.svg);
 }
 
 /* Grey svg */
+
 .color-icon_DemoAlloy27_5 {
     background-image: url(../shop/shop_individual_bikes/downhill/img/DemoAlloy29[3]_dot.svg);
 }
 
 /* Black svg */
+
 .color-icon-SWorksDemo8 {
     background-image: url(../shop/shop_individual_bikes/s-works/img/S-WorksDemo8[1]_dot.svg);
 }
 
 /* Acid Kiwi / Green */
+
 .color-icon-SWorksStumpJumper29,
 .color-icon-SWorksStumpJumper27_5 {
     background-image: url(../shop/shop_individual_bikes/s-works/img/S-WorksStumpJumper29[3]_[4]_dot.svg);
 }
 
-
-
-
-
-
 .color-text {
     margin-top: 8px;
-    font-size: 14px;
+    font-size : 14px;
 }
 
 .color-icon,
 .color {
     align-items: flex-start;
-    flex-flow: row;
+    flex-flow  : row;
 }
 
 .info-bike-size-count {
-    position: relative;
+    position : relative;
     min-width: 200px;
 }
 
 .bike-cart-from {
-    height: 30px;
-    display: inline-block;
+    height    : 30px;
+    display   : inline-block;
     align-self: flex-start;
 }
 
 .bike-select {
-    text-transform: uppercase;
-    border: 1px solid #141414;
-    border-radius: 0;
-    font-size: 12px;
-    cursor: pointer;
+    text-transform : uppercase;
+    border         : 1px solid #141414;
+    border-radius  : 0;
+    font-size      : 12px;
+    cursor         : pointer;
     text-align-last: center;
 }
 
 .noBorder {
     border: none;
-
 }
 
 .bike-select,
 .bike-qty_option {
-    width: 50px;
+    width : 50px;
     height: 100%;
 }
 
 .bike-qty_option {
     text-align: center;
-    height: 30px;
+    height    : 30px;
 }
 
 .bike-qty {
@@ -938,20 +913,19 @@
 }
 
 .info-right-add {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-
 }
 
 .bike-cart_add-to-cart {
     background-color: #d32e2e;
-    border: none;
-    color: #ffffff;
-    width: 150px;
-    height: 50px;
-    align-items: center;
-    transition: background-color 0.3s ease-in;
-    cursor: pointer;
+    border          : none;
+    color           : #ffffff;
+    width           : 150px;
+    height          : 50px;
+    align-items     : center;
+    transition      : background-color 0.3s ease-in;
+    cursor          : pointer;
 }
 
 .bike-cart_add-to-cart:hover {
@@ -959,8 +933,8 @@
 }
 
 .bike-cart_in-stock {
-    color: #44d14f;
-    font-size: 12px;
+    color     : #44d14f;
+    font-size : 12px;
     margin-top: 40px;
 }
 
@@ -970,53 +944,53 @@
     text-transform: uppercase;
 }
 
-
 /* DESCRIPTION */
+
 .bike-description {
-    width: 100%;
-    display: flex;
+    width          : 100%;
+    display        : flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding        : 40px 20px;
 }
 
 .bike-description-wrap {
-    width: 60%;
-    display: flex;
+    width         : 60%;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
+    align-items   : center;
 }
 
 .bike-description-text {
-    font-size: 14px;
-    line-height: 24px;
+    font-size    : 14px;
+    line-height  : 24px;
     margin-bottom: 20px;
 }
 
 .bike-description-text-bottom {
-    font-size: 18px;
-    margin: 20px 0 50px;
+    font-size  : 18px;
+    margin     : 20px 0 50px;
     font-weight: 600;
-    cursor: pointer;
+    cursor     : pointer;
 }
 
 .bike-description-list {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left   : 20px;
 }
 
 .bike-description-list-text {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    display: list-item;
+    font-size          : 14px;
+    line-height        : 24px;
+    margin-bottom      : 20px;
+    display            : list-item;
     list-style-position: outside;
-    list-style: disc;
+    list-style         : disc;
 }
 
-
 /* BIKE VIDEO video-StumpJumperPro29 */
+
 .video-StumpJumperPro29 {
-    width: 100%;
+    width : 100%;
     height: 75vh;
 }
 
@@ -1024,30 +998,29 @@
 
 .bike-specs {
     background-color: #292929;
-    padding: 70px 40px;
-    color: #ffffff;
+    padding         : 70px 40px;
+    color           : #ffffff;
     /* margin-bottom: 40px; */
 }
 
 .bike-specs-wrap {
-    width: 100%;
-    padding: 70px 0;
-    display: flex;
+    width          : 100%;
+    padding        : 70px 0;
+    display        : flex;
     justify-content: left;
 }
 
 .bike-specs-downloadManual {
-    width: 250px;
-    padding: 20px 15px;
-    border: 1px solid #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width           : 250px;
+    padding         : 20px 15px;
+    border          : 1px solid #fff;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
     background-color: #292929;
-    transition: background-color .2s ease-in;
-    cursor: pointer;
-
+    transition      : background-color .2s ease-in;
+    cursor          : pointer;
 }
 
 .bike-specs-downloadManual:hover {
@@ -1055,29 +1028,29 @@
 }
 
 .bike-specs-downloadManual-title {
-    font-size: 14px;
+    font-size  : 14px;
     font-weight: 500;
 }
 
 .bike-specs-right-table {
-    width: auto;
+    width  : auto;
     padding: 0 20px;
 }
 
 /* SPECS TABLE */
-tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
 
+tbody {
+    display       : table-row-group;
+    vertical-align: middle;
+    border-color  : inherit;
+}
 
 .bike-specs-right-table-title {
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    cursor: pointer;
+    font-size     : 24px;
+    font-weight   : 600;
+    margin-bottom : 20px;
+    cursor        : pointer;
 }
 
 .specs-table-wrap,
@@ -1090,27 +1063,26 @@ tbody {
 }
 
 .specs-section-wrap {
-    padding-top: 10px;
-    /* display: flex;
+    padding-top    : 10px;
+    /* display     : flex;
     justify-content: space-between; */
-
 }
 
 .specs-section-category {
-    font-size: 16px;
-    font-weight: lighter;
-    line-height: 22px;
-    font-weight: 400;
+    font-size    : 16px;
+    font-weight  : lighter;
+    line-height  : 22px;
+    font-weight  : 400;
     padding-right: 14px;
 }
 
 .specs-section-category-title {
-    width: 150px;
+    width         : 150px;
     padding-bottom: 5px;
-    transition: filter 0.2s ease-in;
-    cursor: pointer;
-    color: #cdcdcd;
-    font-size: 18px;
+    transition    : filter 0.2s ease-in;
+    cursor        : pointer;
+    color         : #cdcdcd;
+    font-size     : 18px;
 }
 
 .specs-section-category-title:hover,
@@ -1123,33 +1095,31 @@ tbody {
 }
 
 .chevrons {
-    position: relative;
-    display: flex;
+    position       : relative;
+    display        : flex;
     justify-content: center;
-    justify-items: center;
+    justify-items  : center;
 }
 
 .chevronUp {
     background: url(../img/icos/svg/chevron-up.svg);
-
 }
 
 .chevronDown {
     background: url(../img/icos/svg/chevron-down.svg);
-    display: none;
+    display   : none;
 }
 
 .chevronUp,
 .chevronDown {
-    position: absolute;
-    filter: invert(95%) sepia(58%) saturate(0%) hue-rotate(233deg) brightness(114%) contrast(96%);
-    width: 100%;
-    height: 20px;
+    position         : absolute;
+    filter           : invert(95%) sepia(58%) saturate(0%) hue-rotate(233deg) brightness(114%) contrast(96%);
+    width            : 100%;
+    height           : 20px;
     background-repeat: no-repeat;
-    position: left;
-    cursor: pointer;
+    position         : left;
+    cursor           : pointer;
 }
-
 
 .chevronUp:hover,
 .chevronDown:hover {
@@ -1157,22 +1127,22 @@ tbody {
 }
 
 .specs-name {
-    white-space: nowrap;
-    width: 150px;
-    /* display: flex; */
-    /* align-self: flex-start; */
-    color: #cdcdcd;
-    font-size: 12px;
-    line-height: 18px;
-    padding-top: 20px;
+    white-space   : nowrap;
+    width         : 150px;
+    /* display    : flex; */
+    /* align-self : flex-start; */
+    color         : #cdcdcd;
+    font-size     : 12px;
+    line-height   : 18px;
+    padding-top   : 20px;
     vertical-align: top;
 }
 
 .specs-info {
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 18px;
-    padding-top: 20px;
+    font-size     : 11px;
+    font-weight   : 400;
+    line-height   : 18px;
+    padding-top   : 20px;
     vertical-align: top;
 }
 
