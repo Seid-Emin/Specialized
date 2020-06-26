@@ -1,6 +1,6 @@
 # Specialized
 
-Check out the Final Product @ http://seid-saydahmed.site/projects/Specialized/index.html
+Check out the Final Product @ http://seid-saydahmed.site/projects/Specialized
 
 This is a remake of an existing website https://www.specialized.com
 
